@@ -1,0 +1,142 @@
+@if (voltarTopo)
+{
+<div id="jsFloatButton">
+    <a href="#topo" class="voltarTopo" title="Voltar ao topo"></a>
+</div>
+<script type="text/javascript">
+    $('#jsFloatButton').hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('#jsFloatButton').fadeIn();
+        } else {
+            $('#jsFloatButton').fadeOut();
+        }
+    });
+</script>
+}
+
+
+<footer>
+    <div class="center">
+        <section class="fbits-footer-blocos-vertical">
+            <ul class="blockfooter toggle">
+                <li class="titlefooter title-ajuda">Atendimento</li>
+                <li>
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            <span class="contact-list__title contact-list__title--phone">Televendas</span>
+                            <span class="contact-list__info">@Html.Raw(G.Dados["Contato-TelefoneSAC"])</span>
+                        </li>
+                        <li class="contact-list__item">
+                            <span class="contact-list__title contact-list__title--whatsapp">Whatsapp</span>
+                            <span class="contact-list__info">(11) 93334 4333</span>
+                        </li>
+                        <li class="contact-list__item">
+                            <span class="contact-list__title contact-list__title--email">E-mail</span>
+                            <a class="contact-list__info contact-list__info--email" href="mailto:felix@felix.com.br">felix@felix.com.br</a>
+                        </li>
+                        <li class="contact-list__item">
+                            <span class="contact-list__info contact-list__info--support">Aberto das 8 às 17h</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="fbits-footer-blocos-vertical">
+            <ul class="blockfooter toggle">
+                <li class="titlefooter title-sobre-nos">Institucional</li>
+                <li class="linksfooter">
+                    <a href="@(eCommerceURL)QuemSomos">Empresa</a>
+                    <a href="@(eCommerceURL)CompraSegura">Cadastre-se</a>
+                    <a href="@(eCommerceURL)ComoComprar">Meus Pedidos</a>
+                    <a href="@(eCommerceURL)PoliticadePrivacidade">Contato</a>
+                </li>
+            </ul>
+        </section>
+        <section class="fbits-footer-blocos-vertical">
+            <ul class="blockfooter toggle">
+                <li class="titlefooter title-ajuda-suporte">Ajuda</li>
+                <li class="linksfooter">
+                    <a href="@(eCommerceURL)DuvidasFrequentes">Como Comprar</a>
+                    <a href="@(eCommerceURL)FormasPagamento">Pagamento</a>
+                    <a href="@(eCommerceURL)Entrega">Prazos e envio</a>
+                    <a href="@(eCommerceURL)Entrega">Garantia</a>
+                    <a href="@(eCommerceURL)TrocaseDevolucoes">Trocas</a>
+                    <a href="@(eCommerceURL)Atendimento">Segurança</a>
+                </li>
+            </ul>
+        </section>
+        <section class="fbits-footer-blocos-vertical payment">
+            <ul class="blockfooter noborder bloco-formas-pagamento">
+                <li class="titlefooter title-formas-pagamento">Pagamento</li>
+                <li class="linksfooter li-formas-pgto">
+                    <span class="icones-pagamento-footer icone-boleto"></span>
+                    <span class="icones-pagamento-footer icone-visa"></span>
+                    <span class="icones-pagamento-footer icone-master"></span>
+                    <span class="icones-pagamento-footer icone-paypal"></span>
+                    <span class="icones-pagamento-footer icone-amex"></span>
+                    <span class="icones-pagamento-footer icone-dois-cartoes"></span>
+                    <span class="icones-pagamento-footer icone-diners"></span>
+                    <span class="icones-pagamento-footer icone-deposito"></span>
+                    <span class="icones-pagamento-footer icone-hipercard"></span>
+                    <span class="icones-pagamento-footer icone-elo"></span>
+                    <span class="icones-pagamento-footer icone-discover"></span>
+                    <span class="icones-pagamento-footer icone-aura"></span>
+                    <span class="icones-pagamento-footer icone-fastcash"></span>
+                    <span class="icones-pagamento-footer icone-ayden"></span>
+                    <span class="icones-pagamento-footer icone-stelo"></span>
+                </li>
+            </ul>
+        </section>
+        <section class="fbits-footer-blocos-vertical">
+            <ul class="blockfooter toggle">
+                <li class="linksfooter socialnetwork">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFelix-Fantasias-1619058164978178%2F&tabs=timeline&width=265px&height=185px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=147877002413301" width="265px" height="185px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="copyright-footer">
+        <div class="center">
+            <section class="fbits-footer-blocos-horizontal clear">
+                <span class="title">Copyright © 2017-felixfantasias.com.br. Todos os direitos reservados.</span>
+                <address class="fbits-dadosEmpresa">
+                    Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet. Fotos meramente ilustrativas. Felix Fantasias Ltda. Me CNPJ: @G.Dados["DadosEmpresa-CNPJ"] - Endereço: @G.Dados["DadosEmpresa-Endereco"] - @G.Dados["DadosEmpresa-Cidade"] - @G.Dados["DadosEmpresa-Estado"]
+                </address>
+                <ul class="blockfooter noborder logo-fbits">
+                    <li>
+                        <a target="_blank" href="http://www.fbits.com.br/solucao/f-store-plataforma-de-ecommerce/?utm_source=@(G.NomeEcommerce)&utm_medium=F-Store&utm_term=F-Store&utm_content=Rodape&utm_campaign=MiniBannerRodapeHome" title="F-Store powered by FBITS"><i class="fstore replace">F-Store powered by FBITS</i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="external" href="http://www.auaha.com.br" class="auaha">Auaha</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <ul class="auaha-list">
+        <li class="auaha-list__item">
+            <a href="http://auaha.com.br/" target="_blank" rel="external">
+                <img src="//recursos.felixfantasias.ecommercestore.com.br/i/designby.png" alt="Auaha" />
+            </a>
+        </li>
+        <li class="auaha-list__item">
+            <a href="http://fbits.com.br/" target="_blank" rel="external">
+                <img src="//recursos.felixfantasias.ecommercestore.com.br/i/logofbits.png" alt="Fbits" />
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<script>
+    $(".toggle .titlefooter").click(function(){
+        $(this).next().toggle();
+        $(this).toggleClass("opened");
+    });
+</script>
+
+
+@Html.Partial("_ViewSwitcher")
+@Zanox.InsertScript(Convert.ToBoolean(G.Dados["ZanoxAtivo"]))
+
+@{Html.RenderAction("SelectGrupoScriptTag", "GrupoScriptTag", new { @posicao = EnumPosicaoScript.FooterBaixo });}

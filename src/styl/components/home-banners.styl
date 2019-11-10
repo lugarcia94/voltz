@@ -1,0 +1,59 @@
+section.fbits-section-home
+  @extend .center
+  float none
+
+
+section.fbits-banner-topo-home
+  border-bottom 1px solid #eee
+
+  .row
+    float none
+
+  .slick-list.draggable
+    width auto
+
+    .fbits-banner-item
+      border-right 1px solid #eee
+
+      a
+        display flex
+        justify-content center
+        padding 9px 0
+
+        img
+          flex 0 0 auto
+          width auto
+
+      &:first-child
+        a
+          justify-content flex-start
+
+      &:last-child
+        border-right 0 none
+
+        a
+          justify-content flex-end
+
+section.fbits-banner-extra-home
+  margin-top 30px
+
+section.fbits-section-home
+
+  .row-fbits-banner-topo
+    .slick-list.draggable
+      width 100%
+
+  .fbits-banner-item
+    a
+      display inline-block
+
+  .fbits-componente-banner
+    display flex
+    justify-content space-between
+
+    > *
+      flex 0 0 auto
+      float none
+      width auto
+
+ 

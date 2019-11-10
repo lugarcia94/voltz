@@ -1,0 +1,596 @@
+.product__comprejunto
+    @media(max-width: 991px)
+        width: 50%
+        order: -1
+    @media(max-width: 768px)
+        width: 100%
+        order: 2
+
+    #divGruposProdutoRecomendado
+        background: #f9f9f9
+        padding: 10px
+        width: 100%
+        transition: all 300ms ease-in-out
+        @media(min-width: 992px)
+            margin-top: 20px
+
+    #divGrupoProduto
+        transition: all 300ms ease-in-out
+        .line
+            display: inline-block
+
+    #divTitulo
+        font-size: 0
+        line-height: 0
+        background: none
+        text-transform: none
+        padding: 0
+        + span
+            display: none
+
+        &:before
+            content: 'Aproveite e compre junto!'
+            font-size: 22px
+            line-height: 22px
+            color: $cor02
+            font-weight: 300
+            text-transform: none
+            padding: 10px 0 5px 0
+            display: block
+
+
+
+    #ulGrupoProduto
+        position: relative
+        transition: all 300ms ease-in-out
+        &:last-child
+            margin: 0
+
+        >li
+            background: #fff
+            padding: 5px 20px 20px 20px
+            margin: 0 0 20px 0
+            transition: all 300ms cubic-bezier(1, -0.35, 0, 1.34)
+
+        &:before
+            background: #000
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 1
+            opacity: 0
+            cursor: pointer
+            transition: all 300ms ease-in-out
+
+        #divSpotProdutoRecomendado
+            align-items: stretch
+            display: flex
+
+        [id*="view-item-quantidade"]
+            display: none
+
+        &:not(.cpj-md-on)
+            #spotVejaTambem-Principal
+            .divisor
+            .divisorIgual
+            .opcoesCombo
+            #precoCompreJuntoPorProduto
+                display: none
+
+            .spotRecomendadoText
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-between
+                padding: 5px 0 5px 20px
+                .spotTitle
+                    font-size: 14px
+                    color: $cor02
+                    font-weight: 400
+                    color: #333333
+
+
+            .p-de
+                font-size: 11px
+                color: #7c7c7c
+                font-weight: 500
+                display: block
+                width: 100%
+
+            .p-por
+                font-size: 11px
+                color: $cor02
+                font-weight: 500
+                display: block
+                width: 100%
+                em
+                    font-style: normal
+                    color: $cor01
+                    font-weight: 600
+
+
+            .divFotosProduto
+                min-width: 70px
+                max-width: 70px
+                height: 80px
+                a
+                    display: block
+                img
+                    max-width: 100%
+                    height: auto
+                    display: block
+
+        &.cpj-md-on
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 10000
+            >li
+                background: #f9f9f9
+                z-index: 10
+                width: 100%
+                max-width: 600px
+                top: 50%
+                left: 50%
+                position: fixed
+                transform: translate(-50%, -50%)
+                padding: 15px
+            &:before
+                opacity: 0.6
+
+            #divSpotProdutoRecomendado
+                background: #fff
+                padding: 10px
+                margin-bottom: 15px
+
+            .divFotosProduto
+                min-width: 70px
+                max-width: 70px
+                height: 80px
+                a
+                    display: block
+                img
+                    max-width: 100%
+                    height: auto
+                    display: block
+
+
+            .spotRecomendadoText
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                padding: 0 0 0 20px
+                .spotTitle
+                    font-size: 16px
+                    color: $cor02
+                    font-weight: 500
+                    text-transform: uppercase
+
+            .p-de
+            .p-por
+                display: none
+
+
+            .atributos-container
+                .atributo-div
+                    font-size: 12px
+                    line-height: 12px
+                    text-transform: none
+                    color: $cor02
+                    margin: 10px 0
+
+            #precoCompreJuntoPorProduto
+                display: inline-block
+                width: 100%
+
+            #divPrecoCompreJuntoPorProduto
+                background: #fff
+                padding: 10px
+
+
+            #divFormaPagamento
+                .precoDe
+                    font-size: 12px
+                    color: #ababab
+                    margin-right: 5px
+                    font-weight: 300 
+                    text-align: left
+                .precoPor
+                    color: #40dfcf
+                    font-size: 22px
+                    font-weight: 600
+                    display: flex
+                    align-items: center
+                    
+
+                .precoParcela
+                    font-size: 12px
+                    color: #3e3e3e
+                    margin-bottom: 2px
+                    width: 100%
+
+                    .fbits-parcela-x
+                    .fbits-parcela
+                    .fbits-quantidadeParcelas
+                        font-weight: 600
+
+                .precoVista
+                    text-transform: none
+                    .fbits-boleto-ou
+                        display: none
+
+                    .fbits-boleto-preco
+                        color: #00d833
+                        font-size: 15px
+                        font-weight: 600
+
+                    .fbits-boleto-avista,
+                    .fbits-boleto-desconto
+                        font-size: 12px
+                        color: #3e3e3e
+
+            #btnComprarTodos
+                margin-top: 10px
+
+
+
+
+
+    #btnComprarTodos
+        background: #00d833
+        cursor: pointer
+        color: #fff
+        font-size: 0
+        line-height: 13px
+        font-weight: 600
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        text-transform: uppercase
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        height: 45px
+        width: 100%
+        text-decoration: none
+        -webkit-transition: all 150ms ease-in-out
+        transition: all 150ms ease-in-out
+        position: relative
+
+        i
+            &:before
+                content: 'COMPRE ESTES ITENS JUNTOS'
+                position: absolute
+                width: 100%
+                display: block
+                font-size: 14px
+                color: #fff
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                font-style: normal
+                font-weight: 700
+
+        &:hover
+            color: #fff
+            text-decoration: none
+            background: #5fad0c
+            opacity: 0.9
+
+a#btnContinuarComprando
+    background: #40e0d0!important
+    border-radius: 2px
+ 
+
+#divCompreJunto:after 
+    display: block
+    clear: both
+    content: ''
+
+
+.divPaiCarrosselCompreJunto
+    height auto
+    background-color: transparent 
+    padding: 55px 25px 25px 25px
+    position relative
+    &:before
+        content: 'APROVEITE E '
+        font-size: 14px
+        font-weight bold
+        color: $cor02
+        position absolute
+        top: 25px
+        left: 25px
+    &:after
+        content: 'COMPRE JUNTO'
+        font-size: 14px
+        font-weight bold
+        color: $cor01
+        position absolute
+        top: 25px
+        left: 128px
+    .precoDe
+        float none
+        width auto 
+        display inline-block
+
+    .precoPor
+        width auto 
+        display inline-block
+        font-size 15px!important
+        line-height normal
+        color #ee3a53
+        margin 0
+
+        &:before
+            content ''
+
+    .precoVista
+        display none
+        
+    .fbits-quantidadeParcelas
+        font-weight 700
+        line-height normal
+        font-size 12px
+
+    .divFotosProduto
+        max-width 88px
+        margin-right 20px
+    
+    [id*=produto-item]
+        position relative
+        padding 0 30px
+        .fbits-comprejunto3
+            position absolute
+            right: 30px
+            bottom 0px
+            width: 190px
+            height 40px
+            background-color: #f3f3f3
+            display flex
+            justify-content: center
+            align-items: center
+            span.fbits-adicionar-produto
+                margin 0
+        @media(max-width: 991px)
+            justify-content: center !important
+            .fbits-comprejunto3
+                position relative
+                margin 0 auto
+                right initial
+    .slick-prev
+        left: 0px
+        top: 20%;
+        &.slick-disabled
+            opacity: .5
+    .slick-next
+        right: 0px
+        top: 36%;
+        &.slick-disabled
+            opacity: .5
+
+.compre__junto-wrapper
+    width: 100%
+    max-width 100%
+    margin 30px 0
+
+    @media(max-width: 1290px)
+        max-width 100%
+    @media(max-width: 991px)
+        max-width 100%
+        
+    .spotTitle
+        font-size: 14px
+        color: $cor02
+        font-weight 500
+        text-transform: none
+        text-align: left
+        height initial
+    .valorAtributoFoto
+        margin-bottom 20px
+
+    .variante, .atributos-container
+        position static
+        width 100%
+        margin: 0!important
+        margin-bottom 10px!important 
+        display: block
+
+        .atributo-div
+            margin: 0 
+            display: none
+        
+    .atributos-container
+ 
+
+        [data-codigoatributo]
+            > div 
+                margin: 0
+                >* 
+                    padding: 0
+                    margin: 5px
+
+        [data-atributoselecionado="true"]
+            border: 1px solid #A85449
+
+    .tmbMore:before, .divisor:before, .tmbIgual:before, .divisorIgual:before
+        background: transparent
+        color:$cor02    
+        font-size: 40px
+
+    #divPrecoCompreJuntoPorProduto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 260px
+        width 100%
+        flex-wrap: wrap
+        
+        
+        @media(max-width 1000px)
+            max-width 100%
+            width 100%
+            flex-wrap: wrap
+    
+    .bt.comprarProduto
+        background: $cor01
+        color: #fff
+        font-size: 0
+        text-transform: uppercase
+        width 100%
+        height 50px
+
+ 
+
+    #precoCompreJuntoPorProduto
+        max-width 100%
+        width 100%
+        margin: 0
+        border: none
+        padding: 0
+        display: flex
+        justify-content: center
+        align-items: center
+
+        @media(max-width 992px)
+            margin: 20px 0
+
+        #divFormaPagamento
+            displa: flex 
+            flex-wrap wrap
+
+            .precoPor
+                margin: 0
+                color: #FF5D5D
+                font-weight: 700
+                font-size: 28px 
+                text-align: center
+            .precoDe
+                color: #ADADAD
+                font-size: 14px
+                font-weight: 300 
+                text-align: left
+
+            .precoParcela
+                font-size: 14px
+                color: #333
+                line-height: 14px
+                @media(max-width: 992px)
+                    text-align: center
+            .fbits-quantidadeParcelas, .fbits-parcela-x, .fbits-parcela
+                font-weight: 700
+
+
+            .precoVista
+                display: none
+
+            .precoPor.com-precoDe:before
+                display: none
+
+    #view-item-quantidade-0-normal
+        display: none
+ 
+
+    .spotVejaTambem 
+        width: 20%
+        position: relative
+
+        @media(max-width: 991px)
+            width 45%
+
+        #divSpotProdutoRecomendado 
+            width: 100%
+
+    .open__item
+        [data-atributospagproduto] >div
+            display: flex
+            background: #fff
+            z-index: 999
+            width: 100%!important
+            max-height: 1000px
+            justify-content: center
+
+
+    [data-atributospagproduto] >div 
+        overflow hidden
+        transition: all .3s ease-in-out
+        float: none
+ 
+
+        
+
+    [data-atributoselecionado="True"]
+        border: 1px solid $cor01 !important
+        
+    [id^="produto-item"]
+        display: flex!important
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+
+        @media(max-width: 767px)
+            align-items: flex-start
+
+    .divisor, .divisorIgual
+        &:before
+            margin: 0 auto
+ 
+    
+    .line 
+        display: flex
+        align-items: center
+        flex-wrap: wrap 
+        justify-content: flex-end
+ 
+        span 
+            display: none
+        h3  
+            margin: 0
+            font-size: 30px
+            color: #373535
+            font-weight: 700 
+            display: flex
+            align-items: center
+            justify-content: center
+            text-transform: none 
+            position relative
+            padding: 0
+            display: none
+
+            @media(max-width: 1100px)
+                display: flex
+                width: 100%
+    
+    .fbits-comprejunto1,
+    .fbits-comprejunto2
+        width  auto
+
+    .fbits-comprejunto2
+        flex 1 1 auto 
+        min-width 0
+
+.divisor
+    @media(max-width 768px)
+        position: absolute
+        top: 20%
+        left: 50%
+        transform: translateX(-50%)
+        
+ul#ulGrupoProduto
+    @media(max-width 992px)
+        position relative
+
+.divisorIgual
+    @media(max-width 992px)
+        display: none
+ 
+div#divCompreJunto
+    float none

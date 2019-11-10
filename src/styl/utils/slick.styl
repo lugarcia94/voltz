@@ -1,0 +1,57 @@
+.slick-arrow
+    width: 35px !important
+    height 35px !important
+    display: flex
+    align-items: center 
+    justify-content: center
+    background-color: $cor02 !important 
+    border-radius: 50px
+    &.slick-next
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAKlBMVEUAgJv///8Ag50AhZ+k2eGy3+aa1d7P6++t3eSS0tzf8fSf1+Cw3uWi2OBTkoSVAAAAM0lEQVR42u3JtwEAIAwDMKfR+f9dPjAs2dAqfFejGestwV49/SdpC+l0XVMWiy5qUXwPDnoLAMxlkC5oAAAAAElFTkSuQmCC')!important
+        background-repeat no-repeat !important
+        background-size: 100% !important
+        background-position: center !important
+    &.slick-prev
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAKlBMVEUAgJv///8Ag50AhZ+k2eGy3+aa1d7P6++t3eSS0tzf8fSf1+Cw3uWi2OBTkoSVAAAAM0lEQVR42u3JtwEAIAwDMKfR+f9dPjAs2dAqfFejGestwV49/SdpC+l0XVMWiy5qUXwPDnoLAMxlkC5oAAAAAElFTkSuQmCC')!important
+        background-repeat no-repeat !important
+        background-size:  100% !important
+        background-position: center !important
+        transform: rotate(180deg) !important
+    &:before
+        display none !important
+        
+.slick-dots
+    position: abosolute !important
+    li
+        width: 15px !important
+        height 15px !important
+        border: none !important
+        background: none !important
+        button
+            width: 15px !important
+            height 15px !important
+            background-color transparent !important
+            border: 2px solid $cor03 !important
+            padding 0 !important
+            border-radius 50%
+        &.slick-active
+            button
+                background-color: $cor01 !important
+                border-color: $cor01 !important
+        
+section.fbits-section-home .slick-list.draggable
+    width: initial !important
+
+
+.slick-arrow.slick-prev
+    left 0
+    @media(max-width : 991px)
+        left 5px !important
+        width: 30px
+        height 30px
+.slick-arrow.slick-next
+    right 0
+    @media(max-width : 991px)
+        right 5px !important
+        width: 30px
+        height 30px

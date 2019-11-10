@@ -1,0 +1,178 @@
+@if (voltarTopo)
+{
+	<div id="jsFloatButton">
+		<a href="#topo" class="voltarTopo" title="Voltar ao topo"></a>
+	</div>
+	<script type="text/javascript">
+	  $('#jsFloatButton').hide();
+	  $(window).scroll(function () {
+		  if ($(this).scrollTop() != 0) {
+			  $('#jsFloatButton').fadeIn();
+		  } else {
+			  $('#jsFloatButton').fadeOut();
+		  }
+	  });
+	</script>
+}
+
+
+<footer>
+	<div class="center">
+		<section class="fbits-footer-blocos-vertical">
+			<ul class="blockfooter toggle">
+				<li class="titlefooter title-ajuda">Atendimento</li>
+				<li class="linksfooter">
+					<div class="contato-footer contato-fone">
+						<span class="icone-contato-footer"></span>@Html.Raw(G.Dados["Contato-TelefoneSAC"])
+					</div>
+					<div class="contato-footer horario-atendimento">
+						Horário de atendimento: <br/>
+						Segunda à Sexta das 9:00 às 18:00<br/>
+						Sábado das 09:00 às 13:00
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="fbits-footer-blocos-vertical">
+			<ul class="blockfooter toggle">
+				<li class="titlefooter title-sobre-nos">Sobre Nós</li>
+				<li class="linksfooter">
+					<a href="@(eCommerceURL)QuemSomos">Quem somos</a>
+					<a href="@(eCommerceURL)CompraSegura">Compra segura</a>
+					<a href="@(eCommerceURL)ComoComprar">Como comprar</a>
+					<a href="@(eCommerceURL)PoliticadePrivacidade">Política de privacidade</a>
+					<a href="@(eCommerceURL)ContratoDeCompraEVenda">Termos de Compra e Venda</a>
+                    <a href="@(eCommerceURL)Fabricante/Fabricantes">Fabricantes</a>
+				</li>
+			</ul>
+		</section>
+		<section class="fbits-footer-blocos-vertical">
+			<ul class="blockfooter toggle">
+				<li class="titlefooter title-ajuda-suporte">Ajuda e Suporte</li>
+				<li class="linksfooter">
+					<a href="@(eCommerceURL)DuvidasFrequentes">Dúvidas Frequentes</a>
+					<a href="@(eCommerceURL)TrocaseDevolucoes">Trocas e devoluções</a>
+					<a href="@(eCommerceURL)FormasPagamento">Formas de pagamento</a>
+					<a href="@(eCommerceURL)Entrega">Frete e entrega</a>
+					<a href="@(eCommerceURL)Atendimento">Central de Atendimento</a>
+				</li>
+			</ul>
+		</section>
+		<section class="fbits-footer-blocos-vertical">
+			<ul class="blockfooter toggle">
+				<li class="titlefooter title-redes-sociais">Redes Sociais</li>
+				<li class="linksfooter socialnetwork">
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-face"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+					  <span class="icones-redes-footer icone-gmais"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+					  <span class="icones-redes-footer icone-twitter"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-youtube"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-insta"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-vimeo"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-snapchat"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-pinterest"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-linkedin"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-flickr"></span>
+					</a>
+					<a class="fbits-redes-sociais" target="_blank" href="#">
+						<span class="icones-redes-footer icone-blogger"></span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="fbits-footer-blocos-horizontal clear">
+			<ul class="blockfooter noborder bloco-formas-pagamento">
+				<li class="titlefooter title-formas-pagamento">Formas de Pagamento</li>
+				<li class="linksfooter li-formas-pgto">
+					<span class="icones-pagamento-footer icone-boleto"></span>
+					<span class="icones-pagamento-footer icone-visa"></span>
+					<span class="icones-pagamento-footer icone-master"></span>
+					<span class="icones-pagamento-footer icone-paypal"></span>
+					<span class="icones-pagamento-footer icone-amex"></span>
+					<span class="icones-pagamento-footer icone-dois-cartoes"></span>
+					<span class="icones-pagamento-footer icone-diners"></span>
+					<span class="icones-pagamento-footer icone-deposito"></span>
+					<span class="icones-pagamento-footer icone-hipercard"></span>
+					<span class="icones-pagamento-footer icone-elo"></span>
+					<span class="icones-pagamento-footer icone-discover"></span>
+					<span class="icones-pagamento-footer icone-aura"></span>
+					<span class="icones-pagamento-footer icone-fastcash"></span>
+					<span class="icones-pagamento-footer icone-ayden"></span>
+					<span class="icones-pagamento-footer icone-stelo"></span>
+				</li>
+			</ul>
+			<ul class="blockfooter noborder bloco-certificados">
+				<li class="titlefooter title-certificados">Certificados e Segurança</li>
+				<li class="linksfooter li-certificados">
+					<span class="selo-seal">
+						<img alt="Wildcard SSL Certificates" border=0 id="ss_img" src="https://seal.alphassl.com/SiteSeal/images/alpha-ssl-logo.gif" title="SSL Certificate">
+					</span>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<div class="copyright-footer">
+		<div class="center">
+			<section class="fbits-footer-blocos-horizontal clear">
+				<ul class="blockfooter noborder endereço-footer">
+					<address class="fbits-dadosEmpresa">
+						<span class="razaoSocial" data-nome="Razão Social">@G.Dados["DadosEmpresa-RazaoSocial"]</span>
+						<span class="cnpj" data-nome="CNPJ">@G.Dados["DadosEmpresa-CNPJ"]</span>
+						<span class="InscricaoEstadual" data-nome="Inscrição Estadual">@G.Dados["DadosEmpresa-InscricaoEstadual"]</span>
+						<span class="endereco" data-nome="Endereço">@G.Dados["DadosEmpresa-Endereco"]</span>
+						<span class="bairro" data-nome="Bairro">@G.Dados["DadosEmpresa-Bairro"]</span>
+						<span class="cidade" data-nome="Cidade">@G.Dados["DadosEmpresa-Cidade"]</span>
+						<span class="estado" data-nome="Estado">@G.Dados["DadosEmpresa-Estado"]</span>
+						<span class="cep" data-nome="CEP">@G.Dados["DadosEmpresa-CEP"]</span>
+					 </address>
+				</ul>
+				<ul class="blockfooter noborder logo-fbits">
+					<a target="_blank" href="http://www.fbits.com.br/solucao/f-store-plataforma-de-ecommerce/?utm_source=@(G.NomeEcommerce)&utm_medium=F-Store&utm_term=F-Store&utm_content=Rodape&utm_campaign=MiniBannerRodapeHome" title="F-Store powered by FBITS"><i class="fstore replace">F-Store powered by FBITS</i></a>
+				</ul>
+				<ul class="blockfooter noborder copyright">
+					<p>&copy; <span class="copyright-direitos">Todos os direitos reservados.</span> Eventuais promoções, descontos e prazos de pagamento expostos aqui são válidos apenas para compras via internet. As fotos, textos e layout aqui veiculados são de propriedade da Loja. É proibida a utilização total ou parcial sem nossa autorização.</p>
+				</ul>
+			</section>
+		</div>
+	</div>
+</footer>
+
+
+<div id="utility">
+
+	<img src="@(B.Bal( G.UrlRecursosSSL, "i/topbar/banner.png", false))" alt="Banner" />
+
+</div>
+
+
+
+<script>
+$(".toggle .titlefooter").click(function(){
+  $(this).next().toggle();
+  $(this).toggleClass("opened");
+});
+</script>
+
+
+@Html.Partial("_ViewSwitcher")
+@Zanox.InsertScript(Convert.ToBoolean(G.Dados["ZanoxAtivo"]))
+
+@{Html.RenderAction("SelectGrupoScriptTag", "GrupoScriptTag", new { @posicao = EnumPosicaoScript.FooterBaixo });}

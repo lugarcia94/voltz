@@ -1,0 +1,549 @@
+.product__price
+    
+    @media(max-width: 991px)
+        margin-top: 20px
+        width: 100%
+        display: flex
+        align-items: flex-start
+
+    @media(max-width: 768px)
+        flex-wrap: wrap
+
+    .product__price-container
+        flex-wrap: wrap
+        display: flex
+
+
+.product__name
+    display: flex
+    justify-content: space-between
+
+.product__brand
+    display: flex
+    justify-content: flex-end
+    #fbits-fabricante-logo
+        max-width: 100px;
+    img 
+        height: auto
+        width: 100%
+    @media(min-width: 992px)
+        &.brand01
+            display: none
+    @media(max-width: 991px)
+        &.brand02
+            display: none
+        img
+            width: 70px
+            margin-left: 10px
+
+.product__price-on
+    @media(min-width: 769px)
+        &.price02
+            display: none
+    @media(max-width: 768px)
+        &.price02
+            margin: 0 0 15px 0
+
+    .fbits-preco
+        align-items: center
+        position: relative
+        display: flex
+        flex-wrap: wrap
+
+    .precoDe
+        font-size: 15px
+        color: #A1A0A1
+        text-decoration: none
+        margin-right: 5px
+        font-weight: 600
+
+        &:before
+            content 'de'
+            margin-right 5px
+
+        &:after
+            content 'por'
+            margin-left 5px
+
+    .precoPor
+        color: $cor01
+        font-size: 20px
+        font-weight: 600
+        display: flex
+        align-items: center
+        &:before
+            display: none
+
+    .fbits-preco-off
+        margin: 0 0 0 5px
+
+    .precoVista
+        text-transform: none
+        display: none
+        .fbits-boleto-ou
+            display: none
+
+        .fbits-boleto-preco
+            color: #00d833
+            font-size: 15px
+            font-weight: 600
+
+        .fbits-boleto-avista,
+        .fbits-boleto-desconto
+            font-size: 12px
+            color: #3e3e3e
+
+
+    .product__price-installments
+        font-size: 12px
+        color: #3e3e3e
+        margin-bottom: 2px
+        width: 100%
+
+        .numeroparcelas,
+        .parcelax,
+        .parcelavalor,
+        span.parcelade
+            font-weight: 600
+            color: $cor01
+            font-size: 16px
+        
+        .parcelajuros
+            display: none
+ 
+
+[id*="view-item-quantidade"]
+    display none
+    width: 100%
+    order: -1
+    text-align: center
+    display: none
+
+    .fbits-titulo-quantidade.atributo-div
+        font-size: 12px
+        color: $cor02
+        text-transform: none
+        font-weight: 600
+        margin-right 5px
+
+    #menosQtd 
+        font-size: 20px
+        font-weight: 700
+        margin-right: 5px
+        color: $cor01
+        cursor pointer
+
+   #maisQtd 
+        font-size: 20px
+        font-weight: 700
+        margin-left: 5px
+        color: $cor01
+        cursor pointer
+
+    @media(max-width: 768px)
+        margin: 0
+
+    .fbits-titulo-quantidade
+        display: none
+
+    #item-quantidade-1
+        border: 1px solid $cor03
+        color: $cor02
+        font-size: 14px
+        line-height: 14px
+        font-weight: 600
+        text-align: center
+        background: none
+        width: 45px
+        height: 45px
+        border-radius: 3px
+
+[id*="produto-variante"]
+    float: none
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+
+[id*="produto-comprar"]
+    margin: 0
+    position: absolute
+    bottom: 0
+    max-width: 222px
+    width: 100%
+    height: 66px
+    z-index: 99
+
+    @media(max-width: 992px)
+        display: none
+
+    a
+        margin: 0
+
+.produto-comprar
+    a
+        background: #189E60
+        cursor: pointer
+        color: #fff
+        font-size: 0!important 
+        font-weight: 600
+        border-radius: 2px
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        display: flex
+        height: 66px
+        width: 100%
+        text-decoration: none
+        transition: $transition
+
+        &:before
+            @extend $ico-before
+            background-image url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
+            transition: $transition
+            width: 23px
+            height: 23px
+            background-size: 23px
+            margin-right 5px
+
+#cepCarrinho 
+    .summary
+        display none 
+
+    .simule
+        font-size: 0
+        margin-top 5px
+        display: flex
+        align-items: center
+        margin: 0
+
+
+        @media(max-width 992px) 
+            width: 100%
+            justify-content: center
+            margin-bottom: 10px
+
+        &:after
+            content: 'Calcule o frete'
+            font-size: 13px
+            text-transform: none
+            font-weight: 600
+            color: #6D6A5C
+
+        &:before
+            @extend $ico-before
+            background-image svg-inline(shape)
+            transition: $transition
+            width: 26px
+            height: 26px
+            background-size: 26px
+            margin-right 5px
+
+    .details-content 
+        display: flex!important
+        align-items: center
+        padding: 0
+        position relative
+
+        @media(max-width: 992px)
+            flex-wrap: wrap
+ 
+
+    #txtCalculaFreteProduto
+        margin: 0 
+        width 159px
+        text-align: left
+        height 40px
+        border: 1px solid #DED7C1
+        border-radius: 2px
+
+        @media(max-width 992px)
+            width 100%
+            margin-bottom 10px
+
+    #btnCalculaFreteProduto
+        margin: 0
+        width 32px
+        height 35px
+        font-size: 0
+        color: #ffffff
+        background: #fff
+        border: none
+        cursor: pointer
+        font-weight: 700
+        text-transform: none
+        color: #189E60
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAABAlBMVEUAAAD///9VqqpAv4ArqoAktm0gn4AuonQnsWIiqmYgn3AepWkjomghpmQgn2ofo2Ydp2Icn2AboWUan2YYpGEdomMcn2AanmEZoGQZomIYn2AcoWMbn2QboWIboWIbnmEZnmEYoWIan2MYoWEanmEan2AZoWEaoGEYoGIan2Ian2AZoGEZnmEZoGEYnmEYn2AYn2AanmEYn2Aan2EZn2EYn2AYn2EYnmEYn2EYn2AZn2EZn2AYn2EZnmEZn2AYn2AYn2EYnmEZnmEZn2EYnmEZn2AYnmEYn2AYnmEZnmEZn2AZn2AYnmEYn2AYnmEZnmEYnmEYnmEYn2AYnmEYnmDe18HFWZTYAAAAVHRSTlMAAQMEBgcICw0PEBEWFxgZGiUmKCosLTIzNDU2ODlBQkdJUFRXWlxhc4CCg4SGiYqUlp+gpaeosbK0uLm9w8TR0tPW2tvk5efo6+7v8PHy+Pr7/P0hVEhkAAAA1klEQVR4AeXS2TqHQBzG8UFkIaFEFlH27LLvO5HK1/3fioYwc9KZE/85mPfk8zzzzsxPvIvm1drAD4abwQkbfwOs+fU47P0FbhRZKlh4BrgLvsFkxmabAqYhmZ07Jh/5AhMvUingnL1qbz/l4BOMpSxrHfrAlxmSSXD0xKFecgpMmQ7YFQDKcQ240C/Th+4KvC2ecWmowCgJZS5xK4/YEk5OrJXc5WpAiKF71uprrlJ4KrAfedhJUm7MGnRdc2EoQAzuF/C63fPzkjOwov9Fpzfa8S+n+gNiuTGb2IgOBQAAAABJRU5ErkJggg==')
+        background-repeat: no-repeat
+        position absolute
+        right: 10px
+        background-position: center
+
+        @media(max-width 992px)
+            right: 10px
+            top: 37px
+
+        @media(max-width 425px)
+            top: 42px
+
+
+
+    // #naoSeiCep
+    //     display: none
+
+    a#naoSeiCep 
+       
+        left: 32px;
+        font-size: 9px;
+        color: #007DD7;
+        @media(min-width: 992px)
+            position: absolute;
+            bottom: -8px;
+    
+
+
+.product__price-other
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+
+    @media(max-width: 768px)
+        justify-content: space-between
+
+    .fbits-frete-diponibilidade
+        background: #4b4b4b;
+        color: #fff;
+        padding: 0 15px;
+        margin: 0 auto;
+        line-height: 40px;
+        border-radius: 4px;
+        font-weight: 600;
+        max-height: 0px;
+        overflow hidden;
+        transition: all .3s ease-in-out
+        &.open
+            max-height: 1000px;
+            margin: 15px auto;
+
+
+
+.fbits-calculafrete 
+    @media(max-width 992px)
+        width: 100%
+
+#btnAlertaValores
+    @media(max-width 992px)
+        width: 100%!important
+        max-width 100%
+
+.link-add-lista-produto
+    border: 1px solid $cor03
+    border-radius: 3px
+    font-size: 12px
+    line-height: 12px
+    font-weight: 600 
+    width: 100%
+    color: $cor02
+    text-align: center
+    align-items: center
+    display: flex
+    height: 40px
+    padding: 0 15px 
+    cursor: pointer
+    justify-content: center
+    margin-top 10px
+    transition: all 150ms ease-in-out
+
+    &:before
+        @extend $ico-before
+        background-image url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9ImZhdm9yaXRlIj48cGF0aCBkPSJNMjU1LDQ4OS42bC0zNS43LTM1LjdDODYuNywzMzYuNiwwLDI1Ny41NSwwLDE2MC42NUMwLDgxLjYsNjEuMiwyMC40LDE0MC4yNSwyMC40YzQzLjM1LDAsODYuNywyMC40LDExNC43NSw1My41NUMyODMuMDUsNDAuOCwzMjYuNCwyMC40LDM2OS43NSwyMC40QzQ0OC44LDIwLjQsNTEwLDgxLjYsNTEwLDE2MC42NWMwLDk2LjktODYuNywxNzUuOTUtMjE5LjMsMjkzLjI1TDI1NSw0ODkuNnoiLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==')
+        
+        height: 18px
+        width: 20px
+        padding: 0
+        margin-right 3px
+
+    &:hover
+        border: 1px solid $cor01
+
+.product__alertaprazo
+    background: $cor02 
+    color: #fff
+    transition: $transition
+    width: 125px
+    font-size: 12px
+    line-height: 12px
+    font-weight: 600 
+    cursor: pointer 
+    height: 40px
+    border: none
+    margin: 0
+    border-radius: 3px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 22px
+    float: none
+    @media(max-width: 1199px)
+        margin: 0 auto
+        margin-bottom: 5px
+    @media(max-width: 425px)
+        max-width 48%
+        width 48%
+    &:before
+        @extend $ico-before
+        // background-image svg-inline(alarm2)
+        height: 20px
+        width: 38px
+        padding: 0
+        margin-right 3px
+
+    &:hover
+        color: #fff
+        background: $cor01
+
+#btnAlertaValores
+    background: #fff 
+    color: #3D161D
+    font-size: 0
+    width: 135px 
+    border: 1px solid #DED7C1
+    border-radius: 2px
+    text-transform: none
+    padding: 0 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+
+    &:before
+        @extend $ico-before
+        // background-image svg-inline(notification)
+        transition: $transition
+        width: 15px
+        height: 15px
+        background-size: 12px 
+
+    &:after 
+        content: 'Criar alerta de preço'
+        font-size: 11px
+
+.share__mobile
+    order: 6
+    margin: 20px auto 
+
+    @media(min-width: 993px)
+        display: none
+
+ .top__product 
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @media(max-width: 992px)
+        justify-content: center
+        .addthis_inline_share_toolbox
+            display: none
+
+.addthis_inline_share_toolbox
+    display: flex
+    align-items: center
+
+    &:before
+        content:  'Compartilhe:'
+        font-size: 13px
+        color: #353232
+        margin-right 10px
+
+.at-share-btn-elements
+    display: flex
+    
+.at-style-responsive .at-share-btn 
+    padding: 5px
+    background: transparent!important
+    border: 1px solid #3D161D
+    height: 22px
+    width: 22px
+    padding: 0;
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px
+
+    @media(max-width: 992px)
+        width 40px
+        height 40px
+
+        span  
+            width 30px!important
+            height 30px!important
+            svg 
+                width 30px!important
+                height 30px!important
+
+    svg 
+        fill: #3D161D!important
+
+#btnComprarTodos
+    background: #189E60
+    cursor: pointer
+    color: #fff
+    font-size: 0!important 
+    font-weight: 600
+    border-radius: 2px
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    display: flex
+    height: 66px
+    width: 100%
+    text-decoration: none
+    transition: $transition
+    max-width 100%
+
+    &:before
+        @extend $ico-before
+        background-image svg-inline(cartb)
+        transition: $transition
+        width: 23px
+        height: 23px
+        background-size: 23px
+        margin-right 5px
+
+    &:after
+        content: 'comprar agora'
+        font-size: 18px
+        cursor pointer
+        font-weight: 700
+        text-shadow:  0 0
+    &:hover
+        color: #fff
+        text-decoration: none
+        background: darken(#189E60, 20%)
+
+.btn-comprar
+    background: #189E60
+    cursor: pointer
+    color: #fff
+    font-size: 18px!important 
+    font-weight: 600
+    border-radius: 2px
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    display: flex
+    height: 66px
+    width: 100%
+    text-decoration: none
+    transition: $transition
+    max-width 100%
+
+
+
+.fbits-categoria
+    ul.filtroFilho, ul.fbits-lista-filtro-filho
+        @media(max-width: 992px)
+            display: block

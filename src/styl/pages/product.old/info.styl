@@ -1,0 +1,52 @@
+.product__info
+    width: 100%
+    margin-top: 20px
+
+    .informacao-abas
+        display: none
+
+    .product__info-title
+        color:$cor02
+        font-size: 32px
+        line-height: 32px
+        font-weight: 300
+        text-align: center
+        margin: 0 0 40px 0
+
+    .product__info-container
+
+        [class*="item"]
+            color: #ababab
+            font-size: 12px
+            line-height: 20px
+            margin-bottom: 30px
+
+        h3
+            color: $cor02
+            font-weight: 600
+            margin-bottom: 10px
+
+        p 
+            margin: 10px 0
+
+
+    &.info02
+        @media(min-width: 992px)
+            display: none
+    &.info01
+        @media(max-width: 991px)
+            display: none
+
+.atributo-div, .listacompra-produtos-atributos-titulo, .divLabelQuantidade
+    color: #3D161D
+    font-size: 14px
+    font-weight: normal
+    width: auto
+    display: inline-block
+    line-height: 12px
+    font-weight: 500
+    margin: 5px 0
+    text-transform: none
+
+    @media(max-width: 992px)
+        font-size: 17px

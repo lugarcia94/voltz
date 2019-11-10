@@ -1,0 +1,780 @@
+.product__price
+    
+    @media(max-width: 991px)
+        margin-top: 20px
+        width: 100%
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+
+    @media(max-width: 768px)
+        flex-wrap: wrap
+
+    .product__price-container
+        flex-wrap: wrap
+        display: flex
+
+
+.product__name
+    display: flex
+    justify-content: space-between
+
+.product__brand
+    display: flex
+    justify-content: flex-end
+    #fbits-fabricante-logo
+        max-width: 100px;
+    img 
+        height: auto
+        width: 100%
+    @media(min-width: 992px)
+        &.brand01
+            display: none
+    @media(max-width: 991px)
+        &.brand02
+            display: none
+        img
+            width: 70px
+            margin-left: 10px
+
+.product__price-on
+    @media(min-width: 769px)
+        &.price02
+            display: none
+    @media(max-width: 768px)
+        &.price02
+            margin: 0 0 15px 0
+
+    .fbits-preco
+        align-items: center
+        position: relative
+        display: flex
+        flex-wrap: wrap
+
+    .precoDe
+        font-size: 15px
+        color: #A1A0A1
+        text-decoration: none
+        margin-right: 5px
+        font-weight: 600
+
+        &:before
+            content 'de'
+            margin-right 5px
+
+        &:after
+            content 'por'
+            margin-left 5px
+
+    .precoPor
+        color: $cor01
+        font-size: 20px
+        font-weight: 600
+        display: flex
+        align-items: center
+        &:before
+            display: none
+
+
+    .fbits-preco-off
+        margin: 0 0 0 5px
+
+    .precoVista
+        text-transform: none
+        display: none
+        .fbits-boleto-ou
+            display: none
+
+        .fbits-boleto-preco
+            color: #00d833
+            font-size: 15px
+            font-weight: 600
+
+        .fbits-boleto-avista,
+        .fbits-boleto-desconto
+            font-size: 12px
+            color: #3e3e3e
+
+
+    .product__price-installments
+        font-size: 12px
+        color: #3e3e3e
+        margin-bottom: 2px
+        width: 100%
+
+        .numeroparcelas,
+        .parcelax,
+        .parcelavalor,
+        span.parcelade
+            font-weight: 600
+            color: $cor01
+            font-size: 16px
+        
+        .parcelajuros
+            display: none
+
+.prazo-entrega-item
+    display none
+
+.product__offer {
+    width: 100%;
+}
+
+[id*="view-item-quantidade"]
+    display none !important
+    width: 100%
+    text-align: center
+    margin: 15px 0
+    display flex
+    align-items center
+    max-width: 100%
+
+    .fbits-titulo-quantidade.atributo-div
+        font-size: 12px
+        text-transform: uppercase!important
+        line-height: 1.2
+        text-align: left      
+        color: #353535
+        text-transform: none
+        font-weight: 400
+        margin-right 5px
+        width auto
+        margin-bottom 0
+
+
+    #menosQtd 
+        font-size: 20px
+        font-weight: 400
+        cursor pointer
+
+   #maisQtd 
+        font-size: 20px
+        font-weight: 400
+        cursor pointer
+
+    @media(max-width: 768px)
+        margin: 0
+
+    .fbits-titulo-quantidade
+        display: none
+
+    #item-quantidade-1
+        border: none
+        color: #979797
+        font-size: 15px
+        line-height: 16px
+        font-weight: 600
+        text-indent: 0
+        text-align: center
+        background: none
+        width: 40px
+        height: 40px
+        border-radius: 1px
+        font-style: italic
+
+[id*="produto-variante"]
+    float: none
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    border none
+
+[id*="produto-comprar"]
+    margin: 0 
+    bottom: 0
+    max-width: 100%
+    width: 100%
+    height: 50px 
+    margin-top: 10px
+    
+
+    a
+        margin: 0
+
+.produto-comprar
+    a
+        background-color: $cor01
+        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
+        background-repeat: no-repeat
+        background-position 95%  
+        background-size: 20px 25px
+        cursor: pointer
+        color: #fff
+        font-weight: 800
+        border-radius: 2px
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        display: flex
+        height: 50px
+        width: 100%
+        text-decoration: none
+        transition: $transition
+        padding-left 0 
+        &:hover
+            opacity .7
+
+        @media(max-width: 991px)
+            padding-left: 10px
+
+.product__payment
+    display flex
+    justify-content: flex-end
+    width: auto
+    position: absolute
+    left: 50%
+
+    @media(max-width: 991px)
+        margin 10px 0
+        position relative
+        justify-content:center
+        width 100%
+        left 0
+
+#cepCarrinho 
+    .summary
+        display none 
+
+    .simule
+        font-size: 0
+        display: flex
+        align-items: center
+        margin: 0
+        position relative
+        padding-left 52px
+        top: -10px
+
+        @media(max-width 992px) 
+            width: 100%
+            justify-content: center
+            margin-bottom: 10px
+
+        &:after
+            content: 'Digite seu CEP:'
+            font-size: 15px
+            text-transform: none
+            font-weight: 600
+            color: #353535
+
+        &:before
+            content:''
+            display inline-block
+            width 48px
+            height 26px
+            position: absolute;
+            left: 0;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAaCAMAAADG6y/lAAABblBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAcCckUAAAAenRSTlMADNr//W8wsIhgzkDEPSgH9Kh40Nn6ZeM0uiAlP4bz/ktBj5BqZ5QPJObhBAH8yRVOVdPgnInRC6L4OofkT5uyA4DwvKwGI6WScXpXrb9rz+9d3Ou5PMigjoTYs+7owC75ECLSWO216lrfgTUfuIvimH7GTGbLwwrUOIWMoBsAAAFaSURBVHjajdLnUsJgEIbRxRelqYCAvQL2AGoUC1ETFCxYsYO9917v3gQxE8gHw/n/7MzuLKkMZWAzlhNTBQoxFQzMFgZrkcBGDCZU2mRV1faSgyyHs5qyalwyd8FA5amlP3X4U88OGhplTc0trWhrp4wOr0/hp6zOrm5NoC7d04u+fmLgAgiGGAENAIPE4gWGQoyA4zFMIy69MORiVB/QGKw0jgImGEEEAk369KYATIuMQEKUGMQZYDZGpQdxYE6kYoHFlDH/f+SFRZGKBoK6pw47SCzJ85cBWwlB/rdyK6trwfX8wGBObmxuMYNhKKTcwL4NmXFSF+xIu4BVciOwJ6lSSDmBdGQfB9KhNjhCxvEJnULnjKNzKC5IFbvkef5CCeLAFa/lUIJroI6/uaVcd0C4JYnAPWn5gYfHKJ5E0nuG4oVy2F8h87wRA/f+IXwmKM/X7beQ/iHFL+2QO5uYW0jgAAAAAElFTkSuQmCC")no-repeat;
+            top: 4px
+            background-size: 43px
+
+    .details-content 
+        display: flex!important
+        align-items: center 
+        padding: 0
+        position relative
+
+        @media(max-width: 992px)
+            flex-wrap: wrap
+ 
+        br  
+            display: none
+
+
+    #txtCalculaFreteProduto
+        margin: 0 
+        width 140px
+        text-align: left
+        height 40px
+        border: 1px solid #E8E8E8
+        border-radius: 1px
+        margin-left 15px
+
+        @media(max-width 992px)
+            width 100%
+            margin-bottom 10px
+
+    #btnCalculaFreteProduto
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0
+        width 48px
+        height 40px 
+        color: #ffffff
+        background: #1c1d1d
+        border: none
+        cursor: pointer 
+        height 40px
+        font-size: 14px!important
+        font-weight: 700!important
+        padding 0 20px
+
+        @media(max-width: 991px)
+            width 100%
+
+    a#naoSeiCep 
+        display: block  
+        font-size: 11px
+        line-height 1
+        font-weight 400
+        color #adadad
+        position: absolute
+        bottom: 0
+        left: 53px
+        top: 20px
+
+        @media(max-width: 992px)
+            position relative
+            margin-top 15px
+            bottom auto
+
+
+.product__price-other
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+
+    @media(max-width: 768px)
+        justify-content: space-between
+
+    .fbits-frete-diponibilidade
+        background: #4b4b4b;
+        color: #fff;
+        padding: 0 15px;
+        margin: 0 auto;
+        line-height: 40px;
+        border-radius: 4px;
+        font-weight: 600;
+        max-height: 0px;
+        overflow hidden;
+        transition: all .3s ease-in-out
+        &.open
+            max-height: 1000px;
+            margin: 15px auto;
+
+.product__frete
+    width: 100%
+    background: #f6f6f6
+    border: 1px solid #d7d7d7
+    padding: 10px
+
+    br
+        display none
+
+    .details.carrinhoInputBlock
+        display flex
+        justify-content: space-between
+        align-items: center 
+        flex-wrap: wrap
+    .fbits-calculafrete 
+        .summary
+            font-size: 0px
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            flex: 0 1 190px
+            margin: 0
+
+            @media(max-width: 991px)
+                justify-content center
+                width 100%
+                flex 0 0 100%
+
+            &:after
+                content: 'Calcule o Frete e Prazo de Entrega'
+                font-size: 14px
+                text-decoration: none !important
+                font-weight bold
+                color: #666666
+                width: 150px
+                text-transform uppercase
+            &:before
+                content: ''
+                display block
+                width: 60px
+                height: 30px 
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAaCAMAAADG6y/lAAABU1BMVEX/fV3/p5H/lXz/tqb/vrD/z8T/jXH/39j/hWf/5+L//f3/i2//7+v/lHv/kXf/08n/ln7/hmn/+/v/fl7/f1///fz/u6v/vq//pI//6+f/5d//mYH/4tz/4dr//Pv/i3D/uqv/187/q5f/yr3/7un/u6z/gGL/j3T/gGD/9/X/9PL/sZ7/g2X/+ff/t6b/wrX/sZ//g2b/iWz/uqr/mID/oYv/r5z/mYL/jHH/zMH/o43/oYz/39f/p5L/m4T/7+z/rZr/2dH/ln3/jXL/nof/xrn/jHD/4Nj/yb3/7uj/sqH/nIX/493/2M//7+r/oIr/0sj/9/b/tKP/v7H/vK3/2dD/hWj/gWH/kHb/zMD/y7//moP/uan/6OP/wbP/k3r/+vn/x7r/taT/rJj/im7/h2v/+fj/1Mv/nYf/7en/0Mb/iGv/qZP/pY//n4n/t6f////aPIskAAAAcXRSTlP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AClMwGUAAAFVSURBVHgBjdJVk+JgEIXhA4TAJktwXxwWFmHH3d3d3V36/19NggwJ+WB47t+uOlUNqisdgc19TSqN4BdaMbQM4mYGR5vAQgwGTFhkkaCr46CmmAzWg/9GmfRTAOSGa0EMVSF2sPlb9ryY6YZ7uhqMlU2KFNWc7Gyrg/ro5TsMeUEMHoTzjIDWgUdmUAZseUZAPAroNTJALh4YwRQcOEQLfxiBDyISJr0uAO8CI+BgBekJH8BblDoP0sCtQO0Cs6HixktV8xcCtQ1EzU4NdmAfl+/PAZbOAu23Ls0chF+ag1I8e98fYQYFKDht4BqEzJ3QBQPcJ+DgJHj2uG8SpCQQ8DnRwz2pg3NU/P1HG9CxEdmhcDaC6AjP804lSAOvvFpRCbaAGD/rB2mEAGMmC88kqaWA0TMrFgQiAmmtQLFLGq5TyHL7xAjouE9ctVOTK/+lGFgjxRdD00qXtODBLAAAAABJRU5ErkJggg==')
+                background-position left 
+                background-size 50px 30px
+                background-repeat no-repeat
+                margin-right 10px
+        .simule
+            display: none
+        input#txtCalculaFreteProduto
+            height 40px
+            flex: 0 1 210px
+            border-color: #f3f3f3
+            border 1px solid #d7d7d7
+            font-size: 14px
+            font-weight: 500
+            color: #333333
+            padding-left: 0
+            @media(max-width 991px)
+                flex: 0 0 100%
+            &::placeholder
+                color: #333333
+                padding-left: 0
+        input#btnCalculaFreteProduto
+            background-color: #d7d7d7
+            color: #333
+            font-weight: bold
+            height: 2.5rem
+            width: 7.19rem
+            letter-spacing: 0
+
+            @media(max-width 991px)
+                flex: 0 0 100%
+
+        a#naoSeiCep, a.helpCep
+            font-size: 9px
+            color: #9a9a9a
+            text-decoration: underline
+            margin-right: 30px
+
+            @media(max-width 991px)
+                margin 10px auto
+
+    @media(max-width 991px)
+        width: 100%
+
+#btnAlertaValores
+    @media(max-width 991px)
+        width: 48%!important
+        max-width 100%
+
+.link-add-lista-produto
+    border-radius: 3px
+    text-transform uppercase
+    font-size: 16px
+    line-height: 12px
+    font-weight: 600 
+    width: 100% 
+    text-align: center
+    align-items: center
+    display: flex
+    cursor: pointer
+    justify-content: center
+    margin-top 10px
+    color #999999
+    transition: all 150ms ease-in-out
+
+    &:before
+        @extend $ico-before
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAMAAADDGrRQAAAAJ1BMVEX/fV3/hmn/3dX/7+r/saD/1Mv/9vT/oIr/jnP/l3//w7X/qZT///+8KJ+3AAAADXRSTlP///////////////8APegihgAAAHJJREFUeAFNzUGORCEIANFCafV31/3PO5/FEGujeYSA1fR+0JXAb84fkMuydXhyE8HOh7PKkq86Iob6Jcs4WlikB2WSXiVTZN/2oLgZdoNdNiNGU8RU+qT9o6f2BhZSOINhm58XX/p4WWHRbYVNba7lf38ZvgobxRB6LQAAAABJRU5ErkJggg==')
+        height: 20px
+        width: 20px
+        padding: 0
+        margin-right 3px
+        background-size auto
+
+ 
+
+.product__alertaprazo
+    background: $cor02 
+    color: #fff
+    transition: $transition
+    width: 125px
+    font-size: 12px
+    line-height: 12px
+    font-weight: 600 
+    cursor: pointer 
+    height: 40px
+    border: none
+    margin: 0
+    border-radius: 3px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 22px
+    float: none
+    @media(max-width: 1199px)
+        margin: 0 auto
+        margin-bottom: 5px
+    @media(max-width: 425px)
+        max-width 48%
+        width 48%
+    &:before
+        @extend $ico-before
+        // background-image svg-inline(alarm2)
+        height: 20px
+        width: 38px
+        padding: 0
+        margin-right 3px
+
+    &:hover
+        color: #fff
+        background: $cor01
+
+.fbits-Contraproposta-modal
+    width auto
+
+.fbits-Div-BtnContraproposta
+    background: #373535
+    color: #fff
+    font-size: 0
+    width: 48% 
+    border: none
+    border-radius: 1px
+    text-transform: none
+    padding: 0 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+    height 45px
+    @media(max-width 991px)
+        width: 48%!important
+        max-width 100%
+    &:before
+        @extend $ico-before
+        background-image svg-inline(money)
+        transition: $transition
+        width: 27px
+        height: 27px
+        background-size: 20px 
+        margin-right 5px
+
+    .fbits-Btn-BtnContraproposta
+        font-size: 0
+        display: none
+
+    &:after 
+        content: 'Contra proposta'
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+        line-height: 14px
+        max-width 52%
+        text-align: left
+
+#btnAlertaValores
+    background: $cor01
+    color: #fff
+    font-size: 0
+    width: 48% 
+    border: none
+    border-radius: 1px
+    text-transform: none
+    padding: 0 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+    height 45px
+
+    &:before
+        @extend $ico-before
+        background-image svg-inline(sino)
+        transition: $transition
+        width: 25px
+        height: 25px
+        background-size: 20px 
+        margin-right 5px
+
+    &:after 
+        content: 'Alerta de preço'
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+        line-height: 14px
+        max-width 52%
+        text-align: left
+        color: #000000
+
+        @media(max-width: 320px)
+            font-size: 13px
+        
+
+.share__mobile
+    order: 6
+    margin: 20px auto 
+
+    @media(min-width: 993px)
+        display: none
+
+ .top__product 
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between 
+    padding-bottom: 20px
+
+    @media(max-width: 992px)
+        justify-content: center
+        margin-bottom 25px
+ 
+.product__frete 
+    margin-top: 10px
+
+.carrinhoInputBlock
+    float: none
+    border none
+    padding 0
+    margin 0
+    display flex!important
+
+.share__product
+    margin-top 20px
+    display: flex
+    align-items: center
+    width: 100%
+    text-transform: uppercase
+    color: #999999
+    font-size: 15px
+
+    @media(max-width: 320px)
+        font-size 13px
+
+#description-product 
+    position: absolute
+    margin-top: -100px
+
+ 
+
+div#divGrupoProduto ul:nth-child(3) 
+    display: none
+
+#btnComprarTodos
+    background: #4ac87a
+    cursor: pointer
+    color: #fff
+    font-size: 0!important 
+    font-weight: 600
+    border-radius: 2px
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    display: flex
+    height: 50px
+    width: 100%
+    text-decoration: none
+    transition: $transition
+
+    &:after
+        content: 'comprar'
+        font-size: 19px
+        cursor pointer
+        font-weight: 700
+        text-shadow:  0 0
+       
+
+    &:hover
+        color: #fff
+        text-decoration: none
+        background: darken(#4ac87a, 20%)
+
+.btn-comprar
+    background: #189E60
+    cursor: pointer
+    color: #fff
+    font-size: 18px!important 
+    font-weight: 600
+    border-radius: 2px
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    display: flex
+    height: 66px
+    width: 100%
+    text-decoration: none
+    transition: $transition
+    max-width 100%
+
+.fbits-comprar
+    @media(min-width 992px)
+        display: none
+
+.fbits-categoria
+    ul.filtroFilho, ul.fbits-lista-filtro-filho
+        @media(max-width: 992px)
+            display: block
+
+.product__boleto
+    display: none
+    .summary.fbits-summary.summaryDesktop
+        display: none
+
+    .details-content
+        display: flex!important
+        flex-wrap: wrap
+        border-bottom: 1px solid #e7e7e7
+        padding-bottom: 1.25rem
+        margin-bottom: 15px
+
+      
+
+    p
+        font-size: 15px
+        line-height: 17px
+        color: #373535
+        font-weight: 700
+        order: 1
+        margin-bottom 20px
+
+        b 
+            color: #FF5D5D
+            font-weight: 700
+
+#fbits-forma-pagamento
+    .product__boleto
+        display: block
+        
+.product__parcelamento
+    .fbits-parcelamento-padrao
+        .summary.fbits-summary.summaryDesktop
+            
+            color: #373535
+            text-decoration: none
+            font-weight: 700 
+            max-width: 100% 
+            text-transform: none 
+            display: flex
+            justify-content: center
+            align-items: center  
+            padding: 0 
+            margin-top 15px!important
+            font-size: 0
+
+            &:before
+                content 'ver formas de pagamento'
+                font-size: 13px
+                border: none!important
+                position relative
+
+            &:after
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAABGdBTUEAALGPC/xhBQAAAGlJREFUGBljYGBg4AfiJiAWA2J8QBUoWQ3ErCBFqUD8H4ivAjEujWpAuadQdc5AmoEFiNdCBbBpRNYwEaQBBnBpxKkBl0YboATMSSg2wDTAaJAnYU4F+ROE8WqAaUR2KlEakDU6wDjoNACVhxxQAlNyIQAAAABJRU5ErkJggg==')
+                border: none
+                content: ''
+                width: 15px
+                height 15px
+                background-repeat: no-repeat
+                background-position: center
+                padding: 0
+                margin-left: 5px
+
+ .quantity
+    position relative
+    width: 120px
+    border: 1px solid #e7e7e7
+.quantity__button 
+    position absolute
+    width 38px
+    height 100%
+    background transparent
+
+    &--more
+        right 0
+        
+    
+    &--less
+        left 0
+
+
+
+
+product__frete
+    @media(max-width 992px)
+        margin-top 24px

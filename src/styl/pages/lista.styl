@@ -1,0 +1,389 @@
+#bodyListaCompra
+    .listacompra
+        margin: 0 auto!important
+
+    @media(max-width 991px)
+        .header__topbar
+            display: none
+    .interna.cf
+        &:after, &:before
+            display: none
+
+    iframe
+        max-width 100%
+
+    .content.listacompra .bread ol
+        max-width 100%
+
+    .product__list
+        margin-top 30px
+
+        > span
+            font-size: 22px
+            color: #373535
+            font-weight: 900
+            display: block
+            text-align: center
+            padding-top: 30px
+            margin-bottom: 30px
+            max-width 960px
+
+    #listaProdutos
+        display: flex
+        flex-wrap: wrap
+        max-width 960px
+        justify-content: space-between
+
+        .listacompra-produtos-item
+            flex: 0 0 48%
+
+            @media(max-width: 425px)
+                flex: 0 0 100%
+
+    .listaProdutos-mensagem
+        position: absolute
+        bottom: 0
+
+    div#testeeeeee
+        display: none
+
+    .addthis_inline_share_toolbox 
+        margin-top 20px
+    label#listaProdutos-selecionar-todos-label, input#listaProdutos-selecionar-todos-check
+        display: none
+    .content.listacompra
+        border-top: 1px solid #F3F3F3
+        >.center
+            max-width: 1300px
+            margin: 0 auto
+            padding: 30px 0
+
+            @media(max-width 991px)
+                padding: 0 15px
+
+        .interna.cf
+            max-width: 1330px
+            width: 100%
+            margin: 0 auto
+            padding: 0
+            float: none
+
+    .detalhe-produto
+        .detalhe-produto-itens
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: flex-start
+            flex-direction: initial
+
+            > div:last-child
+                order 9
+
+            .fbits-breadcrumb.bread
+                flex: 1 1 100%
+                width 100%
+
+            .coluna-listacompra.coluna1
+                padding: 0px
+                max-width:  450px
+                width: 100%
+                float: none
+                @media(max-width : 991px)
+                    margin: 0 auto
+
+            .coluna-listacompra.coluna2
+                float: none
+                width: 100%
+                max-width 520px
+                float: none
+
+                @media(max-width: 991px)
+                    max-width 100%
+
+            .coluna-listacompra.coluna3
+                max-width 300px
+                width: 100%
+                float: none
+                
+                @media(max-width: 991px)
+                    max-width 100%
+
+    .coluna-listacompra__precos
+        border: 1px solid #E7E7E7
+        padding: 25px
+
+    .listacompra-comprarselecionados
+        background: #4AC87A
+        margin: 0
+        height 50px
+        line-height: 50px
+        font-size: 16px
+        font-weight: bold
+        transition: all .3s
+        color: #FFFFFF
+        font-weight: 700
+
+        &:hover
+            opacity 0.8
+        @media(max-width : 1100px)
+            font-size: 16px
+
+    .fbits-componente-listacompra-preco-por
+        font-size: 22px
+        color: #373535
+        font-weight: 700
+        width: auto
+
+    .fbits-componente-listacompra-preco-de
+        font-size: 13px
+        color: #999999
+        line-height: 16px
+        display: block
+        width: 100% 
+        font-weight: 700
+
+    .fbits-componente-listacompra-preco
+        text-align: center 
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        margin: 0
+
+    .fbits-parcelamento
+        margin: 0 auto
+        float: none
+        text-align: center
+
+    .precoParcela
+        font-size: 26px!important
+        color: #FF5D5D
+        font-weight: bold
+        >span 
+            color: #373535
+            text-transform: lowercase
+            font-size: 18px
+
+        .jurosParcela
+            display: none
+
+    .fbits-breadcrumb.bread
+        position static!important
+        ol
+            @media(max-width : 991px)
+                text-align: center
+                padding: 15px 0
+        a
+            font-size: 13px
+            color: #333333
+            font-weight: 400
+            line-height: 15px
+        li
+            &:after
+                display: none
+
+    .desc__curta 
+        width: 100%
+        max-height: 360px
+        overflow: hidden 
+        font-size: 14px
+        color: #333333
+        margin-top: 75px
+
+        > h2 
+            display: none
+
+    .prodTitle.title
+        font-size: 20px
+        color: #333333
+        line-height: 27px
+        width: 100%
+        text-transform: uppercase
+        
+        @media(max-width: 991px)
+            text-align: center
+            width: 100%
+
+    .listaProdutos-selecionar-todos-label
+        font-size: 13px
+        color: #353535
+        line-height: 15px
+    .listaProdutos-selecionar-todos-check
+        margin: 6px 5px 0 0!important
+    .listacompra-produtos-item
+        border: none
+        position relative
+        padding-left: 38px
+        &:nth-child(odd)
+            background: #F4F4F4
+        &:nth-child(even)
+            border: 1px solid #F4F4F4
+        .divLabelQuantidade
+            display: none!important
+    .listacompra-produtos-selecionado
+        position: absolute
+        left 13px
+        top: 50%
+        transform: translateY(-50%)
+        appearance none 
+        background: #ffffff
+        border: 1px solid #333
+        width 10px
+        height 10px
+        &:checked
+            background: #333
+    .listacompra-produtos-imagem
+        width: 39%
+        margin: 0
+        @media(max-width: 991px)
+            width: 100%
+            text-align: center
+            height auto
+
+    .listacompra-produtos-nome
+        width: 54%
+        font-size: 13px
+        color: #333333
+        line-height: 16px
+        margin-left: 15px
+        font-weight: 700
+        margin-bottom 8px
+        
+        @media(max-width: 991px)
+            width: 100%
+            text-align: center
+    .listacompra-produtos-precode
+        width: 54%
+        font-size: 13px
+        color: #999999
+        line-height: 16px
+        @media(max-width: 991px)
+            width: 100%
+            text-align: center
+    .listacompra-produtos-precopor
+        width: 54%
+        font-size: 14px
+        color: #373535
+        line-height: 16px
+        @media(max-width: 991px)
+            width: 100%
+            text-align: center
+    .verDetalhes
+        display: none
+
+    .fbits-produto-informacoes-extras
+        max-width 960px
+        width 100%
+        position relative
+
+        @media(max-width : 991px)
+            width: 100%
+        > h2
+            font-size: 25px
+            color: #353535
+            line-height: 29px
+            font-weight: 900
+
+        img
+            height auto!important
+
+        h3
+            color: #434343 !important
+            font-size: 35px
+            font-weight: 700
+            text-decoration: none  
+            display: flex
+            align-items: center
+            justify-content: center
+            z-index 2
+
+
+            &:before
+                content: ''
+                background: $cor01
+                width: 100%
+                height: 1px
+                position: absolute
+                z-index -1
+
+            &:after
+                background: #fff
+                z-index -1
+                position: absolute
+                left 50%
+                transform: translateX(-50%)
+                content: ''
+                width 30%
+                height 50px
+
+            @media(max-width: 992px)
+                font-size: 23px
+
+                &:before, &:after
+                    display: none
+    .precoParcela
+        margin-bottom: 11px!important
+
+    .listacompra-produtos-atributos
+        width: 54%
+        margin: 0
+        clear: none
+        padding: 0
+        margin-top: 20px
+        @media(max-width : 991px)
+            width: 100%
+            text-align: center
+    .listacompra-produtos-atributos-titulo
+        font-size: 15px!important
+        color: #353535!important
+        line-height: 18px!important
+        margin: 0!important
+    .listacompra-produtos-atributos-opcao.atributo-imagem
+        width: 40px!important
+        height: 40px!important
+        min-width: 40px!important
+        min-height: 40px!important
+        margin: 0
+        border: 1px solid #E8E8E8
+        border-radius: 0px
+        margin-right: 6px
+        &:hover
+            border: 1px solid transparent!important
+            background: none!important
+            outline: 2px solid #5BC0B9
+        img
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 3px
+        &.selecionado
+            outline: 2px solid #5BC0B9
+            border: 1px solid transparent!important
+            background: none!important
+    .listacompra-produtos-atributos-opcao 
+        width: auto
+        max-width: 100%
+        color: #979797
+        border: 1px solid #e8e8e8
+        background: #E7E7E7
+        font-size: 13px
+        color: #373535
+        height: 30px
+        line-height: 30px
+        &:hover
+            outline: 2px solid #373535
+            border: 1px solid transparent!important
+            background: #373535!important
+            color: #f
+        &.selecionado
+            outline: 2px solid #373535
+            border: 1px solid transparent!important
+            background: #373535!important
+            color: #ffffff
+
+.coluna-listacompra.coluna2 
+    > a 
+        color: #333
+        font-weight: 700
+        font-size: 14px
+        text-decoration: underline

@@ -1,0 +1,254 @@
+$ico
+    background-color: transparent
+    background-position: center center
+    background-repeat: no-repeat
+
+$ico-before
+    background-position: center center
+    background-repeat: no-repeat
+    content: ''
+    display: inline-block
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    height: 25px
+    width: 25px
+
+@svg-load medal url("../assets/svg/medal.svg")
+@svg-load store url("../assets/svg/store.svg")
+@svg-load creditcard url("../assets/svg/creditcard.svg")
+@svg-load barcode url("../assets/svg/barcode.svg")
+
+.header__topbar-item--one
+    .header__topbar-icon
+        background-image svg-inline(medal)
+        width: 17px
+        height: 18px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 3px
+        display: block
+.header__topbar-item--two
+    .header__topbar-icon
+        background-image svg-inline(store)
+        width: 17px
+        height: 17px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 2px
+        display: block
+.header__topbar-item--three
+    .header__topbar-icon
+        background-image svg-inline(creditcard)
+        width: 19px
+        height: 17px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 4px
+        display: block
+.header__topbar-item--four
+    .header__topbar-icon
+        background-image svg-inline(barcode)
+        width: 17px
+        height: 14px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 4px
+        display: block
+
+@svg-load telephone url("../assets/svg/telephone.svg")
+@svg-load whatsapp url("../assets/svg/whatsapp.svg")
+.header__topbar-phone--one
+    .header__topbar-icon
+        background-image svg-inline(telephone)
+        width: 17px
+        height: 17px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 3px
+        display: block
+.header__topbar-phone--two
+    .header__topbar-icon
+        background-image svg-inline(whatsapp)
+        width: 17px
+        height: 17px
+        background-size: auto
+        background-repeat: no-repeat
+        background-position: center
+        margin-right 3px
+        display: block
+
+ 
+
+@svg-load user url("../assets/svg/user.svg")
+@svg-load box url("../assets/svg/box.svg")
+@svg-load chat url("../assets/svg/chat.svg")
+.header__mainbar-account
+    a
+        display: flex
+        align-items: center
+    &--icon
+        display: block
+        width: 30px
+        height 30px
+        margin-right: 3px
+        background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAMAAACOj/wDAAABa1BMVEUAAADtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVObkTcPAAAAeXRSTlMAEm+66Pv85LhsEAR49P/xcwMPv8hlIgcIJWrPuQzG8FMBYPa7kewpNfJ9Kv5KWvcXx9tZaMEc7wsTHuc+TdiolqGZSfggO8LDBgrOI+0VG8k363B5NvX9y66wObL5qy2dhWmDwIqGlL0N5TNDtwInMFx2Y3GxJNzV2MfrIgAAAT9JREFUeAF9kPk3AmEYRt9kQlNPFMpSo6TQ2LMUsi9EWshCFrIo+/7nOznNzPdluD/d59wzc94ZUjFUGasFU01tnZkqES1WlLHVN/DN7gAam5qdrpbWNqDdzTanB1JH2b2+TvhFJnYhENRWdw96tRWS0UcM/RgYZB40Eot3CBZ1DGOEOMIYVdQlY4yPQYwragZEPhoARSeACB+jEFSfxBQfpxFTfQazfJzDvOoLWFxiW8iEZe27VrC6prX1OPyksbEJR0IZW0kEuBelJKQzhpIltiVIKeLYyQK7e/sHcRnI8u3wSABD7vhEO+AUEIxn574fwhd5AfJl+UB7Erkr7hdFr2Xc3JZMzKNQpAru0rh/ICILbI/0iycrMkQRK55JhzACbnpBkvTwxvBKHvhIlze8kwkf+rGIAuEf6PPv9vUNgFAuacJJ90AAAAAASUVORK5CYII=');
+        background-size: 20px
+        background-position: center
+        background-repeat: no-repeat
+.header__mainbar-order
+    a
+        display: flex
+        align-items: center
+    &--icon
+        display: block
+        width: 15px
+        height 15px
+        margin-right: 3px
+        background-image svg-inline(box)
+        background-size: auto
+        background-position: center
+        background-repeat: no-repeat
+.header__mainbar-contact
+    a
+        display: flex
+        align-items: center
+    &--icon
+        display: block
+        width: 15px
+        height 15px
+        margin-right: 3px
+        background-image svg-inline(chat)
+        background-size: auto
+        background-position: center
+        background-repeat: no-repeat
+
+@svg-load cart url("../assets/svg/cart.svg")
+.header__mainbar-cart
+    .carrinho.carrinhoHead
+        a
+            &:before
+                content: ''
+                display: flex
+                width:  18px
+                height 22px
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAABDlBMVEX////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uKVtWAAAAWXRSTlMAAQMEBQkKDA0XGBkbHh8gJCYwMTU5Ojs+P0BJSlBTVmFjZWprbXFzdHp+g4WKi4+QkZWZm6OlpqmqsbO1t7m6u7y/wMPFxsvS09Xa293l6evv8fX29/r9/rYqhC4AAAC/SURBVHjaXcjrVkFBGIDhNyq7g4aRSilEETpROqgGxRbpgNR3/zfSXsufmZ6fD3O7vZ9JYxXLzux+P/c29Kx6eVyAlfGxVd85As0b5paUUlJSAWOUihJoi6MAjC61lrIOdDpa98+AaZYNKQMh3w/RbEBE9jiXLyAlkqLegrgkSPYrgGeMR2UA27KGJf8Jmd8wlgNZpPCBbUvWqb5ii8kmV0/YliXNwzWOySH+KY7hCe9FHN0aM3PhGN1x+/zP0R8ZOySOpLVLHgAAAABJRU5ErkJggg==')
+                background-size: 35px
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 18px;
+                position relative
+                z-index 1
+
+@svg-load facebook url("../assets/svg/facebook.svg")
+@svg-load youtube url("../assets/svg/youtube.svg")
+@svg-load linkedin url("../assets/svg/linkedin.svg")
+.footer__social-link
+    &--facebook
+        background-image svg-inline(facebook)
+        background-size: auto
+        background-position: center
+        background-repeat: no-repeat
+    &--youtube
+        background-image svg-inline(youtube)
+        background-size: auto
+        background-position: center
+        background-repeat: no-repeat
+    &--linkedin
+        background-image svg-inline(linkedin)
+        background-size: auto
+        background-position: center
+        background-repeat: no-repeat
+
+@svg-load right url("../assets/svg/arrow-right.svg")
+@svg-load left url("../assets/svg/arrow-left.svg")
+
+.slick-prev.slick-arrow
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAAulBMVEUAAAAbHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0oKirJyspaXFwbHR0bHR3MzMz////39/dWV1cbHR1sbm79/f1UVlby8/NMTk55enobHR0bHR3v7+9DRUWCg4Pt7e2/wMDa29uBgoLw8PB4eXkbHR0bHR0bHR0bHR0bHR0bHR0bHR10QQsDAAAAPnRSTlMACUuNu+Hw/0wrnSoZpv1Z8VoBjqCiA5NYGhul////nAr/////8v///////7zg////////////j5ChkVue4oLrGhcAAAESSURBVHgBndRnV/IwHAXwC4Xetg+UPK2iiAODcSjuoQy+/9dyeKTNSE/09/qenCT/gb9otaNON2bc7URJCx5pFrMSZ//g0Ovn1OX9HkwDQZv4D01R0q0s6qkt+mwPsRHRbwc/dtlkgG8jwSZiD1/GbDbGpzRnszzFh4x1+weHNB0BmAjWHcvpCQ1qArSpOT2T03MaEiCilbu4pC4COjRcSSs3A67pyN3csq4LCFrupLzXcgqgw4OUj6xznvZkn+a+27N1N+ulL86XBv5bElaFiQqqaUCHZMH9FtC9/V/NAgZBkwW80u8NG8WcPvMCleGCboshNEtFm1rCNHLstxEc0pViRa1SeLSScrYWFOtZqe/edz1xLmgk3eyCAAAAAElFTkSuQmCC')
+    background-size: auto!important
+    background-position: center!important
+    background-repeat: no-repeat!important
+    transform: scale(-1)
+    margin-top: -20px
+    width: 40px
+    height 40px
+    z-index: 9
+    &:before
+        display: none
+.slick-next.slick-arrow
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAAulBMVEUAAAAbHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0bHR0oKirJyspaXFwbHR0bHR3MzMz////39/dWV1cbHR1sbm79/f1UVlby8/NMTk55enobHR0bHR3v7+9DRUWCg4Pt7e2/wMDa29uBgoLw8PB4eXkbHR0bHR0bHR0bHR0bHR0bHR0bHR10QQsDAAAAPnRSTlMACUuNu+Hw/0wrnSoZpv1Z8VoBjqCiA5NYGhul////nAr/////8v///////7zg////////////j5ChkVue4oLrGhcAAAESSURBVHgBndRnV/IwHAXwC4Xetg+UPK2iiAODcSjuoQy+/9dyeKTNSE/09/qenCT/gb9otaNON2bc7URJCx5pFrMSZ//g0Ovn1OX9HkwDQZv4D01R0q0s6qkt+mwPsRHRbwc/dtlkgG8jwSZiD1/GbDbGpzRnszzFh4x1+weHNB0BmAjWHcvpCQ1qArSpOT2T03MaEiCilbu4pC4COjRcSSs3A67pyN3csq4LCFrupLzXcgqgw4OUj6xznvZkn+a+27N1N+ulL86XBv5bElaFiQqqaUCHZMH9FtC9/V/NAgZBkwW80u8NG8WcPvMCleGCboshNEtFm1rCNHLstxEc0pViRa1SeLSScrYWFOtZqe/edz1xLmgk3eyCAAAAAElFTkSuQmCC')
+    background-size: auto!important
+    background-position: center!important
+    background-repeat: no-repeat!important
+    width: 40px
+    height 40px
+    z-index: 9
+    &:before
+        display: none
+
+.stay-modal-home .stay-content .slick-arrow.slick-next
+    background-image svg-inline(right)!important
+    background-size: auto!important
+    background-position: center!important
+    background-repeat: no-repeat!important
+
+.stay-modal-home .stay-content .slick-arrow.slick-prev
+    background-image svg-inline(left)!important
+    background-size: auto!important
+    background-position: center!important
+    background-repeat: no-repeat!important
+
+@svg-load starempty url("../assets/svg/staar0.svg")
+@svg-load star1 url("../assets/svg/star1.svg")
+@svg-load money url("../assets/svg/money.svg")
+@svg-load sino url("../assets/svg/sino.svg")
+
+@svg-load menumobile url("../assets/svg/menu-mobile.svg")
+    fill: $cor01
+
+.header__mainbar-mobile
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAADrO07tOlPtOVTvO1TrPVLuOlPuOlPuOlPuOlPuOlPuO1LuOlTuOlPvO1PtO1PuOlPuOVPuOlPuOlLuOlLuOlOXv7dZAAAAFXRSTlMAGlNVUhnd2/38o6FYqKpW9fTzp6SOH6DMAAAAWElEQVR42tXTMRaAIAwD0CigBUVA7f2v6g3SoS78tR368hr4LWsgYsKm1A412AuiVEbJdH5gCme9iNrQlRo/RD2UutHokU/AFF5RQor5cv6o7eKkaFTP7QPWTigvanuUqAAAAABJRU5ErkJggg==')
+    background-size: auto
+    background-position: center
+    background-repeat: no-repeat
+@svg-load arrowmenumobile url("../assets/svg/arrow-menu-mobile.svg")
+span.arrowmenu
+    background-image svg-inline(arrowmenumobile)
+    background-size: auto
+    background-position: center
+    background-repeat: no-repeat
+
+@svg-load consulta url("../assets/svg/consulta.svg")
+@svg-load arrowmenuclose url("../assets/svg/arrow-menu-close.svg")
+.header__mainbar-mobile-close
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAe1BMVEUAAADwPlXuOlLuOVPuOlPrPVLzOlHuOlPuOlLwOlDtOlPuOlPrO07pN07uOVPuOlPuOlPuOlPuOVPtOVPyNlHuO1PwPFruOlPtOlPsOVXuOlPuOlPyQFnuOlPvOlPuOlTuOlPuOlPtOlTxOVXuOlLuOlPuOlPvOFDuOlMI/TGWAAAAKHRSTlMAIcD0sxkWsMMjvNgaF9XB7PKprRPREczaG9PXFNDZsfPCvSSn6rkgvXgysgAAAKxJREFUeNrVklkSgjAQBZ8i4AaI4L7vc/8TaoHWlHYu4PtK0Z1UMg91ulEvVjBJGvUHGprZaBziWf5ChSbmBrmVmpob5FapnrlBnifSfNEsl6uv+62bj5tYggEOA1xugMMAhwEOA/yT7a6dx/v9mdrwDO6n4ZwGOeaLqZO7QU6D/bbt7z/ts7+fXsD/9f/wfkPtx0qdh4yDjs5DRqmT85Bx1qUoq0TB1Nfb/fEEEhE7HKXul4IAAAAASUVORK5CYII=')
+    background-size: auto
+    background-position: center
+    background-repeat: no-repeat
+    width: 45px
+    height 45px
+    position absolute
+    top: 0
+    left 255px
+    background-size 25px
+    @media(min-width : 992px)
+        display: none
+
+@svg-load removefilter url("../assets/svg/remove-filter.svg")
+.category__filter .fbits-componente-filtro-selecionados-filho.checked >a
+    background-image svg-inline(removefilter)
+    background-size: auto
+    background-position: center
+    background-repeat: no-repeat
+
+@svg-load arrowdownselect url("../assets/svg/arrow-down-select.svg")
+.category__ordenation select
+    background-image svg-inline(arrowdownselect)
+    background-size: auto
+    background-position: 90% center
+    background-repeat: no-repeat

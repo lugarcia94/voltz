@@ -1,0 +1,700 @@
+﻿/* ->> INÍCIO HOME NOVA*/
+.fbits-home .container {
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 0;
+}
+section.fbits-section-home {
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+section.fbits-section-home .row {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+section.fbits-section-home .col-md-12 {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+section.fbits-section-home .fbits-componente-banner {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+section.fbits-section-home .slick-track {
+    display: block;
+    float: left;
+}
+section.fbits-section-home .slick-prev, section.fbits-section-home .slick-next {
+    text-align: center;
+    height: 7vw;
+    width: 7vw;
+    line-height: 7vw;
+    background: #e1e1e1;
+    top: 50%;
+    margin-top: 0;
+    z-index: 2;
+}
+section.fbits-section-home .slick-prev {
+    left: 0;
+}
+section.fbits-section-home .slick-next {
+    right: 0;
+}
+section.fbits-section-home .slick-prev:before, section.fbits-section-home .slick-next:before  {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 6vw;
+    line-height: 7vw;
+    color: #313131;
+    text-align: center;
+    z-index: 10;
+    opacity: 1;
+}
+section.fbits-section-home .slick-prev:before {
+    content: "\f104";
+}
+section.fbits-section-home .slick-next:before {
+    content: "\f105";
+}
+section.fbits-section-home .slick-prev:hover, section.fbits-section-home .slick-prev:focus, section.fbits-section-home .slick-next:hover, section.fbits-section-home .slick-next:focus {
+    background: #e1e1e1;
+    opacity: 0.8;
+}
+section.fbits-banner-topo-home {
+    margin: 10px 0;
+    padding: 0 3vw;
+    max-width: 1280px;
+}
+section.fbits-banner-topo-home .slick-list.draggable {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    width: 80vw;
+}
+section.fbits-banner-topo-home .slick-list.draggable .fbits-banner-item {
+    padding: 0;
+}
+section.fbits-banner-topo-home .slick-list.draggable .fbits-banner-item a {
+    display: block;
+}
+section.fbits-banner-topo-home .slick-list.draggable .fbits-banner-item a img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+
+section.fbits-banner-centro-home .slick-list.draggable {
+    margin: auto;
+}
+section.fbits-banner-centro-home .fbits-banner-item {
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+section.fbits-banner-centro-home a {
+    display: block;
+}
+section.fbits-banner-centro-home a img {
+    width: 140%;
+    margin-left: -20%;
+}
+section.fbits-section-home ul.slick-dots {
+    float: left;
+    bottom: -20px;
+}
+section.fbits-section-home ul.slick-dots li {
+    display: inline-block;
+    border: 1px solid #0f2134;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    padding: 2px;
+    overflow: hidden;
+}
+section.fbits-section-home ul.slick-dots li button {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    border-radius: 100%;
+    padding: 0;
+}
+section.fbits-section-home ul.slick-dots li.slick-active button {
+    background-color: #0f2134;
+}
+.fbits-div-vitrine-banner {
+    display: block;
+    float: left;
+    clear: both;
+    padding: 0 3vw;
+    width: 100%;
+}
+section.fbits-section-home.vitrine-home-um {
+    width: 50%;
+}
+section.fbits-section-home.fbits-banner-lateral-direita-home {
+    width: 50%;
+    float: right;
+    clear: none;
+    padding-left: 3vw;
+}
+h3.fbits-vitrine-titulo {
+    color: #0f2134;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 18px;
+}
+section.fbits-section-home.fbits-banner-lateral-direita-home h3.fbits-vitrine-titulo {
+    font-size: 0;
+}
+section.fbits-section-home.vitrine-home-um .slick-slider, section.fbits-section-home.fbits-vitrine-home-dois .slick-slider {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+section.fbits-section-home .fbits-banner-item {
+    display: block;
+    width: 100%;
+    float: left;
+}
+section.fbits-section-home .fbits-banner-item a {
+    display: block;
+}
+.fbits-banner-item.componente-banner-lateral-direita img {
+    max-width: 100%;
+}
+section.fbits-section-home .slick-list.draggable {
+    width: 95%;
+    margin: auto;
+}
+section.fbits-section-home.fbits-banner-centro-home .slick-list.draggable {
+    width: 100%;
+}
+section.fbits-section-home .spot {
+    width: 100%;
+    margin: 0;
+    padding: 2px 3px;
+}
+section.fbits-section-home .spot .spotImg {
+    margin: 0;
+}
+section.fbits-section-home .spot .fb-like {
+    position: absolute;
+    bottom: 0;
+}
+section.fbits-section-home .spot .spotTitle {
+    color: #0f2134;
+    font-size: 9px;
+    line-height: 10px;
+    height: 20px;
+}
+section.fbits-section-home .spot .spotPreco {
+    margin: 0;
+    height: 42px;
+    font-size: 9px;
+    line-height: 14px;
+}
+section.fbits-section-home .spot .spotPreco .precoDeVazio {
+    height: 14px;
+}
+section.fbits-section-home .spot .spotPreco .precoDe, section.fbits-section-home .spot .precoParcela {
+    font-size: 9px;
+}
+section.fbits-section-home .spot .precoPor {
+    font-size: 12px;
+}
+section.fbits-section-home .spot .spotCategoria, section.fbits-section-home .spot .spotFab {
+    display: none;
+}
+section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos {
+    padding: 0;
+    font-size: 7px;
+    min-height: 10px;
+    line-height: 10px;
+    height: 10px;
+}
+section.fbits-section-home .spot .bt.comprar {
+    height: 27px;
+    line-height: 27px;
+    width: 58%;
+    float: left;
+    font-size: 9px;
+}
+section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar, section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos {
+    width: 20%;
+    height: 27px;
+    line-height: 27px;
+    margin: 0 0 0 1%;
+}
+section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho, .fbits-componente-listaSpot.slick-slider .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after {
+    height: 100%;
+    font-size: 15px;
+    line-height: 27px;
+}
+section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos span.fbits-spot-atributo-nome {
+    font-size: 7px;
+    line-height: 10px;
+}
+section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos a {
+    width: auto;
+    height: 10px;
+    font-size: 7px;
+    line-height: 10px;
+    margin-right: 3px;
+}
+section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos a .fbits-spot-atributos-cor {
+    width: auto;
+    height: 10px;
+    font-size: 7px;
+}
+section.fbits-section-home .spot .fbits-spot-conteudo {
+    height: 99px;
+}
+section.fbits-section-home .spot .seloDvg,
+section.fbits-section-home .spot .ribbon.fbits-etiqueta-off {
+    width: 55px;
+    height: 12px;
+    background-size: contain;
+    font-size: 6px;
+    line-height: 12px;
+    background-repeat: no-repeat;
+}
+section.fbits-section-home .spot .ribbon.fbits-etiqueta-selo {
+    width: 55px;
+    background-repeat: no-repeat;
+}
+section.fbits-section-home .spot .fbits-etiqueta-trocagratis,
+section.fbits-section-home .spot .ribbon.fbits-etiqueta-promocao {
+    width: 55px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section.fbits-section-home .spot .ribbon img {
+    max-width: 100% !important;
+    float: left;
+}
+section.fbits-section-home .spot .spotImg img {
+    max-width: 230px;
+}
+
+section.fbits-section-home.fbits-banner-centroLower-home {
+    margin-top: 18px;
+}
+section.fbits-section-home.fbits-banner-centroLower-home img {
+    max-width: 100%;
+}
+section.fbits-section-home.fbits-vitrine-home-dois  {
+    margin-top: 12px;
+    padding: 0 3vw;
+}
+section.fbits-section-home.fbits-vitrine-home-dois h3.fbits-vitrine-titulo {
+    color: #a8b525;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration-color: #dbe57a;
+    text-decoration-style: wavy;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .slick-list.draggable, .fbits-div-ofertas-departamentos .slick-list.draggable {
+    width: 86vw;
+    margin: auto;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .slick-slide img {
+    display: block;
+    width: 100%;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo {
+    height: 209px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTitle, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTitle {
+    font-size: 12px;
+    line-height: 18px;
+    height: 36px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTamanhos.fbits-spot-atributos, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos {
+    padding: 0;
+    font-size: 11px;
+    min-height: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTamanhos.fbits-spot-atributos span.fbits-spot-atributo-nome,
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTamanhos.fbits-spot-atributos a .fbits-spot-atributos-cor,
+.fbits-div-ofertas-departamentos .spot section.fbits-section-home .spotTamanhos.fbits-spot-atributos span.fbits-spot-atributo-nome,
+.fbits-div-ofertas-departamentos .spot section.fbits-section-home .spotTamanhos.fbits-spot-atributos a .fbits-spot-atributos-cor {
+    font-size: 11px;
+    line-height: 20px;
+    height: 20px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotPreco, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotPreco {
+    height: 80px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .precoPor, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .precoPor {
+    font-size: 18px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .precoPor.com-precoDe:before, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .precoPor.com-precoDe:before {
+    font-size: 12px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .precoPor span.fbits-avista, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .precoPor span.fbits-avista {
+    display: inline-block;
+    font-size: 12px;
+    color: #A8B525;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotPreco .precoDe, section.fbits-section-home.fbits-vitrine-home-dois .spot .precoParcela,
+.fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotPreco .precoDe, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .precoParcela {
+    font-size: 13px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .spotPreco span.fbits-spot-preco-boleto-container, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotPreco span.fbits-spot-preco-boleto-container {
+    color: #0f2134;
+    font-size: 12px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .bt.comprar, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .bt.comprar {
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.adicionar,
+section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos,
+.fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar,
+.fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos {
+    height: 47px;
+    line-height: 47px;
+}
+section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho,
+section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after,
+.fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho,
+.fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after {
+    font-size: 29px;
+    line-height: 47px;
+}
+.fbits-div-ofertas-departamentos {
+    margin-top: 30px;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 3vw;
+}
+.fbits-div-ofertas-departamentos h3.fbits-vitrine-titulo {
+    color: #a8b525;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: underline;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.fbits-div-ofertas-departamentos section.fbits-section-home div.spot-vitrine {
+    width: 95%!important;
+    padding: 0;
+    float: none;
+    margin: auto;
+}
+section.fbits-section-home.fbits-ofertas-departamento-dois {
+    margin-top: 30px;
+}
+section.fbits-section-home.fbits-fabricantes-home {
+    margin-top: 20px;
+    padding: 0 3vw;
+}
+section.fbits-section-home .row.row-fbits-fabricantes {
+    border: 1px solid #dddddd;
+}
+section.fbits-section-home.fbits-fabricantes-home .slick-list.draggable {
+    width: 80vw;
+}
+section.fbits-section-home.fbits-fabricantes-home ul.slick-dots {
+    display: none !important;
+}
+section.fbits-section-home.fbits-fabricantes-home .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dotted.slick-slider {
+    clear: both;
+}
+section.fbits-section-home.fbits-fabricantes-home .fbits-listaMarcas-item a {
+    display: block;
+    padding: 14px 5px;
+}
+section.fbits-section-home.fbits-fabricantes-home .fbits-listaMarcas-item a img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+section.fbits-section-home.fbits-banner-rodape {
+    margin: 25px 0 0 0;
+    padding: 0 3vw;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-item {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+section.fbits-conteudo-home-responsivo {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+section.fbits-section-home.fbits-conteudo-centro {
+    margin: 15px 0 0 0;
+}
+section.fbits-conteudo-home-responsivo .fbits-conteudo-home-img {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+section.fbits-conteudo-home-responsivo .fbits-conteudo-home-img img {
+    width: 280%;
+    margin-left: -126%;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto {
+    color: #000000;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: left;
+    padding: 0 30px;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h1.fbits-conteudo-home-title {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h2.fbits-conteudo-home-title {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 45px;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto p.fbits-conteudo-home-descricao {
+    display: none;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto .fbits-conteudo-home-button {
+    display: block;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    height: 42px;
+    line-height: 42px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto .fbits-conteudo-home-button:hover {
+    color: #fff;
+    background: #000
+}
+section.fbits-section-home.fbits-produtos-vistos {
+    margin: 15px 0 0 0;
+    padding: 0 3vw;
+}
+section.fbits-section-home.fbits-produtos-vistos .slick-list.draggable {
+    width: 80vw;
+}
+.fbits-componente-historicoProdutos-vazio, .fbits-componente-historicoTermos-vazio {
+    color: #000;
+    font-size: 12px;
+    letter-spacing: .025rem;
+    line-height: 30px;
+    position: relative;
+    left: 0;
+    white-space: nowrap;
+    text-align: left;
+    clear: both;
+}
+.fbits-div-termos-e-procurados {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 3vw;
+    margin: 15px 0 0 0;
+}
+section.fbits-section-home.fbits-mais-procurados {
+    margin: 15px 0 0 0;
+}
+section.fbits-section-home.fbits-produtos-vistos h3.fbits-vitrine-titulo, .fbits-div-termos-e-procurados h3.fbits-vitrine-titulo, section.fbits-section-home.fbits-mais-procurados h3.fbits-vitrine-titulo {
+    text-align: left;
+    font-weight: 600;
+}
+section.fbits-section-home.fbits-mais-procurados ul {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+}
+section.fbits-section-home.fbits-mais-procurados ul li {
+    display: block;
+    float: left;
+    margin: 0 5px 8px 0;
+}
+section.fbits-section-home.fbits-mais-procurados ul li a {
+    display: block;
+    color: #000000;
+    border: 1px solid #dcdcdc;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+section.fbits-section-home.fbits-mais-procurados ul li a:hover {
+    border: 1px solid #000;
+}
+section.fbits-section-home.fbits-produtos-vistos .fbits-historicoProdutos-item {
+    float: left;
+    border: 1px solid transparent;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+section.fbits-section-home.fbits-produtos-vistos .fbits-historicoProdutos-item:hover {
+    border: 1px solid #000;
+}
+section.fbits-section-home.fbits-produtos-vistos .fbits-historicoProdutos-item img {
+    display: block;
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+}
+section.fbits-section-home.fbits-produtos-vistos .fbits-componente-historicoProdutos-texto {
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0.025rem;
+    line-height: 16px;
+}
+.fbits-componente-historicoTermos {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+ul.fbits-componente-historicoTermos-termosBuscados {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+ul.fbits-componente-historicoTermos-termosBuscados li.fbits-historicoTermos-item {
+    display: block;
+    float: left;
+    width: 50%;
+}
+ul.fbits-componente-historicoTermos-termosBuscados li.fbits-historicoTermos-item a {
+    color: #000000;
+    line-height: 25px;
+    font-size: 13px;
+}
+ul.fbits-componente-historicoTermos-termosBuscados li.fbits-historicoTermos-item a:before {
+    content: "\eb27";
+    font-family: 'icofont';
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+}
+ul.fbits-componente-historicoTermos-termosBuscados li.fbits-historicoTermos-item a:hover {
+    text-decoration: underline;
+    text-decoration-color: #939393;
+}
+section.fbits-section-home.fbits-busca-rodape {
+    padding: 0 3vw;
+    margin: 15px 0 0 0;
+}
+section.fbits-section-home.fbits-conteudo-rodape h1.fbits-conteudo-home-title {
+    color: #0f2134;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+section.fbits-section-home.fbits-conteudo-rodape p.fbits-conteudo-home-descricao {
+    color: #797979;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    clear: both;
+}
+section.fbits-section-home.fbits-news {
+    background: #0f2134;
+    padding: 14px 3vw;
+}
+section.fbits-section-home.fbits-news .txtNews {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+section.fbits-section-home.fbits-news span.icone-news {
+    display: inline-block;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 40px;
+    padding-right: 5px;
+    margin-top: 0;
+}
+section.fbits-section-home.fbits-news span.icone-news:before {
+    content: "\f2b7";
+    font-family: 'FontAwesome';
+    display: block;
+    font-size: 40px;
+}
+section.fbits-section-home.fbits-news span.title-news {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+}
+section.fbits-section-home.fbits-news span.texto-news {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 25px;
+    margin-top: 0;
+    text-transform: none;
+    font-weight: normal;
+}
+/* FIM HOME NOVA <<- */

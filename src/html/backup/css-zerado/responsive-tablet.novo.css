@@ -1,0 +1,211 @@
+﻿@media (min-width: 768px) {
+
+    section.fbits-banner-topo-home {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home .slick-prev, section.fbits-section-home .slick-next {
+	    height: 5vw;
+	    width: 5vw;
+	    line-height: 5vw;
+	}
+	section.fbits-section-home .slick-prev:before, section.fbits-section-home .slick-next:before {
+	    font-size: 4vw;
+	    line-height: 5vw;
+	}
+	section.fbits-banner-topo-home .slick-list.draggable {
+	    width: 86vw;
+	}
+	.fbits-div-vitrine-banner {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.vitrine-home-um {
+	    width: 70%;
+	}
+	section.fbits-section-home.fbits-banner-lateral-direita-home {
+	    width: 30%;
+	    padding-left: 2.8vw;
+	}
+	h3.fbits-vitrine-titulo {
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+	section.fbits-section-home.vitrine-home-um .fbits-componente-listaSpot.slick-slider .slick-list.draggable {
+	    width: 56vw;
+	}
+	section.fbits-section-home.vitrine-home-um .slick-initialized .slick-slide {
+	    padding: 0 10px;
+	}
+	section.fbits-section-home .spot {
+	    padding: 5px 10px;
+	}
+	section.fbits-section-home .spot .fbits-spot-conteudo {
+	    height: 155px;
+	}
+	section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos {
+	    min-height: 15px;
+	    line-height: 15px;
+	    height: 15px;
+	}
+	section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos span.fbits-spot-atributo-nome {
+	    font-size: 8px;
+	    line-height: 15px;
+	}
+	section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos a {
+	    height: 15px;
+	    line-height: 15px;
+	}
+	section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos a .fbits-spot-atributos-cor {
+	    height: 15px;
+	    font-size: 8px;
+	}
+	section.fbits-section-home .spot .spotPreco {
+	    height: 51px;
+	    line-height: 17px;
+	}
+	section.fbits-section-home .spot .spotPreco .precoDe, section.fbits-section-home .spot .precoParcela {
+	    font-size: 10px;
+	}
+	section.fbits-section-home .spot .spotPreco .precoDeVazio {
+	    height: 17px;
+	}
+	section.fbits-section-home .spot .precoPor {
+	    font-size: 14px;
+	}
+	section.fbits-section-home .spot .spotCategoria, section.fbits-section-home .spot .spotFab {
+	    display: block;
+	}
+	section.fbits-section-home .spot .spotContent a.lnkCategoriaPrincipal, section.fbits-section-home .spot .spotContent .spotFabricante {
+		text-transform: none;
+	}
+	section.fbits-section-home.fbits-banner-centroLower-home {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.fbits-banner-centroLower-home .slick-list.draggable {
+	    width: 100%;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .slick-list.draggable .slick-slide {
+	    padding: 0 4px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .spotPreco, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotPreco {
+	    margin: 0;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTitle, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTitle {
+	    font-size: 11px;
+	    line-height: 13px;
+	    height: 26px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTamanhos.fbits-spot-atributos, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos {
+	    font-size: 10px;
+	    min-height: 15px;
+	    line-height: 15px;
+	    height: 15px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .bt.comprar, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .bt.comprar {
+	    height: 40px;
+	    line-height: 40px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.adicionar, section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos {
+	    height: 40px;
+	    line-height: 40px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho, section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after {
+	    font-size: 25px;
+	    line-height: 40px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo {
+	    height: 201px;
+	}
+	.fbits-div-ofertas-departamentos, section.fbits-section-home.fbits-fabricantes-home, section.fbits-section-home.fbits-banner-rodape {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.fbits-fabricantes-home {
+	    margin-bottom: 10px;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-um {
+	    width: 65%;
+	    float: left;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-dois {
+	    width: 35%;
+	    clear: none;
+	    float: right;
+	    margin: 0;
+	}
+	.fbits-div-ofertas-departamentos h3.fbits-vitrine-titulo {
+	    font-size: 13px;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home div.spot-vitrine {
+	    width: 80%!important;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-um .slick-slide {
+	    padding: 0 10px;
+	}
+	section.fbits-section-home.fbits-fabricantes-home .slick-list.draggable {
+	    width: 86vw;
+	}
+	section.fbits-section-home.fbits-banner-rodape .slick-list.draggable {
+		width: 100%;
+	}
+	section.fbits-section-home.fbits-banner-rodape .fbits-componente-banner {
+	    margin: 0;
+	}
+	section.fbits-section-home.fbits-banner-rodape img {
+		max-width: 320px;
+		width: 100%;
+	}
+	section.fbits-section-home.fbits-banner-rodape .fbits-banner-item a {
+		width: 100% !important;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto p.fbits-conteudo-home-descricao {
+	    display: block;
+	    font-size: 14px;
+	    text-transform: none;
+	    font-weight: normal;
+	    line-height: 20px;
+	    letter-spacing: .025rem;
+	    max-width: 70%;
+	    margin-bottom: 20px;
+	}
+	section.fbits-conteudo-home-responsivo .fbits-conteudo-home-img img {
+	    width: 200%;
+	    margin-left: -62%;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h1.fbits-conteudo-home-title {
+	    font-size: 16px;
+	    line-height: 25px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h2.fbits-conteudo-home-title {
+	    font-size: 35px;
+	    line-height: 60px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto .fbits-conteudo-home-button {
+	    font-size: 16px;
+	    height: 50px;
+	    line-height: 50px;
+	    width: 220px;
+	}
+	section.fbits-section-home.fbits-produtos-vistos, .fbits-div-termos-e-procurados {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.fbits-produtos-vistos h3.fbits-vitrine-titulo, .fbits-div-termos-e-procurados h3.fbits-vitrine-titulo, section.fbits-section-home.fbits-mais-procurados h3.fbits-vitrine-titulo, section.fbits-section-home.fbits-conteudo-rodape h1.fbits-conteudo-home-title {
+      	font-size: 16px;
+	}
+	section.fbits-section-home.fbits-fabricantes-home ul.slick-dots {
+	    display: block !important;
+	}
+	section.fbits-section-home.fbits-produtos-vistos .slick-list.draggable {
+	    width: 86vw;
+	}
+	section.fbits-section-home.fbits-busca-rodape {
+	    padding: 0 2vw;
+	}
+	section.fbits-section-home.fbits-conteudo-rodape p.fbits-conteudo-home-descricao {
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+	/* FIM HOME NOVA <<- */
+
+}

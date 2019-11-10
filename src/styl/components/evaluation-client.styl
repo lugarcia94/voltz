@@ -1,0 +1,48 @@
+.evaluation-client
+    width: 100%
+    padding: 45px 0
+    position: relative
+    @media(min-width: 1024px)
+        max-width: 422px
+
+    @media(max-width: 1023px)
+        &:before
+            content: ''
+            height: 1px
+            position:absolute
+            bottom: 0
+            left: 50%
+            width: 100%
+            max-width: 1170px
+            transform: translateX(-50%)
+            background-color: rgb(233, 233, 233)
+            opacity: 0.6
+            box-shadow: 0.656px 0.755px 3px 0px rgba(29, 28, 28, 0.16)
+
+.evaluation-client__article
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+
+.evaluation-client__image
+    background: #fff
+    border-radius: 50%
+    border: 1px solid $cor01
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    min-height: 45px
+    min-width: 45px
+    margin-right: 10px
+
+.evaluation-client__name
+    margin: 0
+    color: $cor01
+    font-size: 12px
+    margin-bottom: 5px
+
+.evaluation-client__text
+    font-size: 11px
+    line-height: 11px
+    color: #7a7a7a

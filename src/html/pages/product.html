@@ -1,0 +1,81 @@
+<div class="product">    
+        @*Microdata de produto*@
+        <!--Div id="produto-item-@itemId" deve ser mantida por motivos estruturarais da plataforma.-->
+        <div class="product__details">
+            <div class="detalhe-produto-itens" id="produto-item-@itemId">
+    
+                <div class="product__title">
+                    <FBITS:BreadCrumb  />
+                    <div class="product__name">
+                        <FBITS:Nome  />
+                    </div>      
+                    <div class="product__brand-sku">
+                        <div class="product__brand"><FBITS:FabricanteLogo /></div>
+                        <div class="product__sku"><FBITS:Sku /></div>
+                    </div>
+                    <div class="product__review-short"><FBITS:Avaliacao /></div>
+                </div> 
+    
+                <div id="imagem-pagina-produto" class="product__images">
+                    <FBITS:Etiqueta tipo="sequencial" />
+                    <div id="produto-imagem-@Model.ProdutoId" class="produto-imagem-eazyZoom" data-fancybox="True">
+                        <FBITS:Imagem  />
+                        <FBITS:ImagemVarianteThumb  />
+                    </div>
+                </div> 
+                
+                <div class="product__info">              	
+                    <FBITS:ValorReferente  />
+                    <FBITS:DadosLivro  />
+                    <!--Opções de escolha de atributos.-->
+                    <FBITS:MatrizAtributos  />
+                    <FBITS:EscolhaAtributos  />
+                    <!--Opções de parcelamento.-->
+                </div>
+                
+                <div class="product__fixed"> 
+                    <div class="product__buys">
+                        <FBITS:ProdutoVariante  />
+                        <FBITS:ParcelamentoPadrao titulo="Consulte opções de parcelamento" />
+                    </div>
+                    <FBITS:EtiquetaAtacado />
+                    <FBITS:AlertaValores />	
+                    <FBITS:DadosVendedor />	
+                    <FBITS:ContraProposta />
+                    <FBITS:Televendas titulo="Vendas apenas por telefone." />  
+                    <FBITS:AdicionarListaDesejos texto="Adicionar à lista de desejos" textoAdicionado="Adicionado à lista de desejos" />
+                    <FBITS:CalculaFrete tipoexibicao="aberto" /> 	
+                    <div class="share">
+                        <FBITS:Facebook  />
+                        <FBITS:Twitter  />
+                        <a href="#divIndicacaoAmigo" id="indicaAmigo"><i class="indicar icon"></i>Indicar Produto</a>
+                    </div>  
+    
+                </div>
+            </div>       
+        </div>
+    
+        <FBITS:CompreJunto tipo="Produto" />
+    
+        <div class="coluna-produto-horizontal">
+            <FBITS:Prescricao  />
+            <FBITS:PromocaoDivulgacao  />
+        </div>
+    
+        <div class="fbits-produto-informacoes-extras">
+            <FBITS:GrupoInformacao  />                      
+            <FBITS:Cores titulo="Cores" />
+        </div> 
+    
+        <FBITS:Carrossel tipo="similar" />  
+    
+        <FBITS:Avaliacoes titulo="Opiniões sobre o produto" /> 
+        <div class="product__two">
+            <FBITS:Avaliar  />
+            <FBITS:Indicar  />	
+        </div>
+    
+    </div>
+    
+    @Html.RecursosCSS("jquery.sliderTabs.min.css")
+    @Html.RecursosJS("fbits.produto.calculafrete.js", "jquery.maskedinput-1.3.min.js")

@@ -1,0 +1,120 @@
+.user-links
+  display flex
+  height 22px
+  justify-content flex-end
+  margin 5px 0 20px
+  transition all 150ms ease-in-out
+
+.icon-support
+  transform scaleX(-1)
+
+.user-links__item
+  margin-right 20px
+
+  &:first-child
+    &:after
+      content svg-inline(bottom-arrow)
+      display inline-block
+      position relative
+      transform rotate(90deg)
+      top -2px
+
+  &:last-child
+    margin-right 0
+
+  &:hover
+    > span
+    > a
+      color $cor02
+
+    .user-links__dropdown
+      opacity 1
+      visibility visible
+      z-index 200
+
+  > span
+  > a
+    align-items flex-end
+    color #606060
+    display inline-flex
+    font-size 11px
+    font-weight 800
+    line-height 15px
+    text-decoration none
+    text-transform uppercase
+    transition all 150ms ease-in-out
+
+  > span
+    cursor default
+
+.user-links__dropdown
+  background-color white
+  box-shadow 2px 2px 4px 0 rgba(0, 0, 0, .24)
+  padding 20px 0 10px 30px
+  position absolute
+  opacity 0
+  transition all 150ms ease-in-out
+  visibility hidden
+  width 180px
+  z-index -1
+
+.user-links__icon
+  fill $cor02
+  margin-right 5px
+
+.contact-list
+  span
+    color #606060
+    display block
+    font-size 10px
+    font-weight 800
+    text-transform uppercase
+
+  a
+  strong
+    color $cor03
+    display block
+    font-size 15px
+    font-weight 800
+    letter-spacing -.2px
+
+.icon-support
+  height 13px
+  width 14px
+
+.icon-orders
+  height 15px
+  width 15px
+
+.icon-store
+  height 14px
+  width 14px
+
+.contact-list__whatsapp
+  margin-bottom 5px
+
+  span
+    align-items center
+    display inline-flex
+
+    &:before
+      content svg-inline(whatsapp)
+      margin-right 3px
+
+.contact-list__email span
+  align-items center
+  display inline-flex
+
+  &:before
+    content svg-inline(email)
+    margin-right 3px
+
+.contact-list__support
+  margin 5px 0
+
+  span
+    align-items center
+    display inline-flex
+
+    &:before
+      content svg-inline(clock)

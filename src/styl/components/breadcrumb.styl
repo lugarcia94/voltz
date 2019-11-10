@@ -1,0 +1,62 @@
+.bread
+    background-color white
+    padding 0
+    position relative 
+    border: 0 !important
+    margin: 0!important
+    
+    ol
+        line-height 1
+        margin: 0
+
+        .fbits-produto-nome 
+            margin: 0!important
+            font-weight: 700!important
+            color: #333333!important
+            line-height: 15px!important
+            font-size: 13px!important
+    li
+        line-height 1 
+        justify-content: center
+        display inline
+
+        &:after
+            content: '/'
+            display: none
+            background-position: center center
+            background-repeat: no-repeat  
+            background-size: 7px
+            vertical-align: middle
+            font-size: 12px
+            color: #999999
+            
+        &:last-child
+            a
+                font-weight: bold
+                margin: 0
+                color: #666666
+
+            &:after
+                display: none
+
+
+        a
+            display inline
+            height: 12px
+            text-decoration: none
+            font-size: 13px!important
+            color: #999999
+            transition: all 150ms ease-in-out
+            vertical-align: middle
+            font-weight: 400
+   
+    h1
+        display inline!important
+        width: auto!important
+        float: none!important
+     
+
+ 
+
+.detalhe-produto-itens
+    float: none

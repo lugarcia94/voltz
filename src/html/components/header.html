@@ -1,0 +1,156 @@
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="640">
+<meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no">
+
+<a name="topo"></a>
+
+<header>
+    <div class="header-lane">
+        <div class="center fbits-center-responsivo">
+            <!--TOP LINKS -->
+            <a href="@string.Format(G.UrlEcommerce)" class="headerLogo">
+                <img src="@(B.Bal(G.UrlRecursosSSL, "i/logo-felix.png", false))" alt="Home" class="logoHome" />
+            </a>
+            <div class="right">
+                <ul class="user-links">
+                    <li class="user-links__item">
+                    <span>
+                        <svg class="user-links__icon icon-support">
+                            <use xlink:href="#support"></use>
+                        </svg>
+                        Atendimento
+                    </span>
+                        <ul class="user-links__dropdown">
+                            <li>
+                                <ul class="contact-list">
+                                    <li class="contact-list__whatsapp">
+                                    <span>
+                                        Whatsapp
+                                    </span>
+                                        <strong>
+                                            (11) 93334 4333
+                                        </strong>
+                                    </li>
+                                    <li class="contact-list__email">
+                                    <span>
+                                        E-mail
+                                    </span>
+                                        <a href="mailto:felix@felix.com.br">felix@felix.com.br</a>
+                                    </li>
+
+                                    <li class="contact-list__support">
+                                    <span>
+                                        Aberto das 8 às 17h
+                                    </span>
+                                    </li>
+                                    <li class="contact-list__social">
+                                    <span>
+                                        Siga-nos
+                                    </span>
+                                        <a href="#" class="facebook">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="user-links__item">
+                        <a href="@string.Format( "{0}HistoricoPedido", G.UrlCarrinho )" class="topLink fbits-link-historicoPedido">
+                        <svg class="user-links__icon icon-orders">
+                            <use xlink:href="#orders"></use>
+                        </svg>
+                        @G.DadosComponente["FBITS:TopLink-Texto-HistoricoPedidos"]
+                        </a>
+                    </li>
+                    <li class="user-links__item">
+                        <a href="#">
+                            <svg class="user-links__icon icon-store">
+                                <use xlink:href="#store"></use>
+                            </svg>
+                            Loja física
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom">
+                    <a href="@string.Format( "{0}HistoricoPedido", G.UrlCarrinho )" class="user-account fbits-link-historicoPedido">
+                    <svg class="user-account__icon icon-user">
+                        <use xlink:href="#user"></use>
+                    </svg>
+                    Minha conta
+                    </a>
+                    <div class="search div-busca-desktop">
+                        @FBITSSearch.Add()
+                    </div>
+                    <div class="div-busca-topo-oculta">
+                        <!--SEARCH MOBILE-->
+                        <div class="headerSearch " itemscope="" itemtype="http://schema.org/WebSite">
+                            <meta itemprop="url" content="https://www.e-lens.com.br">
+                            <form id="searchFormMobile" autocomplete="off" method="get" action="/busca" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+                                <meta itemprop="target" content="https://www.e-lens.com.br/Busca?busca={busca}">
+                                <input type="text" value="" class="inputSearch ac_input" id="txtBuscaMobile" itemprop="query-input" name="busca" placeholder="Buscar" autocomplete="off">
+                                <button class="btSearch greenBack" type="button" id="btnBuscaMobile">
+                                    buscar <i class="icon isearch"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!--SEARCH MOBILE-->
+                    </div>
+                    <ul class="help-list">
+                        <li class="help-list__item contact">
+                        <span class="contact__number">
+                            (11) 3334 4333
+                        </span>
+                            <span class="contact__info">
+                            <svg class="contact__icon icon-phone">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            Televendas
+                        </span>
+                        </li>
+                        <li class="help-list__item help">
+                            <a href="#" class="help__link">
+                                Precisa de
+                                <span>
+                                <svg class="help__icon icon-help">
+                                    <use xlink:href="#help"></use>
+                                </svg>
+                                Ajuda
+                            </span>
+                            </a>
+                        </li>
+                        <li class="help-list__item cart">
+                            @FBITSCarrinho.Add()
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-lane menu-container">
+        <div class="ico-menu-fecha">X</div>
+        <div class="menu-mobile-dynamic">
+            <div class="navbar-mobile dynamic-content-headercustomerinfo">
+                <div class="header-links  pull-right">
+                    <ul class="rgt-content">
+                        <li id="account-dropdown" class="dropdown account-login">
+                            <a href="@string.Format( "{0}AtualizarDadosUsuario", G.UrlCarrinho )" class="fbits-link-minhaConta">
+                            <span class="icm-icon-user"></span> <span class="user-copy">Minha Conta</span>
+                            </a>
+                        </li>
+                        <li class="wishlist-icon wishlist-bag wishlistContainer ">
+                            <a href="@string.Format( "{0}ListaDeDesejos", G.UrlEcommerce )" class="fbits-link-listaDesejos">
+                            <span class="icm-icon-like"></span> <span class="wishlist-label">Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="findastore">
+                            <!--LOGIN -->
+                            @FBITSLogin.Add()
+                            <!--LOGIN -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @{Html.RenderAction("MenuTopo", "Menu");}
+        </div>
+    </div>
+</header>

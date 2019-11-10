@@ -1,0 +1,752 @@
+#bodyProduto , #bodyListaCompra
+    span.fbits-quantidadeParcelas, span.fbits-parcela-x, span.fbits-parcela-de, .fbits-parcela-juros
+        font-size: 15px
+        letter-spacing: 0.7px
+        color: #3d161d
+        font-weight: 700
+
+    span.fbits-parcela 
+        font-size: 15px
+        color: #A85449
+        font-weight: 700
+        letter-spacing: 0.7px
+        text-shadow: 0 0 
+
+    .bread
+        @media(max-width: 992px)
+            position absolute
+            top: 0
+    #galeria 
+        max-width: 100%
+        
+        >a
+            display: block
+            margin: 0
+            margin-bottom 15px
+            max-width: 79px
+
+
+    .fbits-layout-item 
+        display: none
+    
+    &.moving--down
+        [id*="produto-variante"]
+            @media(max-width: 768px)
+                bottom: 0
+
+    .fbits-componente-imagemvariantethumb img 
+        border: none
+        border-radius: 3px
+        margin: 0
+        @media(max-width: 992px)
+            border: none
+
+    .fbits-componente-imagemvariantethumb .active img 
+        border: 2px solid $cor01
+
+    .fbits-componente-imagemvariantethumb.fbits-produto-imagens
+        width 90px
+        order: -1
+        .jcarousel
+            width: 100%
+            li
+                height: 85px!important
+                width: 85px!important
+                margin-bottom: 10px
+                float: none
+
+        @media(max-width: 992px)
+            width 100%!important
+
+    #msgEstoqueDisponivel
+        margin: 0
+        order: 2
+        margin: 0 auto
+        display: none
+
+        span  
+            font-size: 12px
+            color: $cor02
+            max-width 140px
+            display: block 
+            text-align: center
+
+    .avisoIndisponivel
+        margin: 10px 0
+        text-align: center
+
+        h3 
+            font-size: 15px
+            text-transform: uppercase
+
+        p  
+            font-size: 12px
+
+        input 
+            width 100%
+            margin-top 10px
+            border: 1px solid $cor03
+            border-radius: 3px
+
+        #btnEnviarAviseMe
+            border: none 
+            background: $cor01
+            color: #fff 
+            font-weight: 700
+            text-transform: uppercase
+            height 40px
+
+    .jcarousel-prev-horizontal
+    .jcarousel-next-horizontal
+        display: none !important
+
+    .main-container
+        @extend $container 
+
+    .product__price 
+        position relative
+
+    .product__details-variation 
+        margin: 30px 0
+
+    .product__economize 
+        padding: 15px
+        background: #F8F8F8
+        max-width: 265px
+        margin: 15px 0
+        margin-top 0
+        @media(max-width: 425px)
+            max-width 100%
+        .economize__topo
+            text-align: center
+            padding: 10px 0
+            background: $cor03
+
+            span    
+                font-size: 14px
+                text-transform: uppercase
+                font-weight: 600
+
+                strong
+                    color: $cor01
+                    font-weight: 600
+
+        .product__price-on
+            margin-top 5px
+
+            .product__price-installments
+                display: none
+        
+            .fbits-preco
+                justify-content: center
+
+            .precoDe
+                font-size: 15px
+
+    .product--item
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        margin-top: 25px
+
+    .product--item-container
+        display: flex
+        align-items: flex-start
+        max-width: 100%
+        justify-content: space-between
+        width: 100%
+        flex-wrap: wrap
+
+        @media(max-width: 768px)
+            flex-wrap: wrap
+
+        @media(max-width: 992px)
+            position relative
+            padding-top 30px
+            flex-wrap: wrap
+    
+    .optionAtributos
+        >ul
+            width: 100%
+            >li
+                width: 100%
+                >ul
+                    width: 100%
+    [data-atributospagproduto]
+        >div
+            display: flex
+            align-items: flex-start
+            flex-wrap: wrap
+            z-index 999
+            margin-bottom 40px
+            margin: 0 -10px 15px -10px
+
+            @media(max-width: 320px)
+                justify-content: space-between
+
+            >*
+                font-size: 12px
+                line-height: 12px
+                font-weight: 400
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 1px solid transparent
+                border-radius: 3px
+                color: $cor02
+                overflow: hidden
+                cursor: pointer
+                transition: all 300ms ease-in-out
+                height 55px
+                @media(max-width: 320px)
+                    height 110px
+
+                &[data-atributoselecionado="False"]
+                    border: none !important
+
+                &[data-atributoselecionado="True"]
+                    background: $cor01
+                    border: 1px solid $cor01 !important
+                    color: #fff
+                    width: 70px !important
+                    &:hover
+                        border: 1px solid $cor01 !important
+
+                
+
+                &:not(.selected)
+                    &:hover
+                        background: $cor01
+                        border: 1px solid $cor01
+                        color: #fff
+ 
+            
+            >a
+                background: #fff
+                padding: 0 !important
+                overflow: initial
+                height: auto
+               
+
+                &:not(.selected)
+                    &:hover
+                        border: 1px solid $cor01
+                        background: #fff
+
+            .valorAtributoFoto
+                // border: none !important
+                background: #fff
+                width: 50px
+                height: auto
+                background-size: auto 50px !important
+                background-position: top center !important
+                // padding: 0 !important
+                position relative
+                margin: 10px
+                display: block
+     
+
+                &:before 
+                    content: attr(title)
+                    font-size: 11px
+                    line-height: 11px
+                    color: #3D161D
+                    font-weight: 500
+                    width: 100% 
+                    height: 24px;
+                    overflow: hidden;
+                    display: flex
+                    margin: 55px 0 0 0
+                    justify-content: center
+
+            .valorAtributo[data-atributoselecionado="False"]
+                border none
+                &:hover 
+                    border none !important
+
+
+    
+    #buscadorCep
+        h3
+            font-weight: 400
+            color:$cor02
+    #contentBuscarCep
+        .forminline
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+        label
+            width: 100%
+            margin-top: 15px
+        select
+            background: #fff
+            display: inline-block
+            border: 1px solid #ddd
+            height: 45px
+            border-radius: 3px
+
+            &#TipoLogradouro,
+            &#Cidade_Estado_Sigla
+                width: 30%
+        input
+            border-radius: 3px
+            background: #fff
+            display: block
+            border: 1px solid #ddd
+            height: 45px
+
+            &#Logradouro
+                width: 68%
+                margin-left: 2%
+        .btBuscarCep
+            border: 1px solid $cor01
+            font-size: 16px
+            background: $cor01
+            color: #fff
+            width: 100%
+            margin-top: 15px
+
+        .paginacao
+            display: none
+
+
+    .brand__one
+        width: 100%
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 50px
+
+
+
+    .showcase__one
+        position: relative
+        padding: 1px 0
+        margin: 25px 0
+        .item-block-title
+            border: none
+            margin-bottom: 20px
+
+            .fbits-conteudo-item
+                position: relative;
+                display: flex
+                justify-content: center
+                >span 
+                    border-bottom:1px solid #3d161d !important;
+                    top: 1.06rem;
+                    display: table-cell;
+                    height: 1px;
+                    top: 17px;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                
+                >div
+                    background: #fff
+                    display: flex
+                    align-items: center
+                    font-size: 1.88rem
+                    line-height: 1.88rem
+                    color: #a85449
+                    font-weight: 700
+                    position: relative
+                    z-index: 1
+                    padding: 0 15px
+                    span 
+                        color: #a85449
+                        font-size: 1.88rem
+                        line-height: 1.88rem
+                        display: block 
+                        margin: 0 10px 0 0
+                        font-weight: 300
+                    
+
+        &:before
+            content: ''
+            height: 1px
+            position: absolute
+            top: 0
+            left: 50%
+            width: 100%
+            max-width: 1170px
+            -webkit-transform: translateX(-50%)
+            transform: translateX(-50%)
+            background-color: #e9e9e9
+            opacity: 0.6
+            box-shadow: 0.656px 0.755px 3px 0px rgba(29,28,28,0.16)
+        &:after
+            content: ''
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 50%
+            width: 100%
+            max-width: 1170px
+            -webkit-transform: translateX(-50%)
+            transform: translateX(-50%)
+            background-color: #e9e9e9
+            opacity: 0.6
+            box-shadow: 0.656px 0.755px 3px 0px rgba(29,28,28,0.16)
+
+    .review-post
+        .pontosAvaliacao
+            text-align: left
+            margin: 0
+            padding: 0
+ 
+        .divOpinioes
+            display: none
+        
+        .opinioesConteudo
+            margin: 0
+
+        .review
+            background: none
+            padding: 15px 0
+            border-bottom: 1px solid #e9e9e9
+            &:last-child
+                border: none
+
+        blockquote
+            border: none
+            color: #373737
+            font-weight: 300
+        span.icon
+            height: 16px
+            margin: 0 4px
+            line-height: 18px
+
+        .reviewMeta
+            padding: 0
+
+        .reviewUser
+            display: block
+            font-weight: 600
+            font-size: 12px
+
+
+        #avaliacao-Produto 
+            position: relative
+
+        #fbits-indicacao-amigo
+        #fbits-avaliar-produto
+            .line
+                span
+                    display: none
+
+                h2
+                    font-size: 24px
+                    line-height: 24px
+                    font-weight: 600
+                    color: #A85449
+                    text-transform: uppercase
+                    text-align: left
+                    margin: 0
+                    padding: 0
+                    position relative
+                    width 100%
+                    display: flex
+                    align-items: center
+
+                    @media(max-width: 992px)
+                        font-size: 23px
+                        display: flex
+                        justify-content: center
+
+                    &:before
+                        content: ''
+                        height 1px
+                        background: #3D161D
+                        display: block
+                        position absolute
+                        right: 0
+                        max-width 900px
+                        width 100%
+                        line-height: 24px
+
+                        @media(max-width: 992px)
+                            display: none
+
+                    @media(max-width: 992px)
+                        font-size: 30px
+
+            .texto-indique
+            .texto-avalie
+                font-size: 13px
+                line-height: 13px
+                color: $cor02
+                text-align: left
+                margin-bottom 0
+
+                @media(max-width: 992px)
+                    text-align: center
+                    margin-top 5px
+
+            input
+                border: 1px solid #DED7C1
+                height: 35px
+                padding: 0 
+                font-size: 13px
+                color: #818181
+                text-transform: none
+                font-style: italic 
+
+
+            textarea
+                border: 1px solid #DED7C1
+                font-size: 13px
+                color: #818181
+                font-style: italic
+                text-transform: none
+                height 55px
+
+
+            .btAvaliar
+                button
+                    background: $cor01
+                    color: #fff
+                    border-style: solid
+                    border-width: 1px 
+                    border-radius: 3px
+                    text-transform: uppercase
+                    height: 35px
+                    line-height: 35px
+                    font-weight: 600
+                    @media(max-width: 768px)
+                        width: 100%
+                        height: 45px
+
+            #ddlNota
+                border: 1px solid #e9e9e9
+                box-shadow: 0.629px 0.777px 3px 0px rgba(23, 23, 23, 0.15)
+                font-size: 13px
+                color: #a09f9f
+                background: none
+                border-radius: 0
+                width: 130px
+                height: 25px
+
+
+    .avalie-indique
+        position: relative
+        .fbits-indicacao-amigo table tbody tr
+            @media(max-width : 767px)
+                display: flex
+                td:first-child
+                    margin-right: 30px
+
+
+
+    @import 'zoom'
+    @import 'details'
+    @import 'price'
+    @import 'info'
+    @import 'comprejunto'
+
+
+.regras-frete
+    text-decoration: underline
+    padding: 5px 0
+    background: none
+
+.modal-regra-frete
+    &:after
+        content: ''
+        background: #000
+        opacity: 0
+        visibility: hidden
+        position: fixed
+        top:0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: -1
+        transition: all 150ms ease-in-out
+        .modal-frete-on &
+            opacity: 0.8
+            z-index: 1000
+            visibility: visible
+
+    strong
+        display: block
+        width: 100%
+        margin-top: 15px
+
+    span
+        color: $cor01
+        font-weight: 600
+
+#BtnGeraContraProposta, button#btnAlertar
+    background: $cor01
+    font-weight: 600
+.fbits-Contraproposta-modal-header, .tituloAlertaValores
+    border-color: #FFE1C6
+.fbits-Contraproposta-input-group-addon
+    border-color: #FFE1C6
+    background: #fff
+.fbits-Contraproposta-form-control
+    border-color: #FFE1C6!important
+.tituloAlertaValores span.fbits-icone-pagar-menos:before
+    color: $cor01
+ 
+
+// li.atributos-container.atributos-tamanho 
+//     display: none!important
+
+#fbits-forma-pagamento
+    float: none 
+    margin: 0
+    line-height: 1.5rem
+    flex: 0 1 240px
+    *
+        float: none
+
+    .precoVista
+        display: none
+
+    .precoPor.com-precoDe:before
+        display: none
+
+    .precoPor
+    .precoPor.com-precoDe 
+        color: #A85449
+        font-size: 28px
+        font-weight: 700
+
+        &:after
+            content 'à vista'
+            font-size: 14px
+            color: #3D161D
+            margin-left 5px
+            letter-spacing: 0.7px
+
+    .precoDe
+        color: #3D161D
+        font-size: 14px
+        font-weight: 600
+        letter-spacing: 0.7px
+
+        &:before
+            content: 'de'
+            margin-right 5px
+            letter-spacing: 0.7px
+ 
+.details-content
+    padding: 0!important
+
+#summary 
+    font-size: 12px
+    color: #3D161D
+    text-decoration: none
+    font-weight: 600
+    background: #DED7C1
+    max-width: 180px
+    padding: 5px
+    text-transform: none
+    letter-spacing: 0.7px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 1px
+
+    @media(max-width: 992px)
+        font-size: 14px
+        max-width 205px
+
+    &:before
+        @extend $ico-before
+        background-image svg-inline(frete)
+        transition: $transition
+        width: 17px
+        height: 11px
+        background-size: 100%
+        margin-right 5px
+        border: none
+        margin-left: 0
+        position relative
+        padding: 0
+
+.alerta__frete
+    background: #F4F2EA
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding: 20px 10px
+    margin: 35px 0
+
+.atrib__description
+    .line
+        text-align: center
+        margin-bottom: 0
+
+        > span 
+            display: none
+
+        h3  
+            font-size: 12px
+            color: #3D161D
+            font-weight: 600
+            text-transform: capitalize
+            margin: 0
+            padding: 0
+
+            @media(max-width: 992px)
+                font-size: 16px
+
+    ul 
+        li  
+            font-size: 12px
+            color: #3D161D
+            font-weight: 600
+            display: flex
+            align-items: center
+
+            @media(max-width: 992px)
+
+                font-size: 16px
+            span  
+                color: #6D6A5C
+                font-weight: 500
+            img  
+                margin-right 5px
+
+.fbits-indicacao-amigo, .fbits-avaliar-produto
+    width 100%
+
+div#fbits-avaliar-produto
+    .line
+        margin: 0
+
+#formAvaliacao
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: flex-end
+
+    @media(max-width: 992px)
+        justify-content: space-between
+
+.avaliacoment
+    width 100%
+
+.btAvaliar, .pontosAvaliacao.clear
+    width auto
+
+.pontosAvaliacao.clear 
+    display: block
+    width: 260px
+
+    @media(max-width: 992px)
+        width 50%
+
+        select#ddlNota
+            margin: 0
+
+.showcase__one
+    .showcase__container
+        ul  
+            display: none 
+
+            &:first-child
+                display: block

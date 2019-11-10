@@ -1,0 +1,354 @@
+.showcase
+    padding: 60px 0
+    @media(max-width : 991px)
+        padding: 40px 0
+    @media(max-width : 599px)
+        padding-bottom: 55px
+    &__container
+        max-width: 1330px
+        padding: 0 15px
+        width: 100%
+        margin: 0 auto
+    &__title
+        font-size: 18px !important
+        font-weight: 800 !important
+        color: #020202 !important
+        text-decoration: uppercase
+        @media(max-width: 355px)
+            font-size: 15px !important
+    .line
+        span 
+            display: none
+            width: 100%
+            height 1px
+            background-color: #d9d9d9
+            margin-top: -12px
+    &__list
+        .spot
+            width: 100%
+            max-width: 260px
+            float: none
+            margin: 0 auto
+            padding: 0   
+            border 1px solid transparent
+            @media(max-width : 991px)
+                padding: 5px
+            &:hover 
+                .botoesSpot
+                    opacity 1
+                    visibility: visible
+                    display flex
+                    justify-content: space-between !important
+                    .bt.comprar 
+                        background-color: $cor01 
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=') !important 
+                        background-size 15px
+                        background-position: 80% !important
+                        font-weight 600 !important
+                        &:before
+                            display none
+                    .bt.adicionar
+                        display none !important
+                    .wishLink.link-add-lista.addListaDesejos
+                        color: transparent !important
+                        background-color: transparent !important
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTg5ODk4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9ImZhdm9yaXRlIj48cGF0aCBkPSJNMjU1LDQ4OS42bC0zNS43LTM1LjdDODYuNywzMzYuNiwwLDI1Ny41NSwwLDE2MC42NUMwLDgxLjYsNjEuMiwyMC40LDE0MC4yNSwyMC40YzQzLjM1LDAsODYuNywyMC40LDExNC43NSw1My41NUMyODMuMDUsNDAuOCwzMjYuNCwyMC40LDM2OS43NSwyMC40QzQ0OC44LDIwLjQsNTEwLDgxLjYsNTEwLDE2MC42NWMwLDk2LjktODYuNywxNzUuOTUtMjE5LjMsMjkzLjI1TDI1NSw0ODkuNnoiLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==') !important 
+                        background-position: center
+                        background-size: 15px 13px
+                        background-repeat: no-repeat !important
+                        &:hover
+                            border-color: $cor01 !important
+        .spot__request
+            .spotPreco, .botoesSpot
+                *
+                    opacity 0
+                    visibility hidden
+            .spotPreco:before
+                content: 'Preço sob consulta'
+                display: block
+                text-align: center
+                border: 1px solid #CBCBCB
+                font-size: 12px
+                line-height: 24px
+                color: #373535
+                font-weight: bold
+                height 24px
+                max-width: 124px
+                margin: 0 auto
+                margin-top: 3px
+
+        .etiquetas-spot
+            top: 10px
+            left -15px
+            @media(max-width : 991px)
+                left 0px
+        .fbits-etiqueta-off
+            background: #FF5D5D
+            height 30px
+            font-size: 12px
+            color: #ffffff
+            font-weight: 900
+            line-height: 30px
+            width: 60px
+        .fbits-etiqueta-fretegratis
+            height 20px
+            background: #4AC87A
+            width: 80px
+            font-size: 10px
+            color: #ffffff
+            font-weight: 800
+            line-height: 20px
+            height 20px!important
+            width: auto!important
+            border-radius: 0
+
+            &:before
+                content: 'FRETE GRÁTIS'
+                font-size: 10px
+            img
+                display: none!important
+        .fbits-spot-conteudo
+            height auto
+            padding: 0 5px 5px 5px 
+            margin-top 15px
+
+        .spotPreco
+            margin-top: 5px
+        .spotPreco
+            display flex !important
+            align-items: center
+            justify-content: center
+            height: initial
+            margin-bottom 40px
+            .precoDe
+                margin-right 10px
+                color: $cor03 
+            .precoPor 
+                font-size: 18px
+                font-weight bold
+                color: $cor01
+                &:before
+                    display: none
+        .precoDe
+            font-size: 12px
+            color: #ADADAD
+            font-weight: regular
+            line-height: 15px
+            margin-bottom: 2px
+        .precoParcela
+            display: none
+        .precoPor
+            font-size: 20px
+            color: $cor01
+            font-weight: 800
+            line-height: 23px
+            &:before
+                display: none
+        .fbits-spot-preco-boleto-container
+            font-size: 14px
+            color: $cor02
+            line-height: 18px
+            font-weight: 600
+            .fbits-spot-boleto-ou
+                margin-right: 3px
+                &:before
+                    content: 'ou'
+            .fbits-spot-boleto-off
+                margin-left: 3px
+                &:before
+                    content: 'no boleto'
+            .fbits-spot-boleto-valor
+                font-size: 14px
+                color: $cor02
+                font-weight: 700
+                line-height: 17px
+        .spotImg
+            img 
+                width: auto!important
+                max-width: 100%
+                margin: 0 auto
+                display: block
+        .spotTitle
+            font-size: 14px
+            color: $cor02
+            font-weight: 600
+            line-height: 16px
+            text-align: center
+            text-transform: none
+            height 50px
+            overflow hidden
+        .botoesSpot
+            display: block
+            opacity 0
+            visibility: hidden
+            height 40px
+            overflow hidden
+            @media(max-width : 991px)
+                display: none
+            &--spotIndisponivel
+                height: auto
+                padding: 10px 0
+                font-size: 0.75rem
+                color: #434343
+                font-weight: bold
+                line-height: 0.94rem
+                text-align: center
+                text-transform: uppercase
+                input 
+                    color: #434343
+                    &#btnEnviarAviseMe
+                        border: 1px solid #ddd
+                        background: #ddd
+                        height 2.5rem
+                        cursor: pointer
+                        transition: all .3s
+                        &:hover
+                            background: #ffffff
+            
+
+    .slick-next
+        @media(max-width : 1360px)
+            right 0
+        @media(max-width : 991px) 
+            top: 30%
+    .slick-prev
+        @media(max-width : 1360px)
+            left 0
+        @media(max-width : 991px) 
+            top: 30%
+    
+    .slick-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        li
+            width: 10px
+            height: 10px
+            background: #E7E7E7
+        .slick-active
+            width: 14px
+            height: 14px
+            background: #FFF115
+
+
+.spot .bt.comprar
+    color: #fff
+    background: $cor02
+    font-size: 0 
+    line-height: 40px!important
+    text-align: center
+    font-weight: 500
+    height 40px!important
+    float: none
+    transition: all .3s
+    width: 100%!important
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAABDlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v3yHCAAAAWnRSTlMAQMb99aUYPvqxUGPb2g3DtwEX8XH3s6YJIP90uh68a92RMH6/0ov2YR8DywxJj+8/mbsmMTmD1TsZautW/gRTBek6G4XTJDWbuQpKtaNlinrlc8WVkKqpwG0I50RoAAAAvElEQVQYGQXBMUoDYRQGwPn+fbuboJWICBYWoqBoK9hZeQVv6gFs04tVUqR3ITaiZONMgCRJfkHAmCRJdlBgkUxOEtDA8Dfx1XUgzkMyo7NXW82QxCFJ5jnZXyptjJ/lAc2sizLm8/bHmrs4fJxN2v13r3eMYZoGFw/aaDQejVi3ttb3qtdbgd0OFa2uegDoN89tW+8A0OnqOgCgVFUAQKmqAIC36tqmAQDLVjcBAF6SxekTAFg95jUAgPwDLCclWPh/hxYAAAAASUVORK5CYII=')!important
+    background-repeat: no-repeat
+    background-position: 95%
+ 
+ 
+
+.spot .spotContent a
+    text-decoration none
+
+span[id^="fbits-grupo"], .fbits-componente-ofertasPorDepartamento, .row-vitrine-home.estatico.custom-list .center
+    display block!important
+
+.showcase__list.not-carousel
+ > span 
+    display: flex!important
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+    .showcase__item
+        width 25%
+        margin-bottom 20px
+
+        @media(max-width: 991px)
+            width 50%
+
+.spot .spotPreco .precoDeVazio
+    display none
+section.showcase.instagram
+ 
+    h1
+        &:before 
+            content: ''
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAMAAAA4Nk+sAAAAUVBMVEUAAADvOFDvOVHvMFDtOlLuOlLuOlPvOlDuOVLuOVLuOVLuOlLuOlPvOFLvOVLvOVPuOlPvOFTuOVPvOFPuOVPtOVPtOlLtOVPuOVPtOVLvOlJySMVuAAAAG3RSTlMAID8Qn+//MN/gwNDPYHBQsECvX/CggJC/j3+wTu5FAAAAxklEQVR4AV3PW3KsMAyE4dYRtC+MzZhjLsn+FxqVyVB2vrf+H1QlNPLvIfil08zOPCmM82SIj0B6Z3lhFHQk8gUkBkUnrxqY8GYaKimJb0QWwKRtnrf/cHVBYUSlWtSNzdYGCRJmZ02qqXKC+WRhFRiplC4fPNGcPIac0eQxt2WOIRd6hVHP0mUsvASQiwv6LIF8XWSQO3++1J1mV5jCaHnFrRTcVsuZF/6IzNDKLwxOVgVW0k/fj8nzPusWDoLDzaXjkVv8Af4eCx7xPwg2AAAAAElFTkSuQmCC')
+            display: block
+            width: 30px
+            height: 24px
+            background-repeat: no-repeat
+            @media(max-width: 991px)
+                display none
+            
+        strong  
+            color $cor01
+            font-weight: 800
+
+            &:before
+                content: '@'
+                
+.showcase
+
+    .spot
+        .spotImg
+            margin-bottom 18px !important
+            
+        .spotTitle
+            
+            font-size: 15px !important;
+            text-transform: initial !important;
+            color: #333333 !important;
+            font-weight: 400;
+
+            &:hover
+                color: $cor01!important;
+        .spotPreco
+            display flex !important
+            justify-content: center
+            height: initial
+            .precoDe
+                margin-right 10px
+                color: $cor03 
+            .precoPor 
+                font-size: 18px
+                font-weight bold
+                color: $cor01
+                &:before
+                    display: none
+        &:hover 
+            .botoesSpot
+                display flex !important
+        .botoesSpot
+            justify-content: space-between !important
+            .bt.comprar 
+                background-color: $cor01 
+                background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwP/2wBDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAApAC4DAREAAhEBAxEB/8QAGwABAAEFAQAAAAAAAAAAAAAAAAoDBQcICQb/xAAjEAABBAMAAwADAQEAAAAAAAADAQIEBQAGBwgREgkTFSFB/8QAHAEBAAICAwEAAAAAAAAAAAAAAAcIBgkDBQoC/8QAKREAAgEDAwMEAgMBAAAAAAAAAQIDAAQRBQYSBxMhCBQiMUFRCRVxI//aAAwDAQACEQMRAD8A8Lm2GvKdTFKYpTFKYpTFKYpTFK3A8efDPee/anddGNvfLePcypthiaazfuwbSurUV5us+M2TF1XX3shzXz7Ngzgeb7/Sxgje2OI9rhpH27eoumbVvo9IW1vdQ1qSEzdi1j7jpCpwZJPI4r4bGMkkeeIINWC6S+nbc3VTQ7jdsmpaNoGzILtbQXup3Ht4prt1ylvAArdx8tGH5FFAf4GR1aMYQ7PxzfOB9J2blXSatlVtmryhBlsjnSXXT4kuOKbW29ROa1jZtVaQDjMF/wAsejXfBGDK1425Nt3cOl7q0eHXNHcvYzKSMjDKQcMjr+GVgQR5H5UlSCYz6idPd0dLd33myN4QCDW7NwDxPKORGAaOaF8DnFKhDIcBhkrIqSK6Li7O7rCaYpTFKuVKAUq4qYx2IQEizgAMNVVEeIsoQyMVWqjkRzHKn+Ki5wXTtHaySIcOsbEf6ASK7DSYIrrVba2nHKGS4jVhkjKs4BGRgjIP2CD+qnAE8PPHuRqYeYSuT8+Px+Bbj26p5+tDPQUDfSAsK6y2hLJb5wSpNpJQ4zI6RGOE5hHqZ6FRg9bC7+3Wl+dajv7sa+8faafuDLQ5Vlj48M+HBYnkQfA4jjk+kOToZ0tm0JNmz6FpL7FhnFzFYm3PCO8IkR7gHuFctE4QKIlKnmxdufFebX5fuKaHUeOA+rTNX1WR1VOianqjd6qqaZU2KaUxNp/g668cu6u3k/l0gIkY51L6lnA47RgaRADl/oFuLVJt4f0cc840P2sshhZwy97EfOTwiD5PyZRj4ghSWI5GpHrz6f7Ztejz72urGxfeq6la263scJjlFrzm7MGWllYiOLgjtyxI6tIEjDCNIyWXPrTHTFKYpVaPINEkAlR3/rPGMKQAny1/wYL2kG/5e1zHfL2ovpUVF/6mfLosiGNxlGBB/wAPg1zQTy2s6XMB4zRuGU4BwynIODkHBH0QR+6kA0/54bWPVV4L3xjhWlyGGAdnZVvYDU0CdOYNrZEqHUyOY3Rq6OciK5oXS5CjRfX7HeveVWn9MMDTM1trTJbljxVrQOwH4BYXKBiP3xXP6FbSbL+TW8jtI49Q2ZHLfKgEjpqpiR3A+TLGdOlKAnyFMjkfXI/dai+bf5OrzzB5pTctickhcyooe0wtquJT90futhbyKuFYxK2CAjtS1UNXDG+zeUqowxSvYNEcxiPaTPem/Re22BrUmtyX7Xty0DRoOz2VQMVLMf8ArKWOFwPoAE+CcEQT6ivWbqXXrZkOybbQk0bTlvUuJm937x5e0riOMZtLYRqGfmxHJmKKAVXkG5ZZN1UmpilMUpilMUpilMUpilMUpilMUpilMUpilf/Z')!important
+                background-size auto
+                background-position: 100% !important
+                font-weight 600 !important
+                &:before
+                    display none
+            .bt.adicionar
+                display none !important
+            .wishLink.link-add-lista.addListaDesejos
+                color: transparent !important
+                background-color: transparent !important
+                background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTg5ODk4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9ImZhdm9yaXRlIj48cGF0aCBkPSJNMjU1LDQ4OS42bC0zNS43LTM1LjdDODYuNywzMzYuNiwwLDI1Ny41NSwwLDE2MC42NUMwLDgxLjYsNjEuMiwyMC40LDE0MC4yNSwyMC40YzQzLjM1LDAsODYuNywyMC40LDExNC43NSw1My41NUMyODMuMDUsNDAuOCwzMjYuNCwyMC40LDM2OS43NSwyMC40QzQ0OC44LDIwLjQsNTEwLDgxLjYsNTEwLDE2MC42NWMwLDk2LjktODYuNywxNzUuOTUtMjE5LjMsMjkzLjI1TDI1NSw0ODkuNnoiLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==') !important 
+                background-position: center
+                background-size: 15px 13px
+                background-repeat: no-repeat !important
+                &:hover
+                    border-color: $cor01 !important
+        .fbits-spot-conteudo
+            height: auto !important
+
+.spotPreco 
+    height: auto!important
+    min-height: 40px
+    display: flex
+    align-items: center
+    margin-bottom: 20px!important

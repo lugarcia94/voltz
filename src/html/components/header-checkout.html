@@ -1,0 +1,37 @@
+@using B = Fbits.Plataforma.BLL.Recursos.Balanceamento;
+@using G = Fbits.Plataforma.BLL.Configuracoes.GerenciadorConfiguracoes;
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="640">
+<meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no">
+
+
+<header>
+    <div class="header-lane">
+        <div class="center fbits-center-responsivo">
+            <!--TOP LINKS -->
+            <a href="@string.Format(G.UrlEcommerce)" class="headerLogo">
+                <img src="@(B.Bal(G.UrlRecursosSSL, "i/logo-felix.png", false))" alt="Home" class="logoHome" />
+            </a>
+            <div class="right">
+
+                <ul class="help-list">
+                    <li class="help-list__item contact">
+                    <span class="contact__number">
+                        (11) 3334 4333
+                    </span>
+                        <span class="contact__info">
+                        <svg class="contact__icon icon-phone">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        Televendas
+                    </span>
+                    <span class="contact__time">
+                      Aberto das 8 às 17h
+                    </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

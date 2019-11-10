@@ -1,0 +1,78 @@
+.help-list
+  align-items center
+  display flex
+  flex 1 1 auto
+  margin 0
+  justify-content flex-start
+
+.help-list__item
+  align-items center
+  border-right 1px solid #eaeaea
+  display flex
+  flex 1 1 auto
+  flex-flow column nowrap
+
+  &:last-child
+    border-right 0
+
+  &.cart
+    align-items flex-end
+    flex 1 1 35px
+
+.contact__number
+  color $cor03
+  flex 0 0 auto
+  font-size 15px
+  font-weight 700
+  letter-spacing -.2px
+
+.contact__info
+  align-items baseline
+  color #606060
+  display flex
+  font-size 11px
+  font-weight 800
+  text-transform: uppercase
+
+.contact__icon
+  margin-right 4px
+
+.icon-phone
+  fill #606060
+  height 13px
+  position relative
+  top 1px
+  width 15px
+
+.help__link
+  align-items center
+  color #606060
+  display inline-flex
+  flex-flow column nowrap
+  font-size 11px
+  font-weight 800
+  text-decoration none
+  text-transform uppercase
+  transition all 150ms ease-in-out
+
+  &:hover
+    color $cor02
+    text-decoration none
+
+  span
+    align-items center
+    color $cor02
+    display flex
+    font-size 15px
+    font-weight 700
+    letter-spacing -.2px
+    text-transform uppercase
+
+.help__icon
+  flex 0 0 auto
+  margin-right 3px
+
+.icon-help
+  fill $cor02
+  height 15px
+  width 11px

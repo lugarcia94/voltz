@@ -1,0 +1,168 @@
+.footerNews    
+    margin: 0 !important
+    padding 40px 0 !important
+    background-color: $cor01 !important
+    .news.left
+        display none
+    .txtNews.left
+        width: initial
+        display: flex
+        span
+        strong
+            font-size: 20px
+            text-transform uppercase
+        strong 
+            font-weight 800
+        span 
+            font-weight: 400
+    .centerContent
+        display flex
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        max-width 650px
+        margin 0 auto
+        float: none !important
+    .newsletter-box
+        display flex
+        input[type="text"]
+            width: 455px
+        #Nome
+            display: none
+    @media(max-width 1290px)
+        .centerContent
+            max-width 991px
+        .right.footerNewsForm
+            float: none !important
+            width: 100%
+            max-width 100%
+            .newsletter-box
+                justify-content: center;
+            input.btNews
+                margin 10px auto
+                float none
+                font-size: 0 !important
+                &:before
+                    content: 'Enviar'
+                    font: 12px
+                    text-transform uppercase
+    @media(max-width 480px)
+        .newsletter-box
+            flex-wrap: wrap
+            input
+                width: 100%
+                display block
+
+.footerNewsForm
+    width: 100% !important
+    input.btNews
+        margin 10px auto
+        float none
+        background: transparent 
+        border: 1px solid #fff
+        padding 0 50px
+        width: initial
+.newsletter
+    background-color: $cor01 !important
+    padding: 15px
+
+    @media(max-width 991px)
+        padding 20px 15px
+    
+    &__container
+        max-width: 1330px
+        padding: 0 0.94rem
+        width: 100%
+        margin: 0 auto
+        
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height 85px
+        @media(max-width : 1199px)
+            flex-wrap: wrap
+            justify-content: center
+    &__title
+        font-size: 18px
+        color: #ffffff
+        font-weight: bold
+        line-height: 20px
+        text-transform uppercase
+        display flex
+        flex-wrap: wrap
+        margin 0
+        max-width: 400px
+
+
+        span
+            text-transform none
+            font-weight: 400
+            font-size: 14px
+            display: block
+        @media(max-width : 1199px)
+            margin-bottom: 15px
+            text-align: center
+    .footerNewsForm
+        float: none
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding 0
+        @media(max-width : 1199px)
+            width: 100%
+        @media(max-width : 810px)
+            flex-wrap: wrap
+        input[type="text"]
+            float: none
+            width: 47.827%
+            margin: 0
+            border: 1px solid #E7E7E7
+            color: #BABABA
+            &::placeholder
+                color: #BABABA
+            @media(max-width : 810px)
+                width: 100%
+                margin-bottom: 12px
+                text-align: center
+        input.btNews
+            margin 10px auto
+            float none
+            &:before
+                content: 'Enviar'
+                font: 12px
+                text-transform uppercase
+    .newsletter-box + .newsletter-box
+        display: none
+    .newsletter-box
+        width: 71.177%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @media(max-width : 810px)
+            flex-wrap: wrap
+            width: 100%
+    .btNews
+        float: none
+        margin: 0
+        background:$cor01 
+        font-size: 13px
+        font-weight: 800
+        height 40px
+        width 25%!important
+        color #fff
+        @media(max-width : 810px)
+            width: 100%!important
+
+    
+
+.icon__news
+    &:before
+        content: ''
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAhCAMAAABHlLO1AAABcVBMVEXtOVPtOVPtOVPtOVPtOVPtOVMAAADtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPtOVPdKnDeAAAAe3RSTlP/5oGAoAYAlt65DJVwF87NDd0loes3AYf2Sm39Y2tT938975sDPCrjsgriHNLHFRsPwNkhv6roMTIE1vJGB6z6XasQwtd32NXFE0PxkZJC1Czkry/lsD6XH/BV+XwSxH1Ub/77YXj8i/VJiqQ0u9wkug4Zz8vM4LcL35+3CQCkAAABtUlEQVR42r3U/zfTURzH8efk8/IlizTDJoRkxlpEzZdGpqb1hSxTUikVEUVF/vp8+mw+NZ8vfvL87Z57H+fce97nXM6rQMWFs1QRsEmlIf+MSopVVUNNrS+orYHqiwDUBS9BfdAHBOvNQ3WWUMMxv9zoCRqti5SEjCsQavIATaG/j7WFws3Q0uoKWlugOSxbmEWiRNtcQNvx3lWpTKi9AzodQSd0tOu00LUu6O5ReT3d0HVdTkK9N6AvVgZifdDfK2eh+AAMJv4DiUEYuCk3oeQtGBqW3fAQ3E7KXcgYgdE7KnV3FEYMeQmlxmB8QlYT4zCWkqeYvAeQnpLZVBpgetJL3J+BTCQNs5JmIR15ADMe74g/hOycHuXgsfEEck81l4VncTcxvwDPzXksBqAf8ovmPF7AwryzWMpBwZr5cgbILFszL8DLJSfxagVeq9hqljerpcVbWHl3Wqy958O6Top9jNmL9U9E18pE+DNsbMqtzQ34Ev5XGFsQ2pZ72yHYMmyR/Ao7u/Jqdwe+fS+JvX34kZB3iZ+wv2eJwi84OJRfhwfwu0Cxo5T8Sx1xUv6M/26ec+oPubFJQupivTgAAAAASUVORK5CYII=')
+        background-repeat: no-repeat
+        width: 50px
+        height: 35px
+        display: block
+        margin-right 5px

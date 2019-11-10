@@ -1,0 +1,107 @@
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="640">
+<meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no">
+
+<a name="topo"></a>
+<div class="head">
+    <div class="topBar">
+        <div class="center">
+            <div data-fbits="fbits.telefone.sac" class="fbits-telefones fbits-topo-left">ATENDIMENTO: @G.Dados["Telefone-SAC"]</div>
+          	<div class="fbits-topo-right">
+            <!--TOP LINKS -->
+				<div class="toplinks">
+					<!--LOGIN -->
+						@FBITSLogin.Add()
+					<!--LOGIN -->
+					<a href="/Atendimento" class="topLink fbits-link-atendimento"><span class="ico"></span>@G.DadosComponente["FBITS:TopLink-Texto-Atendimento"]</a>
+					<span class="topEspaco"></span>
+					<a href="@string.Format( "{0}HistoricoPedido", G.UrlCarrinho )" class="topLink fbits-link-historicoPedido"><span class="ico"></span>@G.DadosComponente["FBITS:TopLink-Texto-HistoricoPedidos"]</a>
+					<span class="topEspaco"></span>
+					<a href="@string.Format( "{0}AtualizarDadosUsuario", G.UrlCarrinho )" class="topLink fbits-link-minhaConta"><span class="ico"></span>@G.DadosComponente["FBITS:TopLink-Texto-MeuCadastro"]</a>
+					<span class="topEspaco"></span>
+					<a href="@string.Format( "{0}ListaDeDesejos", G.UrlEcommerce )" class="topLink fbits-link-listaDesejos"><span class="ico"></span>@G.DadosComponente["FBITS:TopLink-Texto-ListaDesejos"]</a>
+					<span class="topEspaco"></span>
+					<a href="@string.Format( "{0}lojas/busca", G.UrlEcommerce )" class="topLink fbits-link-nossaslojas"><span class="ico"></span>Nossas Lojas</a>
+				</div>
+			<!--TOP LINKS -->
+            </div>
+        </div>
+    </div>
+    <div class="center fbits-center-responsivo">
+		<div class="align-items">
+			<!--LOGO -->
+				<a href="@string.Format(G.UrlEcommerce)" class="headerLogo">
+					<img src="@(B.Bal(G.UrlRecursosSSL, "i/SVG-diversos/logo.svg", false))" alt="Home" class="logoHome" />
+				</a>
+			<!--LOGO -->
+			<div class="div-busca-desktop">
+				<!--SEARCH -->
+					@FBITSSearch.Add()
+				<!--SEARCH -->
+			</div>
+			<div class="top-icons">
+				<div class="ico-menu">
+				</div>
+				<div class="ico-minha-conta">
+					<a href="@string.Format( "{0}AtualizarDadosUsuario", G.UrlCarrinho )" class="fbits-link-minhaConta"></a>
+				</div>
+				<div class="ico-lista-desejos">
+					<a href="@string.Format( "{0}ListaDeDesejos", G.UrlEcommerce )" class="fbits-link-listaDesejos"></a>
+				</div>
+				<div class="ico-carrinho">
+					@FBITSCarrinho.Add()
+				</div>
+				<div id="ico-busca-topo" class="ico-busca">
+				</div>
+			</div>
+		</div>
+		<div class="div-busca-topo-oculta">
+			<!--SEARCH MOBILE-->
+				<div class="headerSearch " itemscope="" itemtype="http://schema.org/WebSite">
+					<meta itemprop="url" content="https://www.e-lens.com.br">
+					<form id="searchFormMobile" autocomplete="off" method="get" action="/busca" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+						<meta itemprop="target" content="https://www.e-lens.com.br/Busca?busca={busca}">
+						<input type="text" value="" class="inputSearch ac_input" id="txtBuscaMobile" itemprop="query-input" name="busca" placeholder="Buscar" autocomplete="off">
+						<button class="btSearch greenBack" type="button" id="btnBuscaMobile">
+						  buscar <i class="icon isearch"></i>
+						</button>
+					</form>
+				</div>
+			<!--SEARCH MOBILE-->
+		</div>
+    </div>
+	<div class="menu-container">
+		<div class="ico-menu-fecha">X</div>
+		<div class="menu-mobile-dynamic">
+			@{Html.RenderAction("MenuTopo", "Menu");}
+			<div class="navbar-mobile dynamic-content-headercustomerinfo">
+				<div class="header-links  pull-right">
+					<ul class="rgt-content">
+						<li id="account-dropdown" class="dropdown account-login">
+							<a href="@string.Format( "{0}AtualizarDadosUsuario", G.UrlCarrinho )" class="fbits-link-minhaConta">
+								<span class="icm-icon-user"></span> <span class="user-copy">Minha Conta</span>
+							</a>
+						</li>
+						<li class="wishlist-icon wishlist-bag wishlistContainer ">
+							<a href="@string.Format( "{0}ListaDeDesejos", G.UrlEcommerce )" class="fbits-link-listaDesejos">
+								<span class="icm-icon-like"></span> <span class="wishlist-label">Wishlist</span>
+							</a>
+						</li>
+						<li class="findastore">
+							<!--LOGIN -->
+								@FBITSLogin.Add()
+							<!--LOGIN -->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+@if (Convert.ToBoolean(G.Dados["Search-Barra-Fixa-Ativa"]))
+{
+    Html.FbitsRenderPartial("HeaderFloating");
+}

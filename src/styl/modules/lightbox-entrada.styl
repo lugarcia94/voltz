@@ -1,0 +1,76 @@
+.popUp-News-Fundo
+    width 1070px
+    height 451px
+.popUp-News
+    width: 100%
+    padding: 0
+    text-align: right
+    margin-top: 260px
+    padding-right: 85px
+    input[type="text"]
+        display: block
+        margin-left: auto
+        width: 310px
+        margin-bottom: 15px
+        height: 40px
+    #btnCadastrarNews
+        display: block
+        margin-left: auto
+        width: 310px
+        height: 40px
+        color: #FFF115
+        font-size: 13px
+        font-weight: 800
+        float: none
+    #newsletter-erro
+        padding: 0.25rem
+        width: 19.38rem
+        margin: 0.31rem 0
+        margin-left: auto
+        color: #fff!important
+        line-height: 14px
+        font-size: 12px
+        text-align: left
+        height: auto
+        margin-bottom: 0
+        margin-top: 0px
+
+#fancybox-close
+    top: 12px
+    right: 15px
+    display: block
+    background: none
+    color: #FF5D5D
+    font-size: 0px
+    line-height: 0px
+    text-indent: unset
+    &:before
+        content: 'X'
+        font-size: 23px
+        line-height: 25px
+        font-weight: 900
+
+@media(max-width : 1120px)
+    .popUp-News-Fundo
+        width: 688px
+        background-size: cover
+        background-position: 100% center
+
+@media(max-width : 767px)
+    .popUp-News-Fundo
+        width: 290px
+        background-size: 315%
+        background-position: 90% center
+        height: 386px
+        margin: auto
+    .popUp-News 
+        padding: 0 15px
+        margin-top: 210px
+        input[type="text"]
+            width: 100%
+        #btnCadastrarNews
+            width: 100%
+    div
+        #fancybox-content
+            > div
+                overflow hidden!important

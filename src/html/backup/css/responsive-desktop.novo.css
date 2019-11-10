@@ -1,0 +1,253 @@
+﻿@media (min-width: 1300px) {
+
+     /* ->> INÍCIO HOME NOVA*/
+    /* section.fbits-banner-topo-home {
+	    padding: 0;
+	    margin: auto;
+	    float: none;
+	}
+	section.fbits-section-home .slick-prev, section.fbits-section-home .slick-next {
+	    height: 44px;
+	    width: 44px;
+	    line-height: 44px;
+	}
+	section.fbits-section-home .slick-prev:before, section.fbits-section-home .slick-next:before {
+	    font-size: 32px;
+	    line-height: 44px;
+	}
+	section.fbits-banner-topo-home .slick-list.draggable {
+	    width: 1192px;
+	}
+	section.fbits-banner-centro-home a img {
+	    width: 100%;
+	    margin-left: 0;
+	} */
+	/* .fbits-div-vitrine-banner {
+	    padding: 0;
+	    max-width: 1280px;
+	    margin: auto;
+	    float: none;
+	    overflow: hidden;
+	}
+	section.fbits-section-home.vitrine-home-um {
+	    width: 965px;
+	}
+	section.fbits-section-home.fbits-banner-lateral-direita-home {
+	    width: 300px;
+	    padding-left: 10px;
+	}
+	section.fbits-section-home.vitrine-home-um .fbits-componente-listaSpot.slick-slider .slick-list.draggable {
+	    width: 877px;
+	}
+	section.fbits-section-home .spot {
+	    padding: 8px 15px;
+	}
+	section.fbits-section-home .spot .fbits-spot-conteudo, section.fbits-section-home.fbits-vitrine-home-dois .spot .fbits-spot-conteudo, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .fbits-spot-conteudo {
+	    height: 245px;
+	}
+	section.fbits-section-home .spot .spotTitle, section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTitle, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTitle {
+	    font-size: 12px;
+	    line-height: 18px;
+	    height: 36px;
+	    margin-top: 3px;
+	    margin-bottom: 3px;
+	} */
+	/* section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos span.fbits-spot-atributo-nome, section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos a .fbits-spot-atributos-cor {
+	    font-size: 11px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .spot .spotTamanhos.fbits-spot-atributos, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotTamanhos.fbits-spot-atributos {
+	    padding: 0;
+	    font-size: 11px;
+	    min-height: 20px;
+	    line-height: 20px;
+	    height: 20px;
+	}
+	section.fbits-section-home .spot .spotPreco, section.fbits-section-home.fbits-vitrine-home-dois .spot .spotPreco, .fbits-div-ofertas-departamentos section.fbits-section-home .spot .spotPreco {
+	    height: 80px;
+	    line-height: 20px;
+	    margin: 10px 0;
+	} */
+	/* section.fbits-section-home .spot .precoPor {
+	    font-size: 18px;
+	}
+	section.fbits-section-home .spot .precoPor.com-precoDe:before {
+	    font-size: 12px;
+	}
+	section.fbits-section-home .spot .precoPor span.fbits-avista {
+	    display: inline-block;
+	    font-size: 12px;
+	    color: #40dfcf;
+	}
+	section.fbits-section-home .spot .spotPreco .precoDe, section.fbits-section-home .spot .precoParcela {
+	    font-size: 13px;
+	}
+	section.fbits-section-home .spot .spotPreco span.fbits-spot-preco-boleto-container {
+	    color: #3e3e3e;
+	    font-size: 12px;
+	}
+	section.fbits-section-home .spot .spotCategoria, section.fbits-section-home .spot .spotFab {
+	    font-size: 13px;
+	}
+	section.fbits-section-home .spot .bt.comprar {
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 16px;
+	}
+	section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar, section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos {
+	    height: 47px;
+	    line-height: 47px;
+	}
+	section.fbits-section-home .spot .fbits-spot-conteudo .botoesSpot a.adicionar .icon.addCarrinho, .fbits-componente-listaSpot.slick-slider .spot .fbits-spot-conteudo .botoesSpot a.wishLink.addListaDesejos:after {
+	    font-size: 29px;
+	    line-height: 47px;
+	}
+	section.fbits-section-home.fbits-banner-centroLower-home {
+	    padding: 0;
+	    max-width: 1280px;
+	    margin: 18px auto 0;
+	    float: none;
+	    overflow: hidden;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois {
+	    padding: 0;
+	    max-width: 1280px;
+	    margin: 18px auto 0;
+	    float: none;
+	    overflow: hidden;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .slick-list.draggable, section.fbits-section-home.fbits-fabricantes-home .slick-list.draggable {
+	    width: 1192px;
+	}
+	section.fbits-section-home.fbits-vitrine-home-dois .slick-list.draggable .slick-slide {
+	    padding: 0 19px;
+	} */
+	.fbits-div-ofertas-departamentos, section.fbits-section-home.fbits-fabricantes-home, section.fbits-section-home.fbits-banner-rodape {
+	    padding: 0;
+	    max-width: 1280px;
+	    margin: 20px auto 0;
+	    float: none;
+	    overflow: hidden;
+	}
+	.fbits-div-ofertas-departamentos {
+	    margin: 30px auto 0;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-dois {
+	    width: 26%;
+	}
+	.fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-um {
+	    width: 74%;
+	}
+	.fbits-div-ofertas-departamentos h3.fbits-vitrine-titulo {
+	    font-size: 18px;
+	}
+	/* .fbits-div-ofertas-departamentos section.fbits-section-home.fbits-ofertas-departamento-um .slick-list.draggable {
+	    width: 90%;
+	} */
+	/* section.fbits-conteudo-home-responsivo .fbits-conteudo-home-img img {
+	    width: 100%;
+	    margin-left: 0;
+	} */
+	section.fbits-conteudo-home-responsivo {
+	    max-width: 1280px;
+	    margin: auto;
+	    float: none;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto {
+	    padding: 0 55px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h1.fbits-conteudo-home-title {
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto h2.fbits-conteudo-home-title {
+	    font-size: 38px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto p.fbits-conteudo-home-descricao {
+	    font-size: 20px;
+	    line-height: 30px;
+	    max-width: 740px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro .fbits-conteudo-home-texto .fbits-conteudo-home-button {
+	    font-size: 20px;
+	    height: 57px;
+	    line-height: 57px;
+	    width: 250px;
+	}
+	section.fbits-section-home.fbits-conteudo-centro {
+	    margin: 27px 0 0 0;
+	}
+	section.fbits-section-home.fbits-produtos-vistos, .fbits-div-termos-e-procurados {
+	    margin: 0 auto;
+	    padding: 25px 0 0 0;
+	    max-width: 1280px;
+	    float: none;
+	    overflow: hidden;
+	}
+	.fbits-div-termos-e-procurados section.fbits-section-home.fbits-termos-buscados, .fbits-div-termos-e-procurados section.fbits-section-home.fbits-mais-procurados {
+	    width: 50%;
+	    float: left;
+	}
+	.fbits-div-termos-e-procurados section.fbits-section-home.fbits-mais-procurados {
+	    float: right;
+	    clear: none;
+	    margin: 0;
+	}
+	/* section.fbits-section-home.fbits-produtos-vistos .slick-list.draggable {
+	    width: 1192px;
+	} */
+	section.fbits-section-home.fbits-busca-rodape {
+	    padding: 0;
+	    margin: 25px auto 0;
+	    max-width: 1280px;
+	    float: none;
+	    overflow: hidden;
+	}
+	section.fbits-section-home.fbits-conteudo-rodape {
+	    padding: 0;
+	    margin: 25px auto;
+	    max-width: 1280px;
+	    float: none;
+	    overflow: hidden;
+	    display: block;
+	}
+	.footerNewsForm {
+	    width: 65%;
+	    padding: 0;
+	}
+	section.fbits-section-home.fbits-news .txtNews {
+	    width: 35%;
+	    text-align: left;
+	    margin-bottom: 0;
+	}
+	section.fbits-section-home.fbits-news .col-md-12 {
+	    max-width: 1280px;
+	    margin: auto;
+	    float: none;
+	    overflow: hidden;
+	    display: -webkit-flex;
+	    -webkit-align-items: center;
+	    display: flex;
+	    align-items: center;
+	}
+	section.fbits-section-home.fbits-news span.icone-news {
+	    float: left;
+	    line-height: 60px;
+	}
+	section.fbits-section-home.fbits-news span.icone-news:before {
+	    font-size: 53px;
+	    float: left;
+	}
+	section.fbits-section-home.fbits-news span.title-news {
+	    font-size: 32px;
+	    float: left;
+	    line-height: 40px;
+	}
+	section.fbits-section-home.fbits-news span.texto-news {
+	    width: auto;
+	    text-align: left;
+	    font-size: 16px;
+	    line-height: 20px;
+	    float: left;
+	}
+	/* FIM HOME NOVA <<- */
+}

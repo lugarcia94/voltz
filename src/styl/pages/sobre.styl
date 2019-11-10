@@ -1,0 +1,136 @@
+.sobre
+    position relative
+    &__container
+        max-width: 1330px
+        padding: 0 15px
+        width: 100%
+        margin: 0 auto
+    &__breadcrumb
+        position absolute
+        z-index 1
+        top: 20px
+        &-item
+            display: inline
+            font-size: 13px
+            color: #333333
+            line-height: 16px
+            a
+                font-size: 13px
+                color: #333333
+                line-height: 16px
+    &__banner
+        position relative
+        .fbits-banner-item
+            overflow hidden
+            max-width 100%
+        img 
+            display: block
+            position: relative
+            width: auto
+            min-width: 100%
+            max-width: none
+            left: 50%
+            transform: translateX(-50%)
+
+    &__title
+        font-size: 2.19rem
+        color: #434343
+        letter-spacing: -0.03rem
+        line-height: 2rem
+        text-align: center
+        text-transform: uppercase
+        position: absolute
+        width: 100%
+        top: 50%
+        font-weight: 900
+        transform: translateY(-50%)
+    &__content
+        padding-top: 47px
+        padding-bottom: 116px
+        .fbits-conteudo-item
+            font-size: 14px
+            color: #2F2F2F
+            line-height: 22px
+    &__subtitle
+        font-size: 35px
+        color: #434343
+        line-height: 32px
+        text-align: center
+        text-transform: uppercase
+        font-weight: 800
+        display flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 30px
+        &:before, &:after 
+            content: ''
+            height 1.1px
+            background: #FFF115
+            display: block
+            width: 100%
+        span 
+            white-space: nowrap
+            padding: 0 12px
+    &__content-two
+        padding-bottom: 67px
+        .fbits-conteudo-item
+            font-size: 14px
+            color: #2F2F2F
+            line-height: 22px
+    &__bg
+        background: #F4F4F4
+        padding: 51px 0
+    &__certificates
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            flex: 0 1 32%
+            text-align: center
+    &__definition
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 87px 0
+        .fbits-conteudo-item
+            flex: 0 1 31.54%
+            font-size: 14px
+            color: #2F2F2F
+            line-height: 22px
+            h2
+                font-size: 25px
+                color: #434343
+                font-weight: 900
+                text-transform: uppercase
+                text-align: center
+
+//mobile
+@media(max-width : 991px)
+    .sobre
+        padding-top: 9px
+        &__content
+            .fbits-conteudo-item
+                text-align: center
+        &__content-two
+            text-align: center
+        &__certificates
+            &-item
+                flex: 0 1 100%
+                padding: 20px 0
+        &__definition
+            .fbits-conteudo-item
+                flex: 0 1 100%
+                text-align: center
+                padding: 20px 0
+@media(max-width : 767px)
+    .sobre
+        &__title
+            font-size: 25px
+        &__subtitle
+            font-size: 20px
+            justify-content: center
+            &:before, &:after
+                display: none
+            span
+                white-space: normal

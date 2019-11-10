@@ -1,0 +1,595 @@
+.header
+    &__navbar
+        display: none;
+        background: #ffffff
+        transition: all .3s
+        width: 100%
+        height: 50px
+        @media(max-width : 991px)
+            padding-top: 0px
+            position: fixed
+            top: 0
+            left: 0
+            transition: all .3s
+            transform: translate3d(-100%,0,0)
+            z-index 9
+            background: none
+        &-container
+            max-width 1200px
+            width: 100%
+            margin: 0 auto
+            @media(max-width : 991px)
+                background: #ffffff
+                width: 255px
+                max-width 255px
+                background: #ffffff
+                padding-top: 35px
+                margin: 0
+                height 100vh
+                max-height: 100vh
+                overflow: auto
+        &-wrapper 
+            @media(max-width : 991px)
+                border: none
+
+
+        &-mobile
+            display: none
+            @media(max-width : 991px)
+                display block
+                margin-bottom: 20px
+                >*
+                    display: block
+                    padding: 0
+                    padding-bottom: 18px
+                    border: none
+                .header__mainbar-contact
+                    padding-bottom: 35px
+                    border-bottom: 1px solid #FFF115
+                .footer__column
+                    padding-top: 40px
+                    .footer__contact
+                        margin: 0
+    .menuMain
+        width: 100%;
+        border-bottom: 1px solid #cecece
+        background-color: #fff;
+        .menu-header-mobile
+        .menu-footer-mobile
+            display none
+    .menu
+        background-color: #fff;
+        width: 100%;
+        height: 55px;
+        &__wrapper
+            display: flex
+            justify-content: space-between
+
+    ul.menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position relative
+
+
+        @media(max-width : 991px)
+            flex-wrap: wrap
+            margin: 0
+
+        > li.item
+            background: transparent
+            margin: 0!important
+            display: flex!important 
+            padding: 0
+            flex: 1 1 auto
+            min-width: 0px
+            border: none
+            box-shadow none
+            align-items: center
+            height: 55px;
+            &.ultimo
+                width: 88px !important
+                height: 30px !important
+                display: flex
+                justify-content: center
+                align-items: center
+                a
+                    color: $cor02 !important
+                    width: 88px !important
+                    height: 30px !important
+                &:hover
+                    a
+                        background-color: $cor01
+            @media(max-width : 991px)
+                flex-wrap: wrap
+            > a
+                color #000 !important
+                padding 0 !important
+                font-size: 16px !important
+                font-weight: 800 !important
+                img 
+                    display: none
+            &:hover
+                > ul
+                    column-count: 4;
+                    width: 1190px !important
+            
+
+            > ul.filho
+                padding 50px !important
+                top: 55px !important
+                border-bottom: 1px solid #e3e0d8 !important
+
+                > li 
+                    margin 0 1%
+
+                    > a
+                        color $cor02 !important
+                        font-weight: 700 !important
+                        text-transform uppercase !important
+                        &:hover
+                            color: $cor01 !important
+                            text-decoration none !important
+                            border-bottom none !important
+                    ul
+                        position relative!important
+                        display: block!important
+                        transform: none!important
+                        padding 0!important
+                        min-width 0!important
+                        top 0px!important
+                        
+
+                        li
+                            width 100%!important
+
+                            a   
+                                font-size 13px
+                                color: $cor02
+                                text-transform none!important
+
+                                &:hover
+                                    text-decoration underline
+            
+                
+            @media(max-width : 991px)
+                padding: 0!important
+                width: 100% 
+            &:hover
+                border none 
+                position relative !important
+                @media(min-width: 992px)
+                    &:after
+                        content: ''
+                        display block
+                        width: 30px
+                        height 3px
+                        left 50%
+                        transform: translateX(-50%)
+                        position absolute
+                        bottom 0px
+                        background-color: $cor01
+                    .menu__dropdow
+                        max-height: 325px
+                        opacity: 1
+                        visibility: visible
+                    >a, .todas-categorias
+                        border: none!important
+                        color: $cor01!important
+                        background: none!important 
+
+                 &:nth-child(6),&:nth-child(7), &:nth-child(8), &:nth-child(9)
+                    .menu__dropdow
+                        right 0!important
+                        left auto
+            .menu__dropdow
+                position: absolute
+                left: 0
+                top: 101% 
+                opacity: 0
+                visibility: hidden
+                background: #ffffff
+                border 1px solid #E7E7E7
+                display: flex
+                overflow hidden
+                @media(max-width : 991px)
+                    position: static
+                    opacity: 1
+                    visibility: visible
+                    border: none  
+                    transition: all .3s
+                    max-height: 0px
+                    width 100%
+                    >.menu__image
+                        display: none
+
+            .menu__list
+                flex: 1 1 auto
+                min-width: 260px
+                padding: 30px
+                max-height: 340px
+                overflow-y: scroll
+
+                @media(max-width : 991px)
+                    padding: 20px 15px
+                    width: 100%
+                    max-width: 100%
+                    flex: 1 1 100%
+                    min-width: 0px
+            .menu__image
+                flex: 1 1 auto
+                a
+                    display: block
+                    width: auto
+                    height auto
+                    font-size: 0px
+                    line-height: 0px
+                    border: none!important
+                img 
+                    padding: 0
+                    width: auto
+                    height: auto
+                    max-width: none
+                    max-height: none
+            .menu-geral-filho
+                float: none
+                padding: 0!important
+                justify-content: flex-start
+                height: 30px
+                font-size: 15px
+                color: #373535
+                font-weight: bold
+                line-height 19px
+                text-transform: none
+                text-align: left
+                @media(max-width : 991px)
+                    border: none
+                    font-size: 13px
+                    font-weight: bold
+                    height: auto!important
+                    min-height: 30px
+            &.todas-categorias
+                position: static
+                @media(max-width : 991px)
+                    position relative
+                    &.select
+                        .menu__list
+                            max-height: 1000px
+
+                &:hover
+                    @media(min-width : 992px)
+                        .menu__dropdow
+                            max-height: 325px
+                            padding: 15px
+                            opacity: 1
+                            visibility: visible
+                .menu__list .arrowmenu
+                    display: none
+                .menu__dropdow
+                    position: absolute
+                    top: 101%
+                    width: 100%
+                    right: 0
+                    background: #fff
+                    overflow: auto
+                    border 1px solid #E7E7E7
+                    max-height: 0px
+                    padding: 0 15px
+                    transition: all .3s
+                    opacity: 0
+                    visibility: hidden
+                    @media(max-width : 991px)
+                        position: static
+                        max-height: none
+                        opacity: 1
+                        visibility: visible
+                        margin: 0 -15px!important
+                        border: none
+                        padding: 0
+                        width: auto
+                        max-width: none
+                        >div
+                            width: 100%
+                .menu__list
+                    column-count: 4
+                    max-height: none
+                    overflow: hidden
+                    @media(max-width : 991px)
+                        column-count: unset
+                        padding: 0
+                        background: #f4f4f4
+                        padding: 0 15px
+                        max-height: 0px
+                        transition: all .3s
+                li.todas-categoria-item
+                    height auto
+                    min-height: 0px
+                li.todas-categoria-sub
+                    display block!important
+                    width: auto!important
+                    height auto!important
+                    float: none!important
+                    break-inside: avoid
+                    padding-bottom: 15px!important
+                    @media(max-width : 991px)
+                        border: none
+                        padding: 0!important
+                        height auto!important
+                        min-height: 0px
+                    a
+                        border: none!important
+                        justify-content: flex-start
+                        margin: 0
+                        border-bottom: 1px solid transparent!important
+                        height auto
+                        line-height: 22px
+                        text-align: left
+                        text-transform: none
+
+                        @media(max-width : 991px)
+                            font-size: 12px
+                            font-weight: bold
+                            padding: 0
+                            height: auto!important
+                            min-height: 30px
+
+                    >ul.filho
+                        width: auto!important
+                        height auto!important
+                        max-height: none!important
+                        float none
+                        overflow:initial
+                a.todas-categoria-sub
+                    font-size: 14px
+                    color: #373535!important
+                    font-weight: bold
+                    line-height: 19px
+
+            > a
+                color: #fff
+                font-size: 15px
+                line-height: 17px
+                text-transform: uppercase
+                font-weight: 600
+                height 50px
+                border: none!important 
+                display: flex
+                align-items: center
+                justify-content: center
+
+                width: 100%
+                text-align: center
+                padding: 0
+
+                @media(max-width : 1199px)
+                    font-size: 11px
+
+                @media(max-width : 991px)
+                    justify-content: flex-start
+                    height 35px!important
+                    font-size: 12px
+                    text-align: left
+                    padding-right: 45px
+                    display: flex!important
+                    color $cor02!important
+
+            .todas-categorias
+                height 55px !important
+                font-size: 0px !important
+                line-height: 11px
+                display: flex!important
+                align-items: center
+                justify-content: center
+                border-bottom: 1px solid transparent!important
+                width: 100%
+                padding: 0
+                text-align: center
+                @media(max-width : 991px)
+                    text-align: left 
+                    justify-content: flex-start
+                    height: 65px!important
+                &:before
+                    content: 'Toda a Loja'
+                    font-size: 14px
+                    line-height: 18px
+                    display inline
+                    color: $cor01
+                    font-weight: 800
+                    text-transform: uppercase
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media(max-width : 1199px)
+                        font-size: 11px
+                &:after 
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 5px;
+                    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZjk1YTZjIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjg0LjkyOXB4IiBoZWlnaHQ9IjI4NC45MjlweCIgdmlld0JveD0iMCAwIDI4NC45MjkgMjg0LjkyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg0LjkyOSAyODQuOTI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTI4Mi4wODIsNzYuNTExbC0xNC4yNzQtMTQuMjczYy0xLjkwMi0xLjkwNi00LjA5My0yLjg1Ni02LjU3LTIuODU2Yy0yLjQ3MSwwLTQuNjYxLDAuOTUtNi41NjMsMi44NTZMMTQyLjQ2NiwxNzQuNDQxTDMwLjI2Miw2Mi4yNDFjLTEuOTAzLTEuOTA2LTQuMDkzLTIuODU2LTYuNTY3LTIuODU2Yy0yLjQ3NSwwLTQuNjY1LDAuOTUtNi41NjcsMi44NTZMMi44NTYsNzYuNTE1QzAuOTUsNzguNDE3LDAsODAuNjA3LDAsODMuMDgyYzAsMi40NzMsMC45NTMsNC42NjMsMi44NTYsNi41NjVsMTMzLjA0MywxMzMuMDQ2YzEuOTAyLDEuOTAzLDQuMDkzLDIuODU0LDYuNTY3LDIuODU0czQuNjYxLTAuOTUxLDYuNTYyLTIuODU0TDI4Mi4wODIsODkuNjQ3YzEuOTAyLTEuOTAzLDIuODQ3LTQuMDkzLDIuODQ3LTYuNTY1QzI4NC45MjksODAuNjA3LDI4My45ODQsNzguNDE3LDI4Mi4wODIsNzYuNTExeiIvPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 10px;
+        li.select
+            @media(max-width : 991px)
+                a.menu-geral
+                    display: flex!important
+                    width 100%
+
+
+
+                >.menu__dropdow
+                    max-height: 1000px!important
+                    > div
+                        width 100%
+
+                        ul.menu__list
+                            li
+                                a
+                                    color: $cor02!important
+                .arrowmenu
+                    transform: rotate(180deg)
+        .arrowmenu
+            width: 45px
+            height 25px
+            right 0px
+            top: 10px
+            transition: all .3s
+            &:before
+                display: none
+
+            @media(min-width : 992px)
+                display: none
+
+
+.moving
+    .header
+        .menuMain
+            transition: .3s
+            margin-top: 0px;
+        &__topbar
+            transition: .3s
+            margin-top: -50px;
+    @media(max-width : 991px)
+        .header__mainbar
+            box-shadow: 0.307px 0.307px 4px 0 rgba(0,0,0,.11)
+        .header__topbar
+            transform: translate3d(0, -100%, 0)
+
+.moving--down
+    .header
+        .menuMain
+            transition: .3s
+            margin-top: -60px;
+    @media(min-width : 992px)
+        .header__navbar
+            transform: translateY(-100%)
+        .header__mainbar
+            box-shadow: 0.307px 0.307px 4px 0 rgba(0,0,0,.11)
+    @media(max-width : 991px)
+        .header__mainbar-serach
+            max-height: 0px
+            overflow: hidden
+            padding: 0
+            opacity 0
+            visibility: hidden
+
+.menu__open
+    overflow hidden
+    .header__navbar
+        transform: translate3d(0, 0, 0)
+        &:before
+            content: ''
+            position: fixed
+            display: block
+            top: 0
+            left 0
+            width: 100%
+            height 100%
+            background-color:rgba(0,0,0,0.75)
+            z-index -1
+
+
+.menu li.item.raiz li.menu-geral-filho:hover>a, .menu li.item.raiz ul.filho li:hover a
+    color $cor02
+    text-decoration: none!important
+
+button.btn-close-menu-mobile    
+    display none
+    @media(max-width: 991px)
+        display: block
+
+@media(max-width: 1290px)
+    .menuMain
+        .container
+            .menu
+                margin 0
+                li.item 
+                    span.todas-categorias
+                        padding-left: 0 !important
+                        &:before
+                            font-size: 11px !important
+                            padding-left: 0 !important
+                            width: 100% !important
+                    a
+                        font-size: 11px !important
+
+@media(max-width: 991px)
+    .moving--down .header .menuMain
+        margin-top initial
+    .header
+    
+        .menuMain
+            position fixed
+            top 0px
+            bottom 0px
+            left -350px
+            width 300px !important
+            background-color #fff
+            height 100vh
+            z-index 999
+            padding: 15px
+            box-shadow 0px 0px 6px 0px #000
+            transition: .3s
+            &.open
+                left: 0
+                overflow-y: auto;
+            .container
+                .menu
+                    height initial
+                    li.todas-categorias
+                        span.todas-categorias
+                            justify-content: flex-start !important
+                            &:before
+                                justify-content: flex-start !important
+                    li.item.ultimo
+                        justify-content: flex-start
+                        a
+                            text-align: center
+                            justify-content: center 
+            .menu-header-mobile
+                display block
+                ul
+                    display flex
+                    flex-wrap: wrap
+                    li
+                        width: 100%
+                        margin-bottom 10px
+                        &:before
+                            display none
+                        a   
+                            color: $cor02
+                            font-weight bold
+            .menu-footer-mobile
+                display block
+                margin-top 20px
+                ul
+                    display flex
+                    align-items: center
+                    flex-wrap: wrap
+                    span 
+                        color: $cor02
+                        font-weight bold
+                    li
+                        width 40px
+                        height 40px
+                        display flex 
+                        justify-content: center
+                        align-items: center
+                        &:before
+                            display none
+                        a   
+                            color: $cor02
+                            font-weight bold
+            button.btn-close-menu-mobile    
+                position absolute
+                top: 15px
+                right 15px
+                background-color transparent
+                font-size: 16px
+                font-weight bold
+                width: 25px
+                height 25px
+                border: 1px solid #cecece
+                border-radius 50px  
