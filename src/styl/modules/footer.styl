@@ -1,226 +1,58 @@
-.footer
-    &__informations
-        background: #fff
-    &__container
-        max-width 1200px
-        padding: 0 15px
-        width: 100%
+footer.rodape-site
+    background: #191919
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+    .social
+        display: flex
+        align-items: center
+        flex-wrap: wrap 
+
+        li
+            &:first-child
+                width 100%
+                margin: 0
+                margin-bottom 10px
+            
+            margin-right: 15px
+    ul 
+        max-width 1360px
+        padding: 80px 15px
         margin: 0 auto
-    &__wrapper
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-        padding: 35px 0
-        &.payments-column
-            border-top: 1px solid #cecece
-            border-bottom: 1px solid #cecece
-            padding 20px 0
-            .footer__column.footer__column--one
-                width: 100%
-                display: flex 
-                justify-content: center
-                align-items: center
-                h3
-                    margin 0
-                    padding-right 20px
-                    color: #000
-                    font-size: 12px
-                    margin-bottom: -10px;
-    &__title
-        color: #2a8aa0
-        font-size: 14px
-        font-weight: bold
-        line-height: 16px
-        text-transform: uppercase
-        margin-bottom: 10px
-    &__link
-        color: #000
-        font-size: 14px
-        font-weight: 600
-        line-height: 25px
-        transition: all .3s
-        &:hover
-            text-decoration: underline
-            color $cor01
 
-    &__info
-        display: block
-        color: #434343
-        font-size: 13px
-        font-weight: 500
-        line-height: 15px
-        transition: all .3s
-    &__text
-        display: block
-        color: #434343
-        font-size: 13px
-        font-weight: bold
-        line-height: 15px
-        transition: all .3s
-    &__item
-        color: #000
-        font-size: 14px
-        font-weight: 600
-        line-height: 25px
-        transition: all .3s
-        strong 
-            font-size: 16px
-            font-weight 800
-        &--horary
-            margin: 8px 0
-    &__contact
-        display: block
-        background: #373535
-        color: #FFF115
-        font-size: 11px
-        padding: 11px 0
-        text-align: center
-        text-transform: uppercase
-        font-weight: 800
-        width: 126px
-        transition: all .3s
-        @media(max-width : 475px)
-            margin: 0 auto
-        &:hover
-            border: 1px solid #373535
-            background: #ffffff
-            color: #373535
-    &__payment
-        padding-bottom: 30px
-        @media(max-width : 475px)
-            padding-bottom: 60px
-    &__social
-        &-list
-            display: flex
-            align-items: center
-            @media(max-width : 475px)
-                justify-content: center
-        &-link
-            display: block
-            &--facebook
-                width: 23px
-                height 23px
-                margin-right: 13px
-            &--youtube
-                width: 24px
-                height 17px
-                margin-right: 13px
-            &--linkedin
-                width: 23px
-                height 23px
-    &__safe-list
+        li
+            font-size: 18px
+            color: #fff
+            margin-bottom 10px
+
+            a
+                font-size: 16px
+                color: #808080
+                text-decoration: none
+
+                &:hover
+                    color: #fff
+
+
+
+    .copy__footer
+        width 100%
         display: flex
         align-items: center
         justify-content: space-between
-        flex-wrap: wrap
-        max-width: 190px
-        @media(max-width : 475px)
-            margin: 0 auto
-    &__copyright
-        padding 30px 0
-        min-height 52px
-        display: flex
-        align-items: center
-        justify-content: center
-        @media(max-width 991px)
-            padding 20px 15px  
-        p
-            color: #000
-            font-size: 12px
-            max-width: 420px
-            margin: 0 auto
-            strong
-            span 
-                display block
-            strong
-                text-transform uppercase
-                margin-bottom 5px
-        .footer-container-copy
-            width 1200px
-            margin: 0 auto
-            position relative
-        .credits
-            position absolute
-            top: 38%
-            right: 0
-        &-text
-            font-size: 11px
-            color: #434343
-            line-height: 15px
-            text-align: center
-            padding-bottom: 20px
-            max-width: 1210px
-            margin: 0 auto
-        &-date
-            font-size: 14px
-            color: #434343
-            text-align: center
-            width: 100%
-        &-signature
+        background: #000000
+        min-height: 80px
+
+        span
+            margin 0 15%
             display: flex
             align-items: center
-            justify-content: center
-            margin: 0 auto
-            padding-top: 20px
-        .footer__wrapper
-            padding-bottom: 20px
-            @media(max-width : 475px)
-                padding-top: 30px
-    &__column
-        flex: 1 1 auto;
+            font-size: 15px
 
-    @media(max-width: 1290px)
-        &__container
-            max-width: 991px
-        &__column
-            margin: 20px 0
-            flex: 1 1 auto
-
-#headerLoginMaster
+            img
+                margin-left 5px
+div#headerLoginMaster
     display: none!important
-
-li.footer__item.footer__item--horary 
-    max-width: 270px
-    display flex
-    
-    &:before
-        content: ''
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAAMFBMVEUAAADuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlOYFwGsAAAAEHRSTlMAIjOq/2bumXe7Ed2IzFVEOt4JqwAAAHFJREFUeAE9z0GSxSAIANEmIAqY5P63nYmWv1c8NhTsRPh1qf2n11Yz72N0t7YVSWtkfE4PoAoIT6bJodjkvjn85tJFB9CiYu3tFohC1z67Bbjy7HM8QrMHwl9W7zqZZVNAplXyWc3czTTPD6P3sT74A0s9AyY2T5R6AAAAAElFTkSuQmCC')
-        display block
-        width: 20px
-        height: 20px 
-        background-repeat: no-repeat
-        margin-right 5px
-
-
-        	
-
-li.footer__item.footer__item--telefone
-    display flex
-    align-items: center
-    margin-bottom 10px
-
-    &:before
-        content: ''
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAALVBMVEUAAADuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlMTvOtQAAAAD3RSTlMARHdVEd3/zO6IZpkiqrv56GaKAAAAYklEQVQI1yXJsQHDIAwAMAHGOITw/7kdqlWg9T7CX5u5VlUHI5/ArhcnRxw4tfmuNUEvakTmgcgmm/s/c8vm1I2+qeE+nJmZrWXYBf0+1kefAuKbwa3Kb++31sF8R/vmvBt+4dMC12VBfHgAAAAASUVORK5CYII=')
-        display block
-        width: 20px
-        height: 15px 
-        background-repeat: no-repeat
-        
-li.footer__item.footer__item--email
-    display flex
-    align-items: center
-    
-
-    &:before
-        content: ''
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAMAAABcOc2zAAAAJ1BMVEUAAADuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlPuOlNkYZCBAAAADXRSTlMARJkR/yJ3Zu6Iqsy74X932AAAAFNJREFUeNpVjEESwCAIA4NEser/31ukg2P3AiwEQMqFAMofisqGg7G66JKz9BDMm0aGeAaHAurlizRfTZHpTYodjldHQM0UKYYdigssXiw49QJ4AfbUAsES99zuAAAAAElFTkSuQmCC')
-        display block
-        width: 20px
-        height: 12px 
-        background-repeat: no-repeat
-	
-
-    
-

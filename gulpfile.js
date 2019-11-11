@@ -9,13 +9,13 @@ const
 
 const paths = {
     DIST: 'dist',
-    PROXY: 'https://www2.' + packageJSON.name + '.com.br',
-    PROXY2: 'https://recursos.' + packageJSON.name + '.com.br/c',
+    PROXY: 'https://www2.' + packageJSON.name + '.com',
+    PROXY2: 'https://recursos.' + packageJSON.name + '.com/c',
     CSS: 'src/styl'
 };
 
-let innerIp1 = 'http://localhost:3000';
-let innerIp2 = 'http://localhost:4000';
+let innerIp1 = 'https://localhost:3000';
+let innerIp2 = 'https://localhost:4000';
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -42,7 +42,7 @@ gulp.task('browserSync', function() {
               }
           },
            {
-              match: new RegExp('checkout.'+packageJSON.name+'.ecommercestore.com.br', 'gi'),
+              match: new RegExp('checkout.'+packageJSON.name+'.ecommercestore.com', 'gi'),
               fn: function (req, res, match) {
                   return innerIp2;
               }
@@ -51,7 +51,7 @@ gulp.task('browserSync', function() {
     });
 
     proxyCheckout.init({
-        proxy: 'checkout.'+packageJSON.name+'.ecommercestore.com.br',
+        proxy: 'checkout.'+packageJSON.name+'.ecommercestore.com',
         port: 4000,
         open: false,
         ui: {
@@ -78,7 +78,7 @@ gulp.task('browserSync', function() {
               }
           },
            {
-               match: new RegExp('checkout.'+packageJSON.name+'.ecommercestore.com.br', 'gi'),
+               match: new RegExp('checkout.'+packageJSON.name+'.ecommercestore.com', 'gi'),
                fn: function (req, res, match) {
                    return innerIp2;
                }

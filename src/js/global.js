@@ -46,9 +46,7 @@ $(document).ready(function () {
         $('body').removeClass('menu__open');
     });
 
-    if (jQuery('.fbits-categoria').length) {
-        $(".categoria__name-span").append(Fbits.Categoria.Nome);
-    }
+ 
 
     if (jQuery('.desc__short').length) {
         $("#conteudo-0 .conteudoAbasProduto .paddingbox").clone().appendTo($('.desc__short'));
