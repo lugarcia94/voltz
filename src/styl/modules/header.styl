@@ -35,8 +35,6 @@
             color: #000000
             display: flex!important
             align-items: center
-  
-
         &-phones
             display: flex
             align-items: center
@@ -67,14 +65,14 @@
             max-width 1580px
             width: 100%
             margin: 0 auto
+            padding: 0 15px
             
         &-wrapper
             display: flex
             align-items: center
             justify-content: space-between
             min-height: 70px 
-            @media(max-width : 991px)
-                flex-wrap: wrap
+            @media(max-width : 991px) 
 
                 .menu   
                     display none!important
@@ -153,10 +151,7 @@
                 font-size: 12px
                 text-transform: uppercase
                 font-weight: 600
-                white-space: nowrap
-                border-bottom: 1px solid transparent
-                &:hover
-                    border-bottom: 1px solid #fff115
+                white-space: nowrap 
 
         &-right
             display: flex
@@ -302,9 +297,18 @@
                 color: #646464 
                 font-family: 'Bison-Bold'
 
+                @media(max-width: 991px)
+                    margin-right 10px
+
+                @media(max-width: 320px)
+                    margin: 0
+
                 &:nth-child(2)
                     display: flex
                     align-items: center
+
+                    @media(max-width: 991px)
+                        display: none
                     &:before
                         content: ''
                         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAMFBMVEUAAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDKBS+1AAAAEHRSTlMAIoi73cyqVRGZ/2buRDN3YkubzAAAAIJJREFUeNo9T9sWRREIFCUy+P+/PWU7eiBzWybFUC4sVdOd1q3kMTp4fu/C62OyHVGV5qgGq+bUNPIDsOJIFxd0X5ATYXi6S6Bx02Vkp9ifItAAXkYAYUlEOls7lsBIDIXN9gmdtrjT3GNNjCphA26HDVvn67gdqum/nOxX7tXnW/8Hb1wE18QUJTwAAAAASUVORK5CYII=')
@@ -319,16 +323,19 @@
                     color: #fff
 
             span
-                font-size: 13px;
-                font-weight: 600;
-                color: #fff;
-                margin-left: 5px;
+                font-size: 13px
+                font-weight: 600
+                color: #fff
+                margin-left: 5px
+
             span.minicart-qtde-itens
                 &:before
                 &:after 
                     display: none !important
             @media(max-width : 991px)
                 padding: 0
+                max-width: none
+                width: auto
             .carrinho.carrinhoHead
                 a
                     float none
@@ -346,6 +353,8 @@
                     float: none
                     position: absolute
                     left: 20px
+                    right auto
+                    top: auto
                     bottom: 7px
                     border-radius: 50%
                     height: 15px
@@ -355,35 +364,7 @@
                     justify-content: center
                     z-index: 999
                     padding: 0
-
-    @media(max-width: 1290px)
-        &__topbar-container
-        &__mainbar-container
-            max-width: 991px
-        &__mainbar 
-            &-links
-                min-width: 113px
-                margin-right 20px
-                img 
-                    display none
-            &-cart
-                span 
-                    display none
-                span.minicart-qtde-itens
-                    display block
-                    background-color transparent 
-                    left: 10px !important
-                    &:before
-                    &:after
-                        display none !important
-                .carrinho.carrinhoHead
-                    position relative
-                    a
-                        margin-right: 10px;
-                span.minicart-qtde-itens
-                    left: 10px;
-            &-right
-                max-width: 315px;
+ 
     @media(max-width: 991px)
         &__mainbar
             &-container
@@ -396,6 +377,7 @@
                     max-width: 100% !important 
                     img 
                         max-width: 100% !important
+                        margin: 0
             &-mobile
                 height: 30px
             &-serach
@@ -406,3 +388,16 @@
 .header__navigation
     max-width 500px
     width 100%
+
+.carrinho.carrinhoHead
+    position relative!important
+    width auto!important
+    height auto!important
+
+@media(max-width: 991px)
+    .header__navigation
+        display: none
+
+    .category__filter
+        .category__ordenation
+            display: none

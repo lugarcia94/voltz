@@ -4,6 +4,11 @@ footer.rodape-site
     align-items: flex-start
     flex-wrap: wrap
     justify-content: space-between
+    margin-top 10px
+
+    @media(max-width: 767px)
+        padding: 20px 0
+        justify-content: center
 
 
     .social
@@ -16,12 +21,31 @@ footer.rodape-site
                 width 100%
                 margin: 0
                 margin-bottom 10px
+
+                @media(max-width: 767px)
+                    flex: 0 0 100%
             
             margin-right: 15px
+
+            @media(max-width: 767px)
+                margin: 0
+                flex: 0 0 33%
     ul 
         max-width 1360px
         padding: 80px 15px
         margin: 0 auto
+        
+        @media(max-width: 767px)
+            padding: 0 15px
+            width 50%
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            text-align: center
+            margin-bottom 20px
+
+            li
+                width 100%
 
         li
             font-size: 18px
@@ -46,13 +70,27 @@ footer.rodape-site
         background: #000000
         min-height: 80px
 
+        @media(max-width: 767px)
+            flex-wrap: wrap
+
         span
             margin 0 15%
             display: flex
             align-items: center
             font-size: 15px
 
+            @media(max-width: 767px)
+                width 100%
+                margin: 0
+                padding: 0 15px
+                justify-content: center
+                text-align: center
+
             img
                 margin-left 5px
+ 
 div#headerLoginMaster
     display: none!important
+
+.category__footer
+    display: none

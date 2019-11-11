@@ -11,9 +11,7 @@
             justify-content: space-between
             flex-wrap: wrap
             padding: 0
-    @media(max-width 1290px)
-        max-width: 991px
-        margin 0 auto
+ 
     &__breadcrumb
         >ol
             display: inline-block
@@ -104,8 +102,8 @@
             &:focus
                 border: 1px solid #000
 
-            @media(max-width: 767px)
-                width auto
+            @media(max-width: 991px)
+                width 100%
     &__pagination
         .fbits-paginacao > ul
             a
@@ -153,6 +151,12 @@
             border none
             padding: 0
             position relative
+            margin-right 10px
+
+            @media(max-width: 991px)
+                margin-right 0
+                margin-bottom 10px
+
             &:hover
                 > ul
                     display: block
@@ -189,7 +193,7 @@
             padding: 0!important
             border: 1px solid #000
             border-radius: 5px
-            
+
             .liCores
                 position relative
             >li
@@ -294,9 +298,15 @@
             flex-wrap: wrap
             padding-top: 30px
             justify-content: space-between
+
+            @media(max-width: 991px)
+                padding: 0
         .fbits-item-lista-spot 
             width 24% 
             background: #e5e5e5
+
+            @media(max-width: 991px)
+                width 33%
     &__footer
         &-container
             max-width: 1190px
@@ -321,6 +331,7 @@
 
 body.fbits-categoria 
     padding-top: 71px
+    
 
 .category__content 
     margin-top: 10px
@@ -328,10 +339,18 @@ body.fbits-categoria
 .category__topo
     position relative
     min-height: 280px
-
+    overflow hidden
     .fbits-banner-item 
         text-align: center
         background: #171717
+
+        @media(max-width: 991px)
+            img
+                position relative
+                display: block
+                left 50%
+                transform: translateX(-50%)
+                max-width 400%
 
     .fbits-conteudo-item
         position: absolute
@@ -339,13 +358,20 @@ body.fbits-categoria
         left 50%
         transform: translate(-50%, -50%)
         max-width 500px
+        width 100%
+        padding: 15px
 
         h2,p
             color: #fff
             text-align: center
+            
 
         h2
             margin-bottom 10px
+            font-size: 24px
+
+        p
+            font-size: 18px
 
 
 
@@ -392,43 +418,38 @@ body.fbits-categoria
                 justify-content: center;
                 font-weight: bold;
         &__header
-            &-wrapper
-                padding-top: 25px
+            &-wrapper 
                 > *
-                    flex: 1 1 100%
+                    flex: 0 0 49%
                     text-align: left
                     margin: 5px 0
                 .category__pagination
                     display: none
                 .fbits-ordenar
                     justify-content: center
+                    width: 100%
         &__btn-mobile
             display: flex
             align-items: center
-            justify-content: center
-            max-width 290px
-            width: 100%
-            height 40px
+            justify-content: flex-start 
+            flex: 0 0 49%
+            height 50px
             margin: 0 auto
-            background: $cor01
+            background: #fff
+            border-radius: 5px
+            border: 1px solid #00
             font-size: 14px
-            color: #FFFFFF
+            color: #000
             text-transform: uppercase
             font-weight: bold
             transition: all .3s
             margin: 15px auto
             cursor: pointer
-            position: fixed
-            bottom: 0
-            z-index: 99
-            width: 100%
-            max-width: 100%
-            left: 0
-            margin: 0
-            &:hover
-                background: #ffffff
-                color: #333333
-                border: 1px solid #333333
+            background-image svg-inline(arrowdownselect)
+            background-size: auto
+            background-position: 90% center
+            background-repeat: no-repeat
+            padding-left: 10px
         &__footer
             padding-bottom: 55px
             &-wrapper
@@ -446,7 +467,7 @@ body.fbits-categoria
 @media(max-width : 525px)
     .category__products
         .fbits-item-lista-spot
-            flex: 1 1 49%
+            flex: 1 1 100%
 
 @media(max-width : 320px)
     .category__products
@@ -485,11 +506,20 @@ body.fbits-categoria
         display: flex
         align-items: center
 
-        li
-            margin-right 10px!important
+        @media(max-width: 991px)
+            flex-wrap: wrap
+
+            li
+                width 100%
+
+                .fbits-filtro-titulo-pai
+                    width 100%
 
 .category__filter-wrapper
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+
+    @media(max-width: 991px)
+        align-items: flex-start
