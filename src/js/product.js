@@ -288,3 +288,7 @@ define(['jquery', 'slick-carousel'], ($) => {
         }
     });
 });
+
+$('.close__menu').on('click', function(){
+    $('body').removeClass('menu__open')
+});
