@@ -7,6 +7,7 @@
     border: 1px solid #646464
     border-radius: 5px
     padding: 10px 0
+    position relative
     
     @media(max-width: 992px)
         max-width 100%
@@ -83,9 +84,9 @@
         font-size: 25px
         line-height: normal
         color: #fff  
+        width: auto
 
-        @media(max-width: 767px)
-            text-align: center
+   
 
     .avalie-top
         text-decoration: none
@@ -282,16 +283,20 @@
     .star, .starEmpty
         text-align: left
 
-.ui-slider-tabs-content-container
-    border: 1px solid transparent
-    height auto!important
-    padding 30px 0
+.ui-slider-tabs-content-container 
+    height auto!important 
+    border: none
+
+.ui-slider-tabs-list-wrapper
+    display: none
 
 section.descricao__produto 
-    margin-top: 50px
+    margin-top: 100px
 
-.paddingbox
-    font-family 'Lato'!important
+    @media(max-width: 991px)
+        margin-top 10px
+
+.paddingbox 
 
     h3
         font-size 15px
@@ -307,15 +312,99 @@ section.descricao__produto
             font-size 16px
             line-height 25px
             display flex
-            
+.bloco__info
+    border-top: 1px solid #eeeeee
+    margin-bottom 60px
+    max-height: 200px 
+    position relative
+    cursor pointer
 
-            &:before
-                content ''
-                background-repeat no-repeat
-                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAMAAAB44J7gAAAAIVBMVEX///8AgJsAorbE5uyu3uWCzdfr9vgAkanY7/Iks8QAmq+NOOfrAAAAX0lEQVR4AY3OQQ7CMAxE0fl2TNLe/8AIrNDpAqlvl4X/RI+9dFeUbk5OuQRSJoCw9wBgXAsTgPlbOmiHH/hRsEUXuHwrC4rG0geMSduNyGkNJcQo7PdFK20ZQKTc0j9vxMUBN+jmRyAAAAAASUVORK5CYII=')
-                display block
-                width 20px
-                height 20px
+    @media(max-width: 767px)
+        overflow hidden
+
+        &:before
+            bottom: 0!important
+            height 20px!important
+
+        &:after
+            bottom: 10px!important
+
+    &:after
+        content: ''
+        width 100%
+        position: absolute
+        height 20px
+        bottom: -15px
+        background: #fff
+        filter: blur(7px)
+
+    &:before
+        content: '+'
+        position: absolute
+        bottom: -60px;
+        left: 50%;
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #fff;
+        background-size: auto;
+        width: 100%;
+        height: 50px;
+        font-size: 30px
+        color: #000
+        text-align: center
+
+    h2
+        color: #191919
+        font-size: 24px
+        text-align: center
+        margin: 30px 0
+
+    p
+        max-width 900px
+        margin: 0 auto
+        text-align: center
+        font-size: 14px
+        color: #666666
+        line-height: 25px!important
+
+    ul.ficha__tecnica
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width 900px
+        margin: 0 auto
+
+        li
+            width 100%
+            text-align: center
+            justify-content: space-around
+
+            strong
+                font-size: 16px
+                color: #191919
+
+
+            span
+                font-size: 16px
+                color: #808080
+.open__desc
+    max-height: none
+    padding-bottom: 30px
+
+    &:before
+        content: '-'
+
+.image__full 
+    text-align: center
+    margin: 90px 0
+
+    @media(max-width: 991px)
+        margin: 10px 0
 
 .ui-slider-tabs-list li
     border: none!important

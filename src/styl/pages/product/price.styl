@@ -29,6 +29,9 @@
     border-bottom: 1px solid
     min-height: 100px
 
+    @media(max-width: 375px)
+        min-height: 140px
+
 .product__brand
     display: flex
     justify-content: flex-end
@@ -188,6 +191,8 @@
     justify-content: space-between
     flex-wrap: wrap
     border none
+    padding: 0 20px
+    padding-bottom 20px
 
 [id*="produto-comprar"]
     margin: 0 
@@ -196,7 +201,15 @@
     width: 100%
     height: 50px 
     margin-top: 10px
+    position: absolute
+    bottom: -70px
+    left: 0
+    border-radius: 5px
     
+    @media(max-width: 991px)
+        position relative
+        bottom: 0
+        margin-top 30px
 
     a
         margin: 0
@@ -204,7 +217,7 @@
 .produto-comprar
     a
         background-color: $cor01
-        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
+        
         background-repeat: no-repeat
         background-position 95%  
         background-size: 20px 25px
@@ -783,8 +796,65 @@ div#divGrupoProduto ul:nth-child(3)
         left 0
 
 
+.fbits-parcelamento-padrao 
+    position: absolute
+    right: 20px
+    margin: 0
+    bottom: 25px!important
+    text-decoration: none
+    border: none
+    width: 200px
+    padding: 0 
+    display: flex
+    justify-content: flex-end
+    min-height: 0
+
+    @media(max-width: 991px)
+        bottom: 100px!important
+
+    .details .details-content
+        position: absolute
+        width: 100%
+        right: 17px
+        bottom: -10px
+        margin-bottom: 0!important
+
+        p
+            text-align: right
 
 
-product__frete
-    @media(max-width 992px)
-        margin-top 24px
+    div#summary
+        padding: 0!important
+        margin:0!important
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        text-decoration: none
+        font-size: 0
+        
+
+        &:before
+            content: 'Fornas de pagamento'
+            border: none!important
+            color: #fff
+            margin: 0
+            padding: 0
+            line-height: 17px
+            font-size: 15px
+            text-align: right
+            width: 100%
+            height: auto
+            position: relative
+            margin-right: 5px
+            text-decoration: none
+
+        &:after
+            content: ''
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAAFVBMVEWAgICAgIAAAACAgICAgICAgICAgICgEutlAAAAB3RSTlOqRADM/7tVvEWZWQAAACNJREFUeAENhgESACAAwUbq/09ujhmkhnCm3T1EbKnmKy7iAwiQAGGItcRdAAAAAElFTkSuQmCC')
+            width: 15px
+            height 15px
+            display: block
+            background-position: center
+            background-repeat: no-repeat
+
+         

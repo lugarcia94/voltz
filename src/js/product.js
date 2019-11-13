@@ -259,3 +259,7 @@ define(['jquery', 'slick-carousel'], ($) => {
 $('.close__menu').on('click', function(){
     $('body').removeClass('menu__open')
 });
+
+$('.bloco__info').on('click', function(){
+    $(this).toggleClass('open__desc')
+});
