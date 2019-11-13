@@ -96,8 +96,8 @@
             padding: 0 0.63rem;
             border-radius: 5px
             height 50px
-            text-transform: uppercase
-            font-family: 'Bison-DemiBold'
+            text-transform: none
+            font-family: 'Graphit-Regular', sans-serif !important
 
             &:focus
                 border: 1px solid #000
@@ -164,7 +164,7 @@
             font-size: 15px;
             color: $cor01 
             text-align: left
-            text-transform: uppercase 
+            text-transform: none 
             display flex
             align-items: center
             justify-content: flex-start  
@@ -173,6 +173,8 @@
             width 150px
             padding: 0 10px
             border-radius: 5px
+            font-family: 'Graphit-Regular', sans-serif !important
+            
 
             &:after
                  
@@ -208,6 +210,7 @@
                 overflow hidden
                 margin-bottom 5px
                 padding: 0 5px!important
+                font-family: 'Graphit-Regular', sans-serif !important
                 
                 input
                     appearance none
@@ -350,7 +353,7 @@ body.fbits-categoria
                 display: block
                 left 50%
                 transform: translateX(-50%)
-                max-width 400%
+                max-width 400%!important
 
     .fbits-conteudo-item
         position: absolute
@@ -372,6 +375,10 @@ body.fbits-categoria
 
         p
             font-size: 18px
+            font-family: 'Graphit-Regular', sans-serif !important
+
+            @media(max-width: 991px)
+                font-size: 14px
 
 
 .fbits-item-lista-spot.fbits-item-lista-spot-empty
@@ -418,6 +425,7 @@ body.fbits-categoria
                 align-items: center;
                 justify-content: center;
                 font-weight: bold;
+                left: 250px
         &__header
             &-wrapper 
                 > *
