@@ -5,40 +5,7 @@ define(['jquery', 'slick-carousel'], ($) => {
         carousel() {
             const gallery = $('#galeria:not(.slick-initialized)');
         
-            if(gallery) {
-                gallery.slick({
-                    slidesToShow: 4,
-                    vertical: false,
-                    inifinite: false,
-                    dots: false,
-                    responsive: [
-                        {
-                            breakpoint: 500,
-                            settings: {
-                                slidesToShow: 3,
-                                vertical: false,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 993,
-                            settings: {
-                                slidesToShow: 4,
-                                vertical: false,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 375,
-                            settings: {
-                                vertical: false,
-                                slidesToShow: 2,
-                                dots: true
-                            }
-                        },
-                    ]
-                });
-            }
+ 
         },
         video() {
             $('#thumbVideo').on('click', function(evt){ 
@@ -133,9 +100,9 @@ define(['jquery', 'slick-carousel'], ($) => {
     
     function moveItens() {
         var flag = 1;
-        var garantiaProduto = Fbits.Produto.Atributos.Garantia;
+        var garantiaProduto = Fbits.Produto.Atributos.Modelo;
         if (garantiaProduto) {
-            $('.product__garantia > span').append('Garantia: ' + garantiaProduto);
+            $('.product__model').append(garantiaProduto);
         } 
 
         var descProduto = Fbits.Produto.Descricao;

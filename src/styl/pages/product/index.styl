@@ -1,10 +1,16 @@
 #bodyProduto , #bodyListaCompra
+    .header__mainbar
+        border: none
+
     .ruler
         margin-top 0
 
-    padding-top 20px
-    .content.produto
-        margin-top: 140px
+    padding-top 70px
+
+    .fbits-geral 
+    .content
+        max-width: 100%!important 
+    .content.produto 
         .fbits-breadcrumb
             >ol
                 display: flex
@@ -254,11 +260,8 @@
         display: none !important
 
     .main-container
-        max-width 1580px
-        width: 100%
-        margin: 0 auto
-        @media(max-width: 1290px)
-            max-width: 991px
+        .detalhe-produto-itens
+            background: #191919
         
     .product__price 
         position relative
@@ -321,15 +324,17 @@
         display: flex
         align-items: flex-start
         flex-wrap: wrap
-        margin-top: 15px
+        margin-top: 60px
 
     .product--item-container
         display: flex
-        align-items: flex-start
-        max-width: 100% 
+        align-items: center
+        max-width: 1100px 
         width: 100%
+        margin: 0 auto
         flex-wrap: wrap
-        justify-content: space-between 
+        justify-content: space-between
+
     .optionAtributos
         >ul
             width: 100%
@@ -366,19 +371,20 @@
                 overflow: hidden
                 cursor: pointer
                 transition: all 300ms ease-in-out  
-                width: 45px!important
-                height 35px!important 
+                width: 30px!important
+                height 30px!important 
+                min-width: 30px
+                border-radius: 50%
                 margin: 0
                 padding: 0 
                 background: #ffffff
                 color: #333333 
-                margin-right 9px
-                margin-bottom 10px
-                border 1px solid #d7d7d7  !important
+                margin-right 10px
+                margin-bottom 10px 
                  
 
                 &[data-atributoselecionado="True"]
-                    
+                    border: 2px solid #fff!important
                     color: #fff
                     background:  $cor01
                     font-weight: 700
@@ -404,9 +410,9 @@
             .valorAtributoFoto
                 // border: none !important
                 background: transparent
-                width: 45px
+                width: 30px
                 height: 100%
-                background-size: auto 45px !important
+                background-size: auto 30px !important
                 background-position: top center !important
                 position relative 
                 display: block
@@ -1592,10 +1598,7 @@ div#fbits-avaliar-produto
         position absolute
         bottom: -55px
         right: 0px
-        
-li.atributos-container.atributos-cor 
-    display: none!important
-
+ 
 
 .product__details-topo
     width 100%
@@ -1640,11 +1643,7 @@ li.atributos-container.atributos-cor
         @media(max-width: 991px)
             display none
 
-.product__variation 
-    width: 100%
-    background #f6f6f6
-    border 1px solid #d7d7d7  
-    padding 10px
+ 
 
  
 
@@ -1664,3 +1663,24 @@ li.atributos-container.atributos-cor
 .botoesSpot
     .wishLink    
         display none!important
+
+ul.anchor__product 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width 500px
+    width: 100%
+    padding: 10px 0
+    margin: 0 auto
+
+    li
+        a   
+            font-size: 16px
+            color: #808080
+
+            &:hover
+                color: #fff
+
+    li.active__anchor
+        a
+            color: #fff
