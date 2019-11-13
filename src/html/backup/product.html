@@ -1,74 +1,21 @@
-<FBITS:BreadCrumb  />
-<div class="interna cf">
-    @*Microdata de produto*@
-    <!--Div id="produto-item-@itemId" deve ser mantida por motivos estruturarais da plataforma.-->
-    <div class="detalhe-produto" itemscope itemtype="http://schema.org/Product">
-        <div class="detalhe-produto-itens" id="produto-item-@itemId">
-            <!--##Coluna 1.-->
-            <div id="imagem-pagina-produto" class="colunaProduto coluna1">
-                <FBITS:Etiqueta tipo="sequencial" />
-                <div id="produto-imagem-@Model.ProdutoId" class="produto-imagem-eazyZoom" data-fancybox="True">
-                    <FBITS:Imagem  />
-                    <FBITS:ImagemVarianteThumb  />
-                </div>
-            </div>
-            <div class="produtoInfo-title colunaWide">
-                <FBITS:FabricanteLogo  />
-                <FBITS:Nome  />
-                <FBITS:Sku  />
-                <FBITS:Avaliacao  />
-            </div>
-            <!--##Coluna 2.-->
-            <div class="produtoInfo colunaProduto coluna2">
-                <FBITS:ValorReferente  />
-                <FBITS:DadosLivro  />
-                <!--Opções de escolha de atributos.-->
-                <FBITS:MatrizAtributos  />
-                <FBITS:EscolhaAtributos  />
-                <!--Opções de parcelamento e frete.-->
-                <FBITS:ParcelamentoPadrao titulo="Consulte opções de parcelamento" />
-                <FBITS:CalculaFrete tipoexibicao="fechado" />
-                <div class="share">
-                    <FBITS:Facebook  />
-                    <FBITS:Twitter  />
-                    <a href="#divIndicacaoAmigo" id="indicaAmigo"><i class="indicar icon"></i>Indicar Produto</a>
-                </div>
-            </div>
-            <!--##Coluna 3.-->
-            <div class="colunaProduto coluna3">
-                <FBITS:AlertaValores />
-                <FBITS:ContraProposta />
-                <FBITS:ProdutoVariante  />
-                <FBITS:AdicionarListaDesejos texto="Adicionar à lista de desejos" textoAdicionado="Adicionado à lista de desejos" />
-                <FBITS:Comprar tipo="popup" titulo="Adicionar ao Carrinho" />
-                <FBITS:Televendas titulo="Vendas apenas por telefone." />
-            </div>
-            <!--##Continuação da página.-->
-            <div class="coluna-produto-horizontal">
+<div class="image__full"><img alt="" src="https://recursos.voltzmotors.com/MediaCenter/fotos.jpg" style="width: 1200px; height: 360px;" /></div>
 
-                <FBITS:Prescricao  />
-                <FBITS:PromocaoDivulgacao  />
-            </div>
-        </div>
-        <div class="fbits-produto-informacoes-extras">
-            <FBITS:GrupoInformacao  />
-            <FBITS:ProdutosRelacionados  />
-            <FBITS:Cores titulo="Cores" />
-        </div>
-    </div>
-    <div class="clear"></div>
-    <FBITS:Avaliacoes titulo="Opiniões sobre o produto" />
-    <div class="clear"></div>
-    <div class="avalie-indique">
-        <a id="avaliarProduto" name="avaliarProduto"></a>
-        <a id="divIndicacaoAmigo" name="divIndicacaoAmigo"></a>
-        <FBITS:Indicar  />
-        <FBITS:Avaliar  />
-    </div>
-    <div class="clear"></div>
-    <FBITS:Carrossel tipo="similar" />
+<div class="bloco__info">
+<h2>Descri&ccedil;&atilde;o</h2>
+
+<p>Venha conosco em uma jornada em rumo a um mundo melhor, com transportes mais &aacute;geis, modernos e sem CO2. A primeira gera&ccedil;&atilde;o Voltz chega na linha de frente da revolu&ccedil;&atilde;o da mobilidade urbana. Na vanguarda de um movimento mundial para acessibilizar a locomo&ccedil;&atilde;o com menos impactos ao meio ambiente. Venha conosco em uma jornada em rumo a um mundo melhor, com transportes mais &aacute;geis, modernos e sem CO2. A primeira gera&ccedil;&atilde;o Voltz chega na linha de frente da revolu&ccedil;&atilde;o da mobilidade urbana. Na vanguarda de um movimento mundial para acessibilizar a locomo&ccedil;&atilde;o com menos impactos ao meio ambiente.</p>
 </div>
-<div class="clear"></div>
 
-@Html.RecursosCSS("jquery.sliderTabs.min.css")
-@Html.RecursosJS("fbits.produto.calculafrete.js", "jquery.maskedinput-1.3.min.js")
+<div class="bloco__info">
+<h2>Ficha T&eacute;cnica</h2>
+
+<ul class="ficha__tecnica">
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+	<li><strong>Motor</strong><span>Bosch 60v</span></li>
+</ul>
+</div>
