@@ -227,6 +227,7 @@ footer.rodape-cart
 
     @media(max-width: 425px)
       justify-content: center
+      text-align: center
 
   .right__rodape, .right__rodape span 
     display: flex;
@@ -235,6 +236,10 @@ footer.rodape-cart
     @media(max-width: 425px)
       flex-wrap: wrap
 
+  .right__rodap
+    @media(max-width: 425px)
+      margin-top: 20px
+      
   .right__rodape span 
     @media(max-width: 425px)
       width 100%
@@ -242,3 +247,25 @@ footer.rodape-cart
     img
       margin: 0 10px
 
+.item__cart 
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+    a
+      display: block
+      background: #000
+      max-width: 200px
+      height: 50px
+      line-height: 50px
+      color: #fff
+      margin: 30px auto
+      border-radius: 5px
+
+
+    span
+      max-width: 480px
+      display: block
+      margin: 0 auto
+      font-size: 19px
