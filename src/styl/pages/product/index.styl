@@ -90,20 +90,24 @@
         left: 0!important
 
     select.optionProduct  
-        border: 1px solid #E8E8E8
+        border: 1px solid #646464
         max-width: 166px
         width: 100%
         border-radius: 1px
         -webkit-appearance: none
-        background: #fff
-        background-image: url('data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAQAAABd57cKAAAAaklEQVQI12MwKzcr/c/IgAT+M5qVmZUzmOWa/jNb58YNE3bjNlsHFMkFMi38zD6bXbSSBwlbyZtdNPts4QdVZaVjds/0lbmNuY3pK7N7VjpI5jqImB4w/QmEBxxEGFBBGqtZl1lvGiuMDwCYoh5FSjiDnAAAAABJRU5ErkJggg==')
+        background: #1a1a1a
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMABgcgIyRNkbCxtLW2yM3O3+Pk6us5yHLQAAAAXklEQVR4Ac3LTRICIQxE4aAzYFT8Qd/9r2qx6aL6Ak4vv5fEX1d7K26l9RpfyGKe8IknXqbziPMLuJ8WvwDvPbzIVcytyK3IrZjP7QPIBIZ8+dG9F7kVuW27Xbc4xn70lgg7JCugeAAAAABJRU5ErkJggg==')
         background-repeat: no-repeat
         background-position: 95%
+        background-size: 15px
         height 42px
         font-size: 15px
-        color: #979797
+        color: #fff
         font-style: italic
         padding-left: 15px
+        
+        .valorAtributo, .listacompra-produtos-atributos-opcao
+            color: #fff
 
         @media(max-width: 767px)
             max-width 100%
@@ -177,6 +181,7 @@
     .fbits-componente-imagemvariantethumb.fbits-produto-imagens
         width: 100% 
         float: none
+        display none
         &:first-child
             a
                 opacity 1!important
@@ -262,8 +267,8 @@
 
     .main-container
         .detalhe-produto-itens
-            background: #191919
-
+            background: #1a1a1a
+            padding-bottom: 100px
 
             @media(max-width 991px)
                 padding:  15px
