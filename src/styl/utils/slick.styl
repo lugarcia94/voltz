@@ -6,17 +6,18 @@
     justify-content: center
     background-color: $cor02 !important 
     border-radius: 50px
+    top: -20px!important
     &.slick-next
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAKlBMVEUAgJv///8Ag50AhZ+k2eGy3+aa1d7P6++t3eSS0tzf8fSf1+Cw3uWi2OBTkoSVAAAAM0lEQVR42u3JtwEAIAwDMKfR+f9dPjAs2dAqfFejGestwV49/SdpC+l0XVMWiy5qUXwPDnoLAMxlkC5oAAAAAElFTkSuQmCC')!important
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAVFBMVEUAAADk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5ORdXV2urq5CQkIZGRnW1tZPT0+goKCTk5MnJycbLayTAAAAE3RSTlMAJni24fz/6cCCMCinrS1m/md6Nz04nAAAAKBJREFUeNqNktEOgyAMRRXlIggibkO3/f9/jrl1Eotx56nJCaS9bfUHtWhaCdVpsxO9xQ835MaPyAmbmbBjIhPA8B8zgDP2q3IoYN/GgLhcM1cnpUHcYuZEUh2IeYl3EE1SChtLfFDZJgUUndyr+Rnnb0kf8leK2mAGHTXPO9Q0Mp/LUFAsDUfxcobDpYSzVfIDGP3R2di+dGyybURdnfMC7xUOkIv9eMsAAAAASUVORK5CYII=')!important
         background-repeat no-repeat !important
         background-size: 100% !important
-        background-position: center !important
+        background-position: center !important 
     &.slick-prev
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAKlBMVEUAgJv///8Ag50AhZ+k2eGy3+aa1d7P6++t3eSS0tzf8fSf1+Cw3uWi2OBTkoSVAAAAM0lEQVR42u3JtwEAIAwDMKfR+f9dPjAs2dAqfFejGestwV49/SdpC+l0XVMWiy5qUXwPDnoLAMxlkC5oAAAAAElFTkSuQmCC')!important
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAATlBMVEUAAADk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OSurq5dXV3k5OQZGRlCQkLW1tbk5OTk5OTk5OQnJyfJyclaZH0vAAAAGHRSTlMAMILA6f8trWd6Zij+pyb//3j///+24fxzqz+LAAAAnklEQVR42o3RwQ6DIBBFUQSeKCAtVqD9/x/tVGJFnaS9K5KT2fDEH3VSaUAr2Z2gN/hm+lYGHBp2GXFq3MTikq3i/JW8W2kC0/SRgL3bHVuBKDYyP5btHYkSK0hEmRVkosIKChFqy3N+oY1I81eaSIE1RSTBmiTqwNo6m+F+w9QZwdQzQ9aGn1NS1rfgrWhyUzOVE8dCTLmUnGIQv3sDGlINCpMSTcAAAAAASUVORK5CYII=')!important
         background-repeat no-repeat !important
         background-size:  100% !important
         background-position: center !important
-        transform: rotate(180deg) !important
+        transform: rotate(360deg) !important
     &:before
         display none !important
         
@@ -44,14 +45,8 @@ section.fbits-section-home .slick-list.draggable
 
 
 .slick-arrow.slick-prev
-    left 0
-    @media(max-width : 991px)
-        left 5px !important
-        width: 30px
-        height 30px
+    right 50px
+    left auto
+ 
 .slick-arrow.slick-next
-    right 0
-    @media(max-width : 991px)
-        right 5px !important
-        width: 30px
-        height 30px
+    right 0 
