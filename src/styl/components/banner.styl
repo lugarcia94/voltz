@@ -248,11 +248,13 @@
 
 section.full__banner
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: center
     max-width: 1580px
-    margin: 94px auto
+    margin: 70px auto
     padding: 0 15px
+
+
 
     .full__banner-right
         max-width 582px
@@ -261,6 +263,16 @@ section.full__banner
             a, img
                 display: block
                 max-height: 268px
+
+    @media(max-width: 991px)
+        flex-wrap wrap
+        .full__banner-right
+            display flex
+            max-width 100%
+
+    @media(max-width: 425px)
+        .full__banner-right
+            flex-wrap wrap
 
 .show__product
     max-width: 1580px
