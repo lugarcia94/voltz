@@ -299,3 +299,11 @@ $('a[href*="#"]')
     }
   }
 });
+
+$('.second__menu span').on('click', function(){
+    $('body').addClass('open__second')
+});
+
+$('.header-info-close').on('click', function(){
+    $('body').removeClass('open__second')
+});

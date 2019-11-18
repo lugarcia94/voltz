@@ -333,6 +333,9 @@
                 padding: 0
                 max-width: none
                 width: auto
+
+            @media(max-width: 425px)
+                width: 45%
             .carrinho.carrinhoHead
                 a
                     float none
@@ -361,7 +364,8 @@
                     justify-content: center
                     z-index: 999
                     padding: 0
- 
+    
+
     @media(max-width: 991px)
         &__mainbar
             &-container
@@ -380,7 +384,10 @@
             &-serach
                 padding-top 10px
 
-        
+    @media(max-width: 425px)
+        &__mainbar
+            &-logo
+                width: 30%
 
 .header__navigation
     max-width 500px
@@ -423,3 +430,51 @@
     .category__filter
         .category__ordenation
             display: none
+
+.second__menu
+    span
+        cursor pointer
+
+    .header-info-close
+        display none
+        position: absolute
+        right: 15px
+        z-index: 999999
+        top: 15px
+        cursor pointer
+
+    ul.header-info-menu
+        position fixed
+        right -100%
+        visibility hidden
+        opacity 0
+        transition all 250ms ease-in-out
+        top: 0
+        padding-left: 45px
+        padding-bottom: 50px
+        background: #000
+        color: grey
+        height: 100%
+        z-index: 9999
+        width 300px
+        padding-top 30px
+
+        li
+            margin-bottom 20px
+
+            a
+                color: grey
+                font-family: 'Graphit-Regular', sans-serif !important
+                font-size 15px
+
+                &:hover
+                    color #fff
+
+.open__second
+    .header-info-close
+        display block
+    .second__menu
+        ul.header-info-menu
+            right 0
+            opacity 1
+            visibility visible
