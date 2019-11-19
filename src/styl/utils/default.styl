@@ -8,7 +8,7 @@ html
     outline none
 
 .container
-  max-width 1580px
+  max-width 1350px
   margin: 0 auto;
   @media(max-width: 1290px)
     max-width 991px
@@ -33,7 +33,7 @@ body
     opacity: 1
 
 ::selection
-  background $cor02
+  background $cor01
   color white
 
 body  
@@ -108,7 +108,7 @@ body.minhaConta.fbits-minhaConta div.content.minhaconta .sideBar .filtroTitle.ti
 
 .fbits-geral 
   .content
-    max-width: 1580px!important
+    max-width: 1350px!important
     margin: 0 auto
     padding 0 15px
     overflow initial
@@ -125,7 +125,7 @@ body.minhaConta.fbits-minhaConta div.content.minhaconta .sideBar .filtroTitle.ti
     
 
     .fbits-center-responsivo
-      max-width: 1580px!important
+      max-width: 1350px!important
       padding: 0 15px
       width: 100%
       display: flex
@@ -341,3 +341,73 @@ li.col-lg-2.col-md-2.col-sm-4.col-xs-4.text-right.fbits-responsive-carrinho-head
 
 body.fbits-login.container-fluid.top-navigation.white-bg.pace-done
   font-family: 'Graphit-Regular', sans-serif !important
+
+.fbits-login
+  .full-container
+    h2
+      font-family: 'Bison-Bold'!important
+      font-size: 30px
+
+  p.fbits-subtitle-login 
+    color: #3a3838
+    line-height: 35px
+    margin-bottom: 10px
+
+  form#form-login-rapido 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+  button#btnLoginEntrar 
+    text-transform: none
+    font-size: 15px
+    padding: 20px
+    line-height: 0px
+    margin: 0
+    height: 50px
+    width: 120px!important
+
+    @media(max-width: 375px)
+      width 100%!important
+
+  #inputLoginEmail
+    width: 290px
+    height: 50px
+    border: 1px solid #e6e6e6
+    @media(max-width: 375px)
+      width 100%!important
+  .fbits-label.fbits-label-login
+    margin: 0
+
+
+  .fbits-social-login:before
+    display: none
+
+  .fbits-social-login span 
+    display: block
+    margin: 15px 0
+
+    a
+      font-weight: 700
+      color: #000
+
+      &:hover
+        color: #000
+
+  .info__checkout 
+    background: #f7f7f7
+    margin-top: 10px
+    padding: 10px
+
+    span
+        font-family: 'Bison-Bold'!important
+
+    p
+      color: #8a8686
+      font-size: 12px
+      display: block
+      margin: 10px 0
+
+
+
